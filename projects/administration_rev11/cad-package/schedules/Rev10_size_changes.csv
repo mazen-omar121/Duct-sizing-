@@ -1,0 +1,19 @@
+tag,previous_size_mm,revised_size_mm,flow_l_s,velocity_m_s,status
+SA-M03,950x500,650x750,2255.3,4.62626,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+SA-M04,850x425,650x575,1806.1,4.83237,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-M03,850x550,600x800,1682.853558,3.50594,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-M04,800x450,600x600,1292.990169,3.59164,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-M05,650x300,350x575,467.726779,2.32411,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-M06,450x225,350x300,108.86339,1.03679,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+SA-B04,450x300,350x400,449.2,3.20857,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-B08,700x450,500x650,825.26339,2.53927,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H08-U01,700x450,500x650,825.26339,2.53927,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H08-D01,700x450,500x650,550.175593,1.69285,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H08-D02,700x450,500x650,275.087797,0.84642,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-B05,650x400,500x525,718.36339,2.73662,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H05-U01,650x400,500x525,574.690712,2.1893,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H05-U02,650x400,500x525,431.018034,1.64197,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H05-U03,650x400,500x525,287.345356,1.09465,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H05-D01,650x400,500x525,143.672678,0.54732,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-B06,550x350,350x550,358.86339,1.86423,Proposed clear size; coordinate levels and selected fitting loss / fan ESP
+RA-H06-D01,550x350,350x550,179.431695,0.93211,Proposed clear size; coordinate levels and selected fitting loss / fan ESP

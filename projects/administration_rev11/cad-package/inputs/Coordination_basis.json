@@ -1,0 +1,18 @@
+{
+  "structural_underside_mm_affl": 4000,
+  "structural_datum_source": "User confirmed 4 m is structural slab/roof underside; AFFL datum to verify on site",
+  "external_insulation_mm": 50,
+  "insulation_status": "Indoor coordination assumption only; not a verified UAE average or project specification. Outdoor insulation, fire performance and vapour barrier require selection.",
+  "clear_gap_between_insulation_mm": 100,
+  "clear_gap_status": "Proposed coordination allowance; OEM access / supports may require more",
+  "structure_to_insulation_allowance_mm": 150,
+  "structure_allowance_status": "Assumed hanger / structure allowance for envelope check; beams / services / selected supports not surveyed",
+  "finished_ceiling_mm_affl": 3300,
+  "installed_duct_bod_mm_affl": null,
+  "calculation_status": "Connected indoor trees at proposed bare BOD +3.400 m; single-layer envelope only, not installation approval; roof distribution NTS / survey and structural coordination pending",
+  "minimum_clear_headroom_mm": 3300,
+  "ceiling_datum_source": "User requires 3.3 m below 4.0 m slab/roof underside",
+  "proposed_indoor_bod_mm_affl": 3400,
+  "ceiling_to_insulation_allowance_mm": 50,
+  "distribution_strategy": "Roof common mains with 15 independent room supply/return drops - proposed option, user selection pending"
+}

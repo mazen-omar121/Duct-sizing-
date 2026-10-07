@@ -1,0 +1,9 @@
+{
+  "revision": 11,
+  "base": "Published Administration HVAC Rev10 / 1bce238a1d92d3319cbab4b3803c035d1e7f3334",
+  "reference_dwg": "D-113391-ADDC-AES-ME-AC-001_REV.1.dwg",
+  "reference_sha256": "34ed89731be05b599c6cb43770ea6a68fbf6713d11659423fb047acb61719653",
+  "changes": "See REVISION_11.md and Rev11 route / terminal / size change CSVs",
+  "baseline_source": "projects/administration_rev10",
+  "claims": "Roof-distribution option for confirmed 3.30 m clear height below 4.00 m slab. Indoor geometry checked; roof routing / structural penetrations / outdoor specification / OEM clearances and option selection pending, not for construction."
+}

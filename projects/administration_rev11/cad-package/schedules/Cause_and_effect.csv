@@ -1,0 +1,9 @@
+trigger,input,equipment_action,damper_action,restart,basis
+Confirmed fire,FACP -> HPCP,"STOP all PAUs, extract and basement fans; heaters off",Damper fire positions per approved cause-and-effect; not inferred,Local manual reset after fire clears,8.2.1 / 15.11.11
+Normal start,HMI / BMS start + Auto,Prove duty path dampers; start chosen duty pair and duty extract fans,Standby PAU and parallel fan inlet / outlet paths isolated,Sequence / delays by approved OEM logic,7.14 / 15.10.1
+Duty PAU fault,Unit fault / fan DP,Alarm; isolate failed unit; enable available alternate,Maintain two healthy 50% units when available,Automatic fault changeover; minimum-runtime delay TBC,7.20.3 / 15.10.1
+Low / high room pressure,Room DPT,Proposed RCD / OA or extract-speed adjustment within airflow constraints,"Respect cooling, fresh-air and minimum ACH limits",Alarm if targets cannot be met; revise supply / balance,7.13.2 / 15.10.1
+Extract duty fan fault,Fan fault / proof,Start standby for kitchen / toilet / basement,Prove available path; isolate failed path,CAG standby arrangement TBC,7.19.1 / 7.18.3
+Heater high limit / no flow,TSHH / AFS,Heater OFF by OEM hardwired safety; alarm / proof status to PLC,Fans / dampers per OEM sequence; fire overrides,Manual or OEM reset only after fault clears,Proposed OEM protection
+Power loss / return,Mains / feeder status,HVAC stops; normal restart on restored power,Fire ESD latch overrides automatic restart,Automatic power-return restart only without fire latch,15.11.9 / 10 / 11
+Post-fire purge,Separate approved command,Not enabled by this drawing,"Agent, fire fan suitability and makeup to be approved",No automatic purge assumed,C-H-SS-001 1.5; C-FF-SS-004 required

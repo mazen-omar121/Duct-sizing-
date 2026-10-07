@@ -1,31 +1,20 @@
 # Administration HVAC drawing app
 
-The current delivery is **Rev10**, which revises the rejected Rev09 duct routing and connections against the supplied CAD examples. It contains 21 detailed A1 drawing sheets, four functional schematic sheets, editable DXF, Excel registers and reproducible CAD source.
+The current delivery is **Rev11, a roof-distribution design option for 3.30 m clear height below a 4.00 m slab**. It contains 22 detailed A1 sheets, four functional schematic sheets, editable DXF, Excel registers and reproducible source. Roof option selection and actual roof routing / structural penetrations remain pending.
 
-Download the [complete Rev10 ZIP](deliverables/rev10/Administration_HVAC_Rev10.zip?raw=true). Start with the [three-page junction / crossing / revision review](deliverables/rev10/Administration_HVAC_Junction_Review_Rev10.pdf): D-019 shows six enlargements of the actual delivered junction geometry, D-020 records crossing constraints, and D-021 records terminal and size changes. The [full color drawings](deliverables/rev10/Administration_HVAC_Detailed_Drawings_Rev10.pdf), [monochrome print edition](deliverables/rev10/Administration_HVAC_Detailed_Drawings_Rev10_Monochrome.pdf) and [Excel registers](deliverables/rev10/Administration_HVAC_Drawing_Registers_Rev10.xlsx?raw=true) are also available individually. On GitHub select **Download raw file** if needed.
+Download the [complete Rev11 ZIP](deliverables/rev11/Administration_HVAC_Rev11.zip?raw=true). Start with the [four-page engineering review](deliverables/rev11/Administration_HVAC_Junction_Review_Rev11.pdf): D-019 actual junction enlargements, D-020 ceiling envelope, D-021 changes and D-022 proposed roof drops. The [full color drawings](deliverables/rev11/Administration_HVAC_Detailed_Drawings_Rev11.pdf), [monochrome edition](deliverables/rev11/Administration_HVAC_Detailed_Drawings_Rev11_Monochrome.pdf) and [Excel registers](deliverables/rev11/Administration_HVAC_Drawing_Registers_Rev11.xlsx?raw=true) are also available individually. On GitHub select **Download raw file** if needed.
 
-## What changed
+Rev11 replaces the deep indoor common mains with a proposed roof distribution system and 15 independent room drops. Electrical and telecom returns use perimeter trees. The 116 indoor paths form nine supply, six return and two extract room networks, with no bare indoor crossings, insulated separate-service overlaps, unintended same-service intersections or retraced centerlines. All scheduled terminal duties, neck/face sizes, 85 instrument requirements and I/O duties are retained. Thirteen additional terminal position proposals and twenty existing section size changes are documented against Rev10.
 
-- One continuous exterior per connected service; later runout fills cannot erase header walls. Adapters replace the constant-width throat and formed fitting radii are part of the actual envelope.
-- Corridor distribution / collection uses aggregate-flow headers instead of overlapping individual runouts. Operator returns follow a perimeter tree; meeting, telecom, toilet, bed-room and clean-agent routes are revised.
-- Geometry rejects unintended same-service polygon intersections, duplicated / retraced centerlines and unconnected centerline crossings. Every registered joint conserves airflow.
-- 122 scheduled section paths, 53 retained terminal duties and 85 instrument requirements. Room duties, terminal neck / face sizes and I/O allocations are retained; 22 terminal relocations and clear section size changes are documented against Rev09.
-- Device glyph cores use the supplied reference-vector geometry; straight device stations exclude junctions / crossing footprints. Leadered labels are separated. Actual OEM face-to-face dimensions / actuator access remain to be confirmed.
-- Existing individually tagged fan / heater / basement / metering diagrams, complete instrument index and 11 native CAD dimensions are retained and synchronized.
+The proposed indoor bare BOD is **+3.400 m**, with a maximum bare depth of **400 mm** and assumed **50 mm insulation each face**. The deepest insulated envelope is +3.350 to +3.850 m, giving 50 mm above the required ceiling and 150 mm below the slab. This is a **duct envelope check**; selected flanges, supports, actuators, heater casings, terminal plenums and access may require local redesign. The 50 mm ceiling gap is not a general plenum or working clearance. Insulation is an assumption, not a verified UAE standard, and installed BOD remains unassigned.
 
-See [REVISION_10.md](projects/administration_rev10/REVISION_10.md). Original Rev08 and published Rev09 source and deliverables remain intact.
+Roof common-main sizes/flows are functional only. Actual roof routes, levels, lengths, outdoor insulation, structural openings, curbs, weatherproofing and loads remain to be designed from site information. Common heater / conditional humidifier / five probes are proposed in weather-protected roof plant; OEM suitability and physical mounting are pending. No roof clash clearance or slab penetration approval is claimed.
 
-## Height and engineering coordination
-
-The user confirmed **4.000 m structural slab/roof underside**; the AFFL datum needs site verification. External indoor insulation is assumed at **50 mm** for coordination, not a verified UAE average or project specification. The crossing register calculates maximum local BOD bounds with assumed 100 mm inter-insulation gap and 100 mm structure / hanger allowance. These values are **not assigned connected-network duct elevations**.
-
-There are **20 separate-service crossings** marked with continuous upper edges and dashed lower edges. At **CX-08**, 750 mm supply and 800 mm return depths require a 1950 mm stack under those assumptions, leaving the lowest insulated surface at **+2.050 m**. Resolve a shallower section or reroute against the required finished ceiling / working access before construction. Finished ceiling, BODs, beams, supports, terminal plenums and selected insulation remain unapproved.
-
-Pressure / outdoor-air balance, selected fitting losses / fan ESP / curves, OEM duties, diffuser performance, fire boundaries and I&C settings / wiring remain open. Toilet net flow is about -18.69 L/s and kitchen net is zero; neither verifies +25 Pa. This is an engineering coordination issue with checked / approved identities pending.
+Pressure / outdoor-air balance, revised fitting losses / fan ESP / curves, OEM terminal performance, fire boundaries and I&C settings / wiring remain open. Toilet net flow -18.69 L/s and kitchen zero do not establish +25 Pa. **For engineering coordination, not for construction.** See [REVISION_11.md](projects/administration_rev11/REVISION_11.md). Rev08 / Rev09 / Rev10 source and deliveries remain intact; Rev10 CX-08 at +2.050 m does not meet the new ceiling requirement.
 
 ## AutoCAD workflow
 
-Extract the ZIP and open `Administration_HVAC_Detailed_Layout_Rev10.dxf` in AutoCAD. Review **D001_A1 through D021_A1**, then **Save As → DWG**. Keep `M-MASK` enabled; `VIEWPORT` is non-plotting. Text uses Arial. Print A1 PDFs at 100% / actual size for stated scales; D-019 shows each detail's 1:20 or 1:25 scale. NTS details must not be scaled. Native AutoCAD plotting has not been run here; compare the first plot against the supplied PDF.
+Extract the ZIP and open `Administration_HVAC_Detailed_Layout_Rev11.dxf` in AutoCAD. Review **D001_A1 through D022_A1**, then **Save As → DWG**. Keep `M-MASK` enabled; `VIEWPORT` is non-plotting. Text uses Arial. Print A1 PDFs at 100% / actual size for stated scales; D-019 shows each detail's 1:20 or 1:25 scale. NTS details must not be scaled. Native AutoCAD plotting has not been run here; compare the first plot against the supplied PDF.
 
 A server converter is optional for server-side DWG downloads; it is not needed when you use AutoCAD. No converter is installed and direct server DWG generation remains unvalidated. The app disables unavailable DWG downloads and returns an explicit error. Never rename DXF bytes to DWG. Optional ODA File Converter can be configured later with `DUCT_ODA_CONVERTER`; validate an actual output in CAD before claiming readiness.
 
@@ -38,23 +27,23 @@ cd /workspace/Duct-sizing-
 python -m venv /workspace/.venvs/duct-cad
 /workspace/.venvs/duct-cad/bin/python -m pip install -r requirements.txt
 python -m venv /workspace/.venvs/administration-cad
-/workspace/.venvs/administration-cad/bin/python -m pip install -r projects/administration_rev10/requirements.lock.txt
+/workspace/.venvs/administration-cad/bin/python -m pip install -r projects/administration_rev11/requirements.lock.txt
 /workspace/.venvs/administration-cad/bin/python scripts/build_administration.py
 /workspace/.venvs/administration-cad/bin/python scripts/validate_administration.py
 /workspace/.venvs/administration-cad/bin/python scripts/package_administration.py
 /workspace/.venvs/duct-cad/bin/python -m unittest discover -s tests -v
-/workspace/.venvs/duct-cad/bin/python app.py --port 5003
+/workspace/.venvs/duct-cad/bin/python app.py --port 5004
 ```
 
 The development server uses the specified free port; do not stop unrelated processes. Processes must restart in a new cloud task. Internal onboarding HTTP checks do not provide a localhost preview link. No database or credentials are needed.
 
-The wrapper stages a source copy because generators rewrite derived schedules. Run only one rebuild at a time. Failed builds preserve earlier successful outputs. Successful outputs are in ignored `generated/administration/`; packaging writes `generated/delivery/`. Publishing copies validated versioned files into `deliverables/rev10/`. Historical migration `scripts/prepare_rev10_inputs.py` is not part of normal rebuilding; rerunning it replaces proposed route inputs.
+The wrapper stages a source copy because generators rewrite derived schedules. Run only one rebuild at a time. Failed builds preserve earlier successful outputs. Successful outputs are in ignored `generated/administration/`; packaging writes `generated/delivery/`. Publishing copies validated versioned files into `deliverables/rev11/`. Historical migrations `scripts/prepare_rev10_inputs.py` and `scripts/prepare_rev11_inputs.py` is not part of normal rebuilding; rerunning it replaces proposed route inputs.
 
 Update linked JSON / CSV design inputs together. Excel-only changes are not read by the generator. The generic JSON editor is separate from the Administration source; its constant-size independent routes do not provide these detailed junctions. Portable ZIP rebuilding instructions are in `READ_ME_FIRST.txt`.
 
 ## Validation
 
-Independent checks cover delivered CAD exteriors, native dimension lengths, 85 instrument tags against actual PDF sheet references, airflow conservation, traceable terminal / size changes, centerline clashes, both DXF audits, 21 color / monochrome A1 sheets, four schematic sheets, 20 workbook tabs, and all 122 section velocities / lengths / straight-duct friction calculations. The legacy bad centerline arrangement is rejected by the new check. Crossing stack calculations are independently recomputed, including the CX-08 hold.
+Independent checks cover delivered CAD exteriors, 11 native dimension lengths, all 85 instrument tags against actual PDF sheet references, 64 airflow-balanced indoor nodes, registered free duct ends, traceable 13 terminal / 20 existing size changes from Rev10, centerline clashes, both DXF audits, 22 color / monochrome A1 sheets, four schematic sheets, 23 workbook tabs, all 116 indoor section velocities / lengths / straight friction values and every headroom envelope. Separate-service insulation footprints do not overlap. All 15 proposed room drops match their branches, and the functional roof main flows match room totals. The legacy bad centerline arrangement is rejected by the validator. OEM assemblies and actual roof geometry are outside the verified scope.
 
 App tests cover generic and project downloads, invalid input and converter failures. Packaging checks ZIP integrity and SHA-256 hashes. Reports describe checks and remaining holds; they do not constitute engineering approval. Native AutoCAD plotting remains unrun.
 

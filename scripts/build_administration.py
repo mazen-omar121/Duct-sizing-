@@ -1,4 +1,4 @@
-"""Rebuild the Rev10 engineering package in an isolated staging copy, preserving inputs."""
+"""Rebuild the Rev11 engineering package in an isolated staging copy, preserving inputs."""
 from pathlib import Path
 import json
 import shutil
@@ -7,7 +7,7 @@ import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'projects' / 'administration_rev10'
+SOURCE = ROOT / 'projects' / 'administration_rev11'
 DEST = ROOT / 'generated' / 'administration'
 
 
@@ -21,8 +21,8 @@ def main():
             subprocess.run([sys.executable, str(stage / 'cad-package' / 'src' / script)],
                            cwd=stage, check=True)
         report = json.loads((stage / 'drawing_validation.json').read_text())
-        assert report['sheets'] == 21 and report['DXF_audit'] == 'passed'
-        assert report['duct_geometry']['valid_section_polygons'] == 122
+        assert report['sheets'] == 22 and report['DXF_audit'] == 'passed'
+        assert report['duct_geometry']['valid_section_polygons'] == 116
         assert report['duct_geometry']['unintended_same_service_intersections'] == []
         assert report['duct_geometry']['duplicated_centerlines'] == 'none'
         assert report['room_terminal_totals'] == 'passed'
@@ -39,7 +39,7 @@ def main():
                 raise
         else:
             stage.rename(DEST)
-    print(f'Validated Rev10 outputs: {DEST}')
+    print(f'Validated Rev11 outputs: {DEST}')
 
 
 if __name__ == '__main__':

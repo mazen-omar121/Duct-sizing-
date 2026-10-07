@@ -1,0 +1,14 @@
+tag,old_x_mm,old_y_mm,new_x_mm,new_y_mm,flow_l_s,status
+SD-02-01,2700,18000,2700,17700,166.2,Proposed; reflected ceiling / throw / noise and access coordination pending
+SD-02-02,7100,18000,7100,17700,166.2,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-02-01,5400,17000,2000,17000,151.36584740090174,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-02-03,5400,11900,2000,11900,151.36584740090174,Proposed; reflected ceiling / throw / noise and access coordination pending
+SD-08-01,6500,6500,6800,6500,147.43333333333334,Proposed; reflected ceiling / throw / noise and access coordination pending
+SD-08-03,6500,4200,6800,4200,147.43333333333334,Proposed; reflected ceiling / throw / noise and access coordination pending
+SD-08-05,6500,1700,6800,1700,147.43333333333334,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-08-01,6400,7150,5500,7150,137.54389826726785,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-08-02,11500,7150,11400,7150,137.54389826726785,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-08-03,5900,4600,5500,4600,137.54389826726785,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-08-04,11500,4600,11400,4600,137.54389826726785,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-08-05,5900,900,5500,900,137.54389826726785,Proposed; reflected ceiling / throw / noise and access coordination pending
+RG-08-06,11500,900,11400,900,137.54389826726785,Proposed; reflected ceiling / throw / noise and access coordination pending
