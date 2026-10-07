@@ -1,0 +1,9 @@
+{
+  "revision": 9,
+  "base": "Administration HVAC Rev08 uploaded source",
+  "reference_dwg": "D-113391-ADDC-AES-ME-AC-001_REV.1.dwg",
+  "reference_sha256": "34ed89731be05b599c6cb43770ea6a68fbf6713d11659423fb047acb61719653",
+  "changes": "See REVISION_09.md",
+  "baseline_source": "projects/administration_rev08",
+  "claims": "No change to room duties or duct sizing; this is an engineering drafting revision."
+}

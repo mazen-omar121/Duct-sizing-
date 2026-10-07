@@ -1,0 +1,240 @@
+{
+  "revision": 8,
+  "duct_flow_size_velocity_and_friction_comparison": {
+    "sections": 114,
+    "result": "unchanged"
+  },
+  "terminal_flow_neck_face_comparison": {
+    "terminals": 53,
+    "result": "unchanged"
+  },
+  "revised_routes": [
+    {
+      "tag": "RA-B02",
+      "old_length_m": "1.6",
+      "new_length_m": "2.5",
+      "old_points_mm": [
+        [
+          4400,
+          15700
+        ],
+        [
+          4400,
+          16400
+        ],
+        [
+          3500,
+          16400
+        ]
+      ],
+      "new_points_mm": [
+        [
+          6000,
+          16400
+        ],
+        [
+          3500,
+          16400
+        ]
+      ]
+    },
+    {
+      "tag": "RA-H02-U01",
+      "old_length_m": "1.1",
+      "new_length_m": "0.6",
+      "old_points_mm": [
+        [
+          4400,
+          16800
+        ],
+        [
+          4400,
+          15700
+        ]
+      ],
+      "new_points_mm": [
+        [
+          6000,
+          17000
+        ],
+        [
+          6000,
+          16400
+        ]
+      ]
+    },
+    {
+      "tag": "RA-H02-D01",
+      "old_length_m": "3.8",
+      "new_length_m": "4.5",
+      "old_points_mm": [
+        [
+          4400,
+          11900
+        ],
+        [
+          4400,
+          15700
+        ]
+      ],
+      "new_points_mm": [
+        [
+          6000,
+          11900
+        ],
+        [
+          6000,
+          16400
+        ]
+      ]
+    },
+    {
+      "tag": "RA-R02-01",
+      "old_length_m": "3.2",
+      "new_length_m": "4.8",
+      "old_points_mm": [
+        [
+          1200,
+          16800
+        ],
+        [
+          4400,
+          16800
+        ]
+      ],
+      "new_points_mm": [
+        [
+          1200,
+          17000
+        ],
+        [
+          6000,
+          17000
+        ]
+      ]
+    },
+    {
+      "tag": "RA-R02-02",
+      "old_length_m": "3.3",
+      "new_length_m": "1.7",
+      "old_points_mm": [
+        [
+          7700,
+          16800
+        ],
+        [
+          4400,
+          16800
+        ]
+      ],
+      "new_points_mm": [
+        [
+          7700,
+          17000
+        ],
+        [
+          6000,
+          17000
+        ]
+      ]
+    },
+    {
+      "tag": "RA-R02-03",
+      "old_length_m": "3.2",
+      "new_length_m": "4.8",
+      "old_points_mm": [
+        [
+          1200,
+          11900
+        ],
+        [
+          4400,
+          11900
+        ]
+      ],
+      "new_points_mm": [
+        [
+          1200,
+          11900
+        ],
+        [
+          6000,
+          11900
+        ]
+      ]
+    },
+    {
+      "tag": "RA-R02-04",
+      "old_length_m": "3.3",
+      "new_length_m": "1.7",
+      "old_points_mm": [
+        [
+          7700,
+          11900
+        ],
+        [
+          4400,
+          11900
+        ]
+      ],
+      "new_points_mm": [
+        [
+          7700,
+          11900
+        ],
+        [
+          6000,
+          11900
+        ]
+      ]
+    }
+  ],
+  "proposed_terminal_moves": [
+    {
+      "tag": "RG-02-01",
+      "old_xy_mm": [
+        "1200",
+        "16800"
+      ],
+      "new_xy_mm": [
+        "1200",
+        "17000"
+      ]
+    },
+    {
+      "tag": "RG-02-02",
+      "old_xy_mm": [
+        "7700",
+        "16800"
+      ],
+      "new_xy_mm": [
+        "7700",
+        "17000"
+      ]
+    }
+  ],
+  "IO_instruments_components_cause_effect": "unchanged from Rev07",
+  "final_artifacts": {
+    "Administration_Detailed_HVAC_Duct_Flow_Diagram.pdf": {
+      "pages": 12,
+      "A1_size_and_text_bounds": "passed"
+    },
+    "Administration_HVAC_Schematic.pdf": {
+      "pages": 4,
+      "A1_size_and_text_bounds": "passed"
+    },
+    "Administration_HVAC_Detailed_Layout.dxf": {
+      "audit": "passed",
+      "paper_layouts": 13
+    },
+    "Administration_HVAC_Schematic.dxf": {
+      "audit": "passed",
+      "paper_layouts": 5
+    }
+  },
+  "Excel_CSV_match": {
+    "tabs": 14,
+    "CSV_tables": 11,
+    "result": "passed"
+  }
+}

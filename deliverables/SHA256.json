@@ -1,0 +1,38 @@
+{
+  "Administration_HVAC_Detailed_Drawings_Rev09.pdf": {
+    "bytes": 1755006,
+    "sha256": "9e53a144862549371c3cb702611c786112d17b5e082c3c0ea3c53f5ef79ce86b"
+  },
+  "Administration_HVAC_Detailed_Drawings_Rev09_Monochrome.pdf": {
+    "bytes": 1737959,
+    "sha256": "25338c2bc6bd54d74a52dad65b842fb1b1a6075d32d2f8ed8603d43607ed8800"
+  },
+  "Administration_HVAC_Detailed_Layout_Rev09.dxf": {
+    "bytes": 28769046,
+    "sha256": "10772efca1badf72338540326e12d6e7b357fe6b54b6b198d758ed7baf9b5b3f"
+  },
+  "Administration_HVAC_Drawing_Registers_Rev09.xlsx": {
+    "bytes": 84957,
+    "sha256": "490317786b729148438a995027488b38377cc255b9092d62d5d6c9ca84190aae"
+  },
+  "Administration_HVAC_Rev09.zip": {
+    "bytes": 9644262,
+    "sha256": "219915f46881ea7df40038a1bf123b9921007f9206aa5a16e3d9f3c320454824"
+  },
+  "Administration_HVAC_Schematic_Rev09.dxf": {
+    "bytes": 282941,
+    "sha256": "3a653f14b40be08772a29f502778ec347412383c01c0fc628bc1f9a059e1c4ac"
+  },
+  "Administration_HVAC_Schematic_Rev09.pdf": {
+    "bytes": 83044,
+    "sha256": "26a17575533bd3c430928223d42d1858aabcc8c236fd015eaf3fd33a6912f480"
+  },
+  "drawing_validation.json": {
+    "bytes": 2232,
+    "sha256": "51326cfd620e8d3618d03c9186964fd01fbda367040bbbde650d7fcf89f02e0b"
+  },
+  "independent_validation.json": {
+    "bytes": 746,
+    "sha256": "a6f3228651add2ae2ad1c9bdbbebc9847dfe16d58a07656076c45d66365f1481"
+  }
+}

@@ -1,0 +1,86 @@
+tag,parameter,location,io,basis,provision,action
+TT-GF-02,Dry bulb temperature,GF-02 Electrical panel,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-02,Relative humidity,GF-02 Electrical panel,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-02,Room pressure vs outdoor,GF-02 Electrical panel,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TT-GF-04,Dry bulb temperature,GF-04 Meeting,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-04,Relative humidity,GF-04 Meeting,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-04,Room pressure vs outdoor,GF-04 Meeting,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TSHH-EH-04,Heater high temperature limit,EH-04,DI,Proposed heater protection,OEM safety provision,Trip / inhibit heater; reset per OEM
+TT-GF-08,Dry bulb temperature,GF-08 Telecom panel,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-08,Relative humidity,GF-08 Telecom panel,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-08,Room pressure vs outdoor,GF-08 Telecom panel,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TT-GF-05,Dry bulb temperature,GF-05 Operator console,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-05,Relative humidity,GF-05 Operator console,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-05,Room pressure vs outdoor,GF-05 Operator console,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TSHH-EH-05,Heater high temperature limit,EH-05,DI,Proposed heater protection,OEM safety provision,Trip / inhibit heater; reset per OEM
+TT-GF-06,Dry bulb temperature,GF-06 Reception / corridor,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-06,Relative humidity,GF-06 Reception / corridor,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-06,Room pressure vs outdoor,GF-06 Reception / corridor,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Required,Monitor / alarm; final range and limits TBC
+TSHH-EH-06,Heater high temperature limit,EH-06,DI,Proposed heater protection,OEM safety provision,Trip / inhibit heater; reset per OEM
+TT-GF-09,Dry bulb temperature,GF-09 Toilet group: two cubicles,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-09,Relative humidity,GF-09 Toilet group: two cubicles,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-09,Room pressure vs outdoor,GF-09 Toilet group: two cubicles,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TT-GF-07,Dry bulb temperature,GF-07 Bedroom / Resting Room,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-07,Relative humidity,GF-07 Bedroom / Resting Room,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-07,Room pressure vs outdoor,GF-07 Bedroom / Resting Room,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TSHH-EH-07,Heater high temperature limit,EH-07,DI,Proposed heater protection,OEM safety provision,Trip / inhibit heater; reset per OEM
+TT-GF-03,Dry bulb temperature,GF-03 Kitchen / kitchenette,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-03,Relative humidity,GF-03 Kitchen / kitchenette,AI,8.4.1 humidity provision,Required,Monitor / alarm; final range and limits TBC
+DPT-GF-03,Room pressure vs outdoor,GF-03 Kitchen / kitchenette,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TSHH-EH-03,Heater high temperature limit,EH-03,DI,Proposed heater protection,OEM safety provision,Trip / inhibit heater; reset per OEM
+TT-GF-01,Dry bulb temperature,GF-01 Clean-agent cylinder room,AI,8.4.1 / 15.10.1,Required,Monitor / alarm; final range and limits TBC
+RHT-GF-01,Relative humidity,GF-01 Clean-agent cylinder room,AI,8.4.1 humidity provision,Additional proposal,Monitor / alarm; final range and limits TBC
+DPT-GF-01,Room pressure vs outdoor,GF-01 Clean-agent cylinder room,AI,7.13.2 / 8.4.1 minimum; added room balancing provision,Additional proposal,Monitor / alarm; final range and limits TBC
+TT-SA-01,Supply air temperature,Common supply,AI,8.4.1 air temperature / humidity / airflow,Required,Monitor / alarm; final range and limits TBC
+TT-RA-01,Return air temperature,Common return,AI,8.4.1 air temperature / humidity / airflow,Required,Monitor / alarm; final range and limits TBC
+RHT-RA-01,Return relative humidity,Common return,AI,8.4.1 air temperature / humidity / airflow,Required,Monitor / alarm; final range and limits TBC
+FIT-SA-01,Common supply airflow,Common supply straight length per manufacturer,AI,8.4.1 air temperature / humidity / airflow,Required,Monitor / alarm; final range and limits TBC
+FIT-RA-01,Common return airflow,Common return straight length per manufacturer,AI,8.4.1 air temperature / humidity / airflow,Required,Monitor / alarm; final range and limits TBC
+PDT-OA-01,Outdoor intake filter differential pressure,F-OA-01,AI,Additional intake filter monitoring,Additional proposal,Monitor / alarm; final range and limits TBC
+PDI-OA-01,Local intake filter differential pressure gauge,F-OA-01,LOCAL,Additional intake filter monitoring,Additional proposal,Monitor / alarm; final range and limits TBC
+TSHH-EH-COM-01,Common heater high-limit,EH-COM-01,DI,Proposed OEM heater safety,OEM safety provision,Trip common heater; reset per OEM
+PDT-F1-A,Filter differential pressure,PAU-A filter 1,AI,9.3.4,Required,Dirty filter alarm; OEM threshold TBC
+PDI-F1-A,Local filter differential pressure gauge,PAU-A filter 1,LOCAL,9.3.4,Required,Local indication; not a PLC input
+PDT-F2-A,Filter differential pressure,PAU-A filter 2,AI,9.3.4,Required,Dirty filter alarm; OEM threshold TBC
+PDI-F2-A,Local filter differential pressure gauge,PAU-A filter 2,LOCAL,9.3.4,Required,Local indication; not a PLC input
+DPT-SF-A,Evaporator fan differential pressure,PAU-A fan,AI,8.4.1,Required,Fan proof / alarm; limit TBC
+VS-PAU-A,RMS vibration velocity,PAU-A frame / fan bearing,AI,8.4.1,Required,Alarm / trip limits TBC
+PDT-F1-B,Filter differential pressure,PAU-B filter 1,AI,9.3.4,Required,Dirty filter alarm; OEM threshold TBC
+PDI-F1-B,Local filter differential pressure gauge,PAU-B filter 1,LOCAL,9.3.4,Required,Local indication; not a PLC input
+PDT-F2-B,Filter differential pressure,PAU-B filter 2,AI,9.3.4,Required,Dirty filter alarm; OEM threshold TBC
+PDI-F2-B,Local filter differential pressure gauge,PAU-B filter 2,LOCAL,9.3.4,Required,Local indication; not a PLC input
+DPT-SF-B,Evaporator fan differential pressure,PAU-B fan,AI,8.4.1,Required,Fan proof / alarm; limit TBC
+VS-PAU-B,RMS vibration velocity,PAU-B frame / fan bearing,AI,8.4.1,Required,Alarm / trip limits TBC
+PDT-F1-C,Filter differential pressure,PAU-C filter 1,AI,9.3.4,Required,Dirty filter alarm; OEM threshold TBC
+PDI-F1-C,Local filter differential pressure gauge,PAU-C filter 1,LOCAL,9.3.4,Required,Local indication; not a PLC input
+PDT-F2-C,Filter differential pressure,PAU-C filter 2,AI,9.3.4,Required,Dirty filter alarm; OEM threshold TBC
+PDI-F2-C,Local filter differential pressure gauge,PAU-C filter 2,LOCAL,9.3.4,Required,Local indication; not a PLC input
+DPT-SF-C,Evaporator fan differential pressure,PAU-C fan,AI,8.4.1,Required,Fan proof / alarm; limit TBC
+VS-PAU-C,RMS vibration velocity,PAU-C frame / fan bearing,AI,8.4.1,Required,Alarm / trip limits TBC
+DPT-EF-03-01,Extract fan pressure proof,EF-03-01,AI,Additional fan-proof proposal,Additional proposal,Fault changeover / alarm; final OEM proof method TBC
+VS-EF-03-01,RMS vibration velocity,EF-03-01,AI,8.4.1,Required,Alarm / trip limits TBC
+DPT-EF-03-02,Extract fan pressure proof,EF-03-02,AI,Additional fan-proof proposal,Additional proposal,Fault changeover / alarm; final OEM proof method TBC
+VS-EF-03-02,RMS vibration velocity,EF-03-02,AI,8.4.1,Required,Alarm / trip limits TBC
+DPT-EF-09-01,Extract fan pressure proof,EF-09-01,AI,Additional fan-proof proposal,Additional proposal,Fault changeover / alarm; final OEM proof method TBC
+VS-EF-09-01,RMS vibration velocity,EF-09-01,AI,8.4.1,Required,Alarm / trip limits TBC
+DPT-EF-09-02,Extract fan pressure proof,EF-09-02,AI,Additional fan-proof proposal,Additional proposal,Fault changeover / alarm; final OEM proof method TBC
+VS-EF-09-02,RMS vibration velocity,EF-09-02,AI,8.4.1,Required,Alarm / trip limits TBC
+DPT-EF-01-01,Extract fan pressure proof,EF-01-01,AI,Additional fan-proof proposal,Additional proposal,Fault changeover / alarm; final OEM proof method TBC
+VS-EF-01-01,RMS vibration velocity,EF-01-01,AI,8.4.1,Required,Alarm / trip limits TBC
+DPT-SF-B1-01,Fan pressure proof,SF-B1-01,AI,Additional fan proof provision,Additional proposal,Monitor / alarm; final range and limits TBC
+VS-SF-B1-01,RMS vibration velocity,SF-B1-01,AI,8.4.1,Required,Monitor / alarm; final range and limits TBC
+DPT-SF-B1-02,Fan pressure proof,SF-B1-02,AI,Additional fan proof provision,Additional proposal,Monitor / alarm; final range and limits TBC
+VS-SF-B1-02,RMS vibration velocity,SF-B1-02,AI,8.4.1,Required,Monitor / alarm; final range and limits TBC
+DPT-EF-B1-01,Fan pressure proof,EF-B1-01,AI,Additional fan proof provision,Additional proposal,Monitor / alarm; final range and limits TBC
+VS-EF-B1-01,RMS vibration velocity,EF-B1-01,AI,8.4.1,Required,Monitor / alarm; final range and limits TBC
+DPT-EF-B1-02,Fan pressure proof,EF-B1-02,AI,Additional fan proof provision,Additional proposal,Monitor / alarm; final range and limits TBC
+VS-EF-B1-02,RMS vibration velocity,EF-B1-02,AI,8.4.1,Required,Monitor / alarm; final range and limits TBC
+TT-B1-01,Cable basement air temperature,Cable basement,AI,8.4.1,Required,Monitor / alarm; final range and limits TBC
+DPT-B1-01,Basement pressure vs outdoor,Cable basement,AI,Additional coordination provision,Additional proposal,Monitor / alarm; final range and limits TBC
+EM-HPCP-01,"Energy metering: V, I, kW, kWh, PF, Hz; THD for VFD",HPCP feeders >7.5 kW,COMM,8.4.1,Required where threshold met,Power ratings / feeder quantity / protocol TBC
+AFS-EH-04,Airflow proving switch for heater safety permissive,Electric heater EH-04,DI,Explicit Rev07 OEM safety / monitoring provision; not a quoted additional TAQA minimum,Proposed; OEM proof technology / setpoint TBC,Hardwired heater inhibit on loss of airflow; status / alarm to HPCP. Independent TSHH high limit remains active
+AFS-EH-05,Airflow proving switch for heater safety permissive,Electric heater EH-05,DI,Explicit Rev07 OEM safety / monitoring provision; not a quoted additional TAQA minimum,Proposed; OEM proof technology / setpoint TBC,Hardwired heater inhibit on loss of airflow; status / alarm to HPCP. Independent TSHH high limit remains active
+AFS-EH-06,Airflow proving switch for heater safety permissive,Electric heater EH-06,DI,Explicit Rev07 OEM safety / monitoring provision; not a quoted additional TAQA minimum,Proposed; OEM proof technology / setpoint TBC,Hardwired heater inhibit on loss of airflow; status / alarm to HPCP. Independent TSHH high limit remains active
+AFS-EH-07,Airflow proving switch for heater safety permissive,Electric heater EH-07,DI,Explicit Rev07 OEM safety / monitoring provision; not a quoted additional TAQA minimum,Proposed; OEM proof technology / setpoint TBC,Hardwired heater inhibit on loss of airflow; status / alarm to HPCP. Independent TSHH high limit remains active
+AFS-EH-03,Airflow proving switch for heater safety permissive,Electric heater EH-03,DI,Explicit Rev07 OEM safety / monitoring provision; not a quoted additional TAQA minimum,Proposed; OEM proof technology / setpoint TBC,Hardwired heater inhibit on loss of airflow; status / alarm to HPCP. Independent TSHH high limit remains active
+AFS-EH-COM-01,Airflow proving switch for heater safety permissive,Electric heater EH-COM-01,DI,Explicit Rev07 OEM safety / monitoring provision; not a quoted additional TAQA minimum,Proposed; OEM proof technology / setpoint TBC,Hardwired heater inhibit on loss of airflow; status / alarm to HPCP. Independent TSHH high limit remains active

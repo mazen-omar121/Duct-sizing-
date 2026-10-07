@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+*.dwg
+*.dxf
+generated/
+!deliverables/*.dxf
+!projects/administration_rev09/reference/D-113391-ADDC-AES-ME-AC-001_REV.1.dwg

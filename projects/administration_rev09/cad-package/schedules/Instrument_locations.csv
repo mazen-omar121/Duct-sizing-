@@ -1,0 +1,6 @@
+tag,bubble_x_mm,bubble_y_mm,probe_x_mm,probe_y_mm,section,status
+FIT-SA-01,1800,18800,1800,18800,SA-M01,Proposed probe attachment shown; OEM straight runs / insertion / final mounting TBC
+TT-SA-01,800,17700,1800,17700,SA-M01,Proposed probe attachment shown; OEM straight runs / insertion / final mounting TBC
+FIT-RA-01,3500,18800,3500,18800,RA-M01,Proposed probe attachment shown; OEM straight runs / insertion / final mounting TBC
+TT-RA-01,4550,18200,3500,18200,RA-M01,Proposed probe attachment shown; OEM straight runs / insertion / final mounting TBC
+RHT-RA-01,4550,17500,3500,17500,RA-M01,Proposed probe attachment shown; OEM straight runs / insertion / final mounting TBC

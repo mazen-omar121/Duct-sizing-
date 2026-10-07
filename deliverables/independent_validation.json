@@ -1,0 +1,25 @@
+{
+  "revision": 9,
+  "detailed_sheets": 18,
+  "schematic_sheets": 4,
+  "monochrome_sheets": 18,
+  "instrument_tags": 85,
+  "instrument_sheet_references_checked": 92,
+  "native_dimensions": 11,
+  "room_signal_trunks": 9,
+  "outdoor_reference_annotations": 9,
+  "duct_inputs": "unchanged from Rev08",
+  "terminal_inputs": "unchanged from Rev08",
+  "instrument_requirements": "unchanged from Rev08",
+  "DXF_audits": "passed",
+  "workbook_sheets": 15,
+  "velocities_recalculated": 114,
+  "native_AutoCAD_plot": "not run",
+  "DWG_export": "use AutoCAD Save As from DXF",
+  "engineering_holds": [
+    "pressure / outdoor-air balance",
+    "levels and coordination",
+    "fitting K / fan ESP / OEM selections",
+    "I&C settings and final wiring"
+  ]
+}

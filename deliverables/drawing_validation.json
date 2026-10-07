@@ -1,0 +1,94 @@
+{
+  "revision": 9,
+  "instrumentation_coverage": {
+    "scheduled": 85,
+    "unique_graphically_referenced": 85,
+    "missing_tags": [],
+    "result": "passed",
+    "index": "Instrument_drawing_index.csv"
+  },
+  "native_dimensions": 11,
+  "sheets": 18,
+  "CAD_blocks": 22,
+  "reference_vector_symbols": [
+    "HVAC_VCD",
+    "HVAC_MD",
+    "HVAC_MFD",
+    "HVAC_EH",
+    "HVAC_SILENCER"
+  ],
+  "model_variants": [
+    "COORDINATION_D001",
+    "SUPPLY_D002",
+    "RETURN_EXTRACT_D003",
+    "NORTH_DETAIL_D004",
+    "SOUTH_DETAIL_D005",
+    "SOUTH_DETAIL_D006",
+    "INSTRUMENTATION_D007",
+    "SETTING_OUT_D017"
+  ],
+  "DXF_audit": "passed",
+  "room_terminal_totals": "passed",
+  "dimensions": "A1 landscape",
+  "annotation_method": "Continuous topology-aware profiles / separate instruments / access tags / match lines",
+  "duct_geometry": {
+    "valid_section_polygons": 114,
+    "main_transitions": 13,
+    "branch_and_terminal_adaptors": 64,
+    "topological_connections": 152,
+    "connected_exterior_checks": [
+      {
+        "junction": "GF02-main",
+        "missing_exterior_mm": 0.0,
+        "result": "passed"
+      },
+      {
+        "junction": "GF02-header",
+        "missing_exterior_mm": 0.0,
+        "result": "passed"
+      },
+      {
+        "junction": "RA07-main",
+        "missing_exterior_mm": 0.0,
+        "result": "passed"
+      },
+      {
+        "junction": "RA06-main",
+        "missing_exterior_mm": 0.0,
+        "result": "passed"
+      }
+    ],
+    "unconnected_crossings": "Preserved as independent section geometry"
+  },
+  "branch_device_body_or_AD_wall_checks": {
+    "count": 55,
+    "result": "passed"
+  },
+  "common_probe_attachment_checks": {
+    "count": 5,
+    "result": "passed"
+  },
+  "access_doors": 21,
+  "retained_heater_airflow_proof_DI": 6,
+  "io_counts": {
+    "AI": 65,
+    "AO": 22,
+    "DI": 141,
+    "DO": 44
+  },
+  "flows_and_selected_sizes": "Retained from Rev05",
+  "Rev08_revised_routes": [
+    "RA-B02",
+    "RA-H02-U01",
+    "RA-H02-D01",
+    "RA-R02-01",
+    "RA-R02-02",
+    "RA-R02-03",
+    "RA-R02-04"
+  ],
+  "Rev08_proposed_grille_moves": {
+    "RG-02-01": "y=16800 to 17000 mm",
+    "RG-02-02": "y=16800 to 17000 mm"
+  },
+  "pressure_OA_levels_catalogues": "Pending"
+}

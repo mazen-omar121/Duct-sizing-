@@ -1,0 +1,101 @@
+tag,section,type,x_mm,y_mm,loss_K,basis
+F-SA-M03-B01,SA-M03,90 deg miter bend / turning vanes,1800,9300,TBC selected fitting,Proposed geometry
+F-RA-M03-B01,RA-M03,90 deg miter bend / turning vanes,3500,8350,TBC selected fitting,Proposed geometry
+F-SA-RED-01,SA-M01,Transition / reducer,1800.0,16032.5,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 350 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-02,SA-M02,Transition / reducer,1800.0,12557.5,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 375 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-03,SA-M03,Transition / reducer,4036.2,9300.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 350 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-04,SA-M04,Transition / reducer,7705.0,9300.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 500 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-05,SA-M05,Transition / reducer,11548.8,9300.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 375 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-06,SA-M06,Transition / reducer,13580.0,9300.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 350 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-07,SA-M07,Transition / reducer,15942.5,9300.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 350 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-RED-08,SA-M08,Transition / reducer,18242.5,9300.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 350 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-RA-RED-01,RA-M01,Transition / reducer,3500.0,17105.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 500 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-RA-RED-02,RA-M02,Transition / reducer,3500.0,13123.8,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 875 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-RA-RED-03,RA-M03,Transition / reducer,3885.0,8350.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 350 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-RA-RED-04,RA-M04,Transition / reducer,6795.0,8350.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 375 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-RA-RED-05,RA-M05,Transition / reducer,10626.2,8350.0,TBC geometry / ASHRAE fitting,Rev08 continuous taper; proposed axial length 500 mm; section W x H per schedule. Selected fitting K and fabrication development TBC
+F-SA-TEE-02,SA-B02,Main-to-room take-off / tee,1800,16600,TBC actual fitting,Proposed
+F-SA-HDR-02-01,SA-B02,Header-to-terminal take-off,4800,18000,TBC selected fitting,Proposed
+F-SA-HDR-02-02,SA-B02,Header-to-terminal take-off,4800,18000,TBC selected fitting,Proposed
+F-SA-HDR-02-03,SA-B02,Header-to-terminal take-off,4800,13100,TBC selected fitting,Proposed
+F-SA-HDR-02-04,SA-B02,Header-to-terminal take-off,4800,13100,TBC selected fitting,Proposed
+F-RA-TEE-02,RA-B02,Room-to-main junction,3500,16400,TBC actual fitting,Proposed
+F-RA-HDR-02-01,RA-B02,Header-to-terminal take-off,4400,16800,TBC selected fitting,Proposed
+F-RA-HDR-02-02,RA-B02,Header-to-terminal take-off,4400,16800,TBC selected fitting,Proposed
+F-RA-HDR-02-03,RA-B02,Header-to-terminal take-off,4400,11900,TBC selected fitting,Proposed
+F-RA-HDR-02-04,RA-B02,Header-to-terminal take-off,4400,11900,TBC selected fitting,Proposed
+F-SA-B04-B01,SA-B04,90 deg miter bend / turning vanes,3500,6500,TBC selected fitting,Proposed geometry
+F-SA-TEE-04,SA-B04,Main-to-room take-off / tee,3500,9300,TBC actual fitting,Proposed
+F-SA-HDR-04-01,SA-B04,Header-to-terminal take-off,2900,6600,TBC selected fitting,Proposed
+F-SA-HDR-04-02,SA-B04,Header-to-terminal take-off,2900,4300,TBC selected fitting,Proposed
+F-SA-HDR-04-03,SA-B04,Header-to-terminal take-off,2900,1900,TBC selected fitting,Proposed
+F-RA-B04-B01,RA-B04,90 deg miter bend / turning vanes,4100,6900,TBC selected fitting,Proposed geometry
+F-RA-TEE-04,RA-B04,Room-to-main junction,4100,8350,TBC actual fitting,Proposed
+F-RA-HDR-04-01,RA-B04,Header-to-terminal take-off,3000,7000,TBC selected fitting,Proposed
+F-RA-HDR-04-02,RA-B04,Header-to-terminal take-off,3000,4300,TBC selected fitting,Proposed
+F-RA-HDR-04-03,RA-B04,Header-to-terminal take-off,3000,1000,TBC selected fitting,Proposed
+F-SA-B08-B01,SA-B08,90 deg miter bend / turning vanes,7000,6300,TBC selected fitting,Proposed geometry
+F-SA-TEE-08,SA-B08,Main-to-room take-off / tee,7000,9300,TBC actual fitting,Proposed
+F-SA-HDR-08-01,SA-B08,Header-to-terminal take-off,8500,6500,TBC selected fitting,Proposed
+F-SA-HDR-08-02,SA-B08,Header-to-terminal take-off,8500,6500,TBC selected fitting,Proposed
+F-SA-HDR-08-03,SA-B08,Header-to-terminal take-off,8500,4200,TBC selected fitting,Proposed
+F-SA-HDR-08-04,SA-B08,Header-to-terminal take-off,8500,4200,TBC selected fitting,Proposed
+F-SA-HDR-08-05,SA-B08,Header-to-terminal take-off,8500,1700,TBC selected fitting,Proposed
+F-SA-HDR-08-06,SA-B08,Header-to-terminal take-off,8500,1700,TBC selected fitting,Proposed
+F-RA-B08-B01,RA-B08,90 deg miter bend / turning vanes,7500,6900,TBC selected fitting,Proposed geometry
+F-RA-TEE-08,RA-B08,Room-to-main junction,7500,8350,TBC actual fitting,Proposed
+F-RA-HDR-08-01,RA-B08,Header-to-terminal take-off,8900,7100,TBC selected fitting,Proposed
+F-RA-HDR-08-02,RA-B08,Header-to-terminal take-off,8900,7100,TBC selected fitting,Proposed
+F-RA-HDR-08-03,RA-B08,Header-to-terminal take-off,8900,4600,TBC selected fitting,Proposed
+F-RA-HDR-08-04,RA-B08,Header-to-terminal take-off,8900,4600,TBC selected fitting,Proposed
+F-RA-HDR-08-05,RA-B08,Header-to-terminal take-off,8900,900,TBC selected fitting,Proposed
+F-RA-HDR-08-06,RA-B08,Header-to-terminal take-off,8900,900,TBC selected fitting,Proposed
+F-SA-TEE-05,SA-B05,Main-to-room take-off / tee,1800,13200,TBC actual fitting,Proposed
+F-SA-HDR-05-01,SA-B05,Header-to-terminal take-off,14000,18100,TBC selected fitting,Proposed
+F-SA-HDR-05-02,SA-B05,Header-to-terminal take-off,14000,18100,TBC selected fitting,Proposed
+F-SA-HDR-05-03,SA-B05,Header-to-terminal take-off,14000,15800,TBC selected fitting,Proposed
+F-SA-HDR-05-04,SA-B05,Header-to-terminal take-off,14000,13600,TBC selected fitting,Proposed
+F-SA-HDR-05-05,SA-B05,Header-to-terminal take-off,14000,13600,TBC selected fitting,Proposed
+F-RA-TEE-05,RA-B05,Room-to-main junction,3500,12200,TBC actual fitting,Proposed
+F-RA-HDR-05-01,RA-B05,Header-to-terminal take-off,14900,18800,TBC selected fitting,Proposed
+F-RA-HDR-05-02,RA-B05,Header-to-terminal take-off,14900,18800,TBC selected fitting,Proposed
+F-RA-HDR-05-03,RA-B05,Header-to-terminal take-off,14900,14600,TBC selected fitting,Proposed
+F-RA-HDR-05-04,RA-B05,Header-to-terminal take-off,14900,12500,TBC selected fitting,Proposed
+F-RA-HDR-05-05,RA-B05,Header-to-terminal take-off,14900,10700,TBC selected fitting,Proposed
+F-SA-TEE-06,SA-B06,Main-to-room take-off / tee,11000,9300,TBC actual fitting,Proposed
+F-SA-HDR-06-01,SA-B06,Header-to-terminal take-off,11800,9800,TBC selected fitting,Proposed
+F-SA-HDR-06-02,SA-B06,Header-to-terminal take-off,11800,9800,TBC selected fitting,Proposed
+F-SA-HDR-06-03,SA-B06,Header-to-terminal take-off,11800,6000,TBC selected fitting,Proposed
+F-RA-TEE-06,RA-B06,Room-to-main junction,11300,8350,TBC actual fitting,Proposed
+F-RA-HDR-06-01,RA-B06,Header-to-terminal take-off,13000,8550,TBC selected fitting,Proposed
+F-RA-HDR-06-02,RA-B06,Header-to-terminal take-off,13000,8550,TBC selected fitting,Proposed
+F-RA-HDR-06-03,RA-B06,Header-to-terminal take-off,13000,8550,TBC selected fitting,Proposed
+F-RA-HDR-06-04,RA-B06,Header-to-terminal take-off,13000,5600,TBC selected fitting,Proposed
+F-SA-B09-B01,SA-B09,90 deg miter bend / turning vanes,13200,7100,TBC selected fitting,Proposed geometry
+F-SA-TEE-09,SA-B09,Main-to-room take-off / tee,13200,9300,TBC actual fitting,Proposed
+F-SA-HDR-09-01,SA-B09,Header-to-terminal take-off,13000,7000,TBC selected fitting,Proposed
+F-SA-HDR-09-02,SA-B09,Header-to-terminal take-off,13000,5200,TBC selected fitting,Proposed
+F-SA-B07-B01,SA-B07,90 deg miter bend / turning vanes,15500,3600,TBC selected fitting,Proposed geometry
+F-SA-TEE-07,SA-B07,Main-to-room take-off / tee,15500,9300,TBC actual fitting,Proposed
+F-SA-HDR-07-01,SA-B07,Header-to-terminal take-off,14100,3200,TBC selected fitting,Proposed
+F-RA-B07-B01,RA-B07,90 deg miter bend / turning vanes,15350,2200,TBC selected fitting,Proposed geometry
+F-RA-TEE-07,RA-B07,Room-to-main junction,15350,8350,TBC actual fitting,Proposed
+F-RA-HDR-07-01,RA-B07,Header-to-terminal take-off,15000,1400,TBC selected fitting,Proposed
+F-SA-B03-B01,SA-B03,90 deg miter bend / turning vanes,17800,7300,TBC selected fitting,Proposed geometry
+F-SA-TEE-03,SA-B03,Main-to-room take-off / tee,17800,9300,TBC actual fitting,Proposed
+F-SA-HDR-03-01,SA-B03,Header-to-terminal take-off,18200,6600,TBC selected fitting,Proposed
+F-SA-TEE-01,SA-B01,Main-to-room take-off / tee,18500,9300,TBC actual fitting,Proposed
+F-SA-HDR-01-01,SA-B01,Header-to-terminal take-off,16800,3200,TBC selected fitting,Proposed
+F-EA-B09-B01,EA-B09,90 deg miter bend / turning vanes,14700,7600,TBC selected fitting,Proposed geometry
+F-EA-R09-02-B01,EA-R09-02,90 deg miter bend / turning vanes,14700,5200,TBC selected fitting,Proposed geometry
+F-SA-B01-B01,SA-B01,90 deg bend / turning vanes,18500,8800,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-SA-B01-B02,SA-B01,90 deg bend / turning vanes,16800,8800,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-SA-B06-B01,SA-B06,90 deg bend / turning vanes,11000,10600,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-RA-B06-B01,RA-B06,90 deg bend / turning vanes,13600,10200,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-RA-B06-B02,RA-B06,90 deg bend / turning vanes,13600,7700,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-RA-B06-B03,RA-B06,90 deg bend / turning vanes,11300,7700,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-SA-R06-01-B01,SA-R06-01,90 deg bend / turning vanes,5400,10600,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-SA-R06-02-B01,SA-R06-02,90 deg bend / turning vanes,14700,10600,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-RA-R06-01-B01,RA-R06-01,90 deg bend / turning vanes,3100,10200,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-RA-R06-02-B01,RA-R06-02,90 deg bend / turning vanes,9700,10200,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC
+F-RA-R06-03-B01,RA-R06-03,90 deg bend / turning vanes,17200,10200,TBC selected fitting,Rev08 proposed clearance route; actual elbow development / elevation TBC

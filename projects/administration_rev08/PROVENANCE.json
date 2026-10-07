@@ -1,0 +1,22 @@
+{
+  "archive": "Administration_HVAC_CAD_and_Code_Rev08.zip",
+  "archive_sha256": "f59316a5c293609fe4ae0fd7bd0233523461a457861f1f2edc27bfa35a9fc984",
+  "standalone_comparison": [
+    {
+      "file": "Administration_HVAC_Drawing_Registers_Rev08 (1).xlsx",
+      "sha256": "777f3cfe6c5d9ddffb4e923246ec039cff55912b41145250379e0cea0efecc25",
+      "matches_archive": true
+    },
+    {
+      "file": "Administration_HVAC_Detailed_Layout (2).dxf",
+      "sha256": "d1229fc0a747580721e8fdc315827257f1096eb47681f1cfebd2a1865e30c9f8",
+      "matches_archive": true
+    },
+    {
+      "file": "Administration_Detailed_HVAC_Duct_Flow_Diagram (10).pdf",
+      "sha256": "d875bc5e511a3daeefba95753cf23fddd140c7a9d4bfd1b4d9b373ddd454b958",
+      "matches_archive": false
+    }
+  ],
+  "basis": "Imported archive source is unchanged. Rebuild occurs in a staging copy; archived validation reports are historical, generated reports belong to the current run."
+}
