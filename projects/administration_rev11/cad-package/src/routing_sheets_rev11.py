@@ -99,7 +99,7 @@ def append_sheets(g):
     s.para(511,279,'Stack: 150 mm slab / support allowance + 50 mm insulation + 400 mm bare duct + 50 mm insulation + 50 mm ceiling gap = 700 mm.',302,3,'INK',True)
     s.para(511,326,'This checks scheduled duct envelopes only. Beam downstands, other services, flanges / stiffeners, damper actuators, heater casing, supports, access hatches and terminal plenums are not manufacturer-selected or surveyed.',302,2.9)
     s.para(511,391,'The 50 mm gap below insulation is not a general maintenance clearance or a selected plenum dimension. Terminal drops / plenums must use the available connection space within the duct envelope; selected assemblies may require a local redesign.',302,2.9)
-    s.para(511,454,'Roof option selection pending. Do not cut the slab from these drawings. New penetrations, curbs, weatherproofing, roof loads and fire boundaries require structural / architectural / fire coordination.',302,2.9,'INK',True)
+    s.para(511,454,'User selected roof distribution / room drops. Do not cut the slab from these drawings. New penetrations, curbs, weatherproofing, roof loads and fire boundaries require structural / architectural / fire coordination.',302,2.9,'INK',True)
     g['note_footer'](s,'PROPOSED LEVELS, NOT INSTALLATION APPROVAL. AFFL datum requires site confirmation. 50 mm insulation is an indoor assumption, not a verified UAE standard. D-022 identifies all proposed roof drops; actual roof routing and equipment envelopes remain open.')
     sheets.append(s)
 
@@ -115,10 +115,10 @@ def append_sheets(g):
     yy=table(s,486,52,334,['Section','Rev10 mm','Rev11 mm'],[[r['tag'],r['previous_size_mm'],r['revised_size_mm']] for r in resized],[1.3,1,1],2.6,15)
     s.para(486,yy+16,'Largest indoor bare depth: 400 mm. Outdoor common mains retain their flow / clear-size basis; weather insulation, actual roof routes and fitting / level selection are pending.',330,2.9)
     s.para(486,yy+76,'85 instrument requirements and all existing I/O duties are retained. Common heater / probes / conditional humidifier move to the proposed roof plant, with weather-protected equipment and mounting still to be selected.',330,2.9)
-    g['note_footer'](s,'Rev11 is a roof-distribution OPTION developed for the new 3.30 m clear-height requirement. Rev10 remains preserved as superseded for this ceiling constraint. These are engineering coordination proposals; final ceiling / OEM / pressure / structural approvals are pending.')
+    g['note_footer'](s,'Rev11 is a roof-distribution proposal developed for the new 3.30 m clear-height requirement. Rev10 remains preserved as superseded for this ceiling constraint. These are engineering coordination proposals; final ceiling / OEM / pressure / structural approvals are pending.')
     sheets.append(s)
 
-    s=frame('ROOF DISTRIBUTION OPTION AND ROOM RISER REGISTER',22)
+    s=frame('ROOF DISTRIBUTION AND ROOM RISER REGISTER',22)
     heading(s,18,43,'FUNCTIONAL ROOF CONNECTIONS - NTS / ACTUAL ROOF ROUTING TBC',804)
     s.line([(35,86),(803,86)],'SA',.6);s.arrow((35,86),(72,86),'FLOW',.3,2)
     s.text(35,73,'SUPPLY FROM ROOF COMMON PLANT D-008 / 3697.80 L/s',2.8,'SA',True)
@@ -138,5 +138,5 @@ def append_sheets(g):
     heading(s,18,291,'PROPOSED ROOF DROP CENTERS - SOURCE PLAN X / Y, mm',804)
     table(s,18,300,804,['Riser','Branch / GF','X, Y mm','Clear W x H','L/s','Indoor bare BOD','Roof level / vertical length'],[[r['tag'],r['branch']+' / '+r['room'],str(r['x_mm'])+', '+str(r['y_mm']),r['width_mm']+'x'+r['height_mm'],f"{float(r['flow_l_s']):.2f}",'+3.400 m','TBC / TBC'] for r in g['RISERS']],[1,1.35,1.3,1.1,.8,1.15,1.75],2.7,11.4)
     s.para(18,491,'Roof flow/size basis is functional, not a fabricated plan: no roof survey, beam map, selected curb / sleeve / fire assembly or common heater weather enclosure was supplied. All 15 penetrations are proposals; coordinate spacing, framing, access and roof drainage before setting them out.',802,2.8)
-    g['note_footer'](s,'DESIGN OPTION SELECTION PENDING. Do not treat this functional schematic as a physical roof routing / clash clearance drawing. The indoor plan is geometrically checked; roof branches, levels, insulation, lengths, losses, support loads and OEM clearances remain to be designed from site information.')
+    g['note_footer'](s,'USER SELECTED ROOF DISTRIBUTION / ROOM DROPS. Do not treat this functional schematic as a physical roof routing / clash clearance drawing. The indoor plan is geometrically checked; roof branches, levels, insulation, lengths, losses, support loads and OEM clearances remain to be designed from site information.')
     sheets.append(s)

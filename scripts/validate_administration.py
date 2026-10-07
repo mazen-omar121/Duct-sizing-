@@ -100,6 +100,7 @@ def main():
     headroom=records(schedule/'Headroom_register.csv');head={r['section']:r for r in headroom}
     assert len(headroom)==len(sections)==116
     assert basis['finished_ceiling_mm_affl']==3300 and basis['structural_underside_mm_affl']==4000
+    assert basis['distribution_selection_source']=='User selected roof distribution with room drops'
     assert basis['installed_duct_bod_mm_affl'] is None and bod==3400
     by={r['tag']:r for r in sections}
     for r in sections:
@@ -245,7 +246,7 @@ def main():
             'graph_terminal_connections':52,'CAG_extract_marker':'Dedicated schematic connection shown; airflow / final pickup elevation TBC',
             'workbook_sheets':23,'velocities_lengths_friction_recalculated':116,'separate_service_crossings':0,'insulated_separate_service_clashes':[],'roof_riser_proposals':15,'roof_functional_main_sections':15,'indoor_room_trees':geometry['indoor_room_trees'],
             'coordination_basis':basis,'minimum_ceiling_clearance_mm':50,'minimum_slab_clearance_mm':150,'maximum_indoor_bare_depth_mm':400,'native_AutoCAD_plot':'not run','DWG_export':'AutoCAD Save As from DXF',
-            'engineering_holds':['Roof option selection; actual roof routing / structure / penetrations / loads / curbs / weather insulation / vertical development; OEM terminal plenums, flanges, actuators, supports and access within the proposed ceiling envelope',
+            'engineering_holds':['User-selected roof distribution; actual roof routing / structure / penetrations / loads / curbs / weather insulation / vertical development; OEM terminal plenums, flanges, actuators, supports and access within the proposed ceiling envelope',
                                  'pressure / outdoor-air balance','selected fitting K / fan ESP / OEM selections',
                                  'fire boundaries / I&C settings and final wiring']}
     (OUT/'independent_validation.json').write_text(json.dumps(report,indent=2)+'\n')

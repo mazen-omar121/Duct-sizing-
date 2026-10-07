@@ -11,7 +11,7 @@ readme=[
  ('ADMINISTRATION HVAC - REV11 ROOF OPTION','07 October 2026 | engineering coordination option, not for construction'),
  ('Drawings','22 detailed A1 sheets; four functional schematic sheets. D-019 actual junctions; D-020 height envelope; D-021 changes; D-022 proposed roof drops.'),
  ('User datums','Structural slab/roof underside +4.000 m; minimum ceiling / clear height +3.300 m. Verify AFFL and beam downstands on site.'),
- ('Strategy','Roof common mains with 15 independent room drops. OPTION SELECTION PENDING. Actual roof routes and penetrations require structural / architectural coordination.'),
+ ('Strategy','Roof common mains with 15 independent room drops. USER SELECTED ROOF DISTRIBUTION / ROOM DROPS. Actual roof routes and penetrations require structural / architectural coordination.'),
  ('Indoor geometry','116 indoor paths; nine supply, six return and two extract connected room trees; no indoor service crossings. Proposed bare BOD +3.400 m, bare depth <=400 mm.'),
  ('Insulation','50 mm each face assumed indoors, not a verified UAE standard. Deepest envelope: insulated top +3.850 m, bottom +3.350 m, slab allowance 150 mm and ceiling gap 50 mm.'),
  ('Envelope limits','Only ducts checked: selected flanges, actuators, heater casings, supports, access and terminal plenums may require local redesign. Ceiling gap is not a general access / plenum allowance.'),
@@ -59,7 +59,7 @@ for r in rows:
 ws=wb.create_sheet('Comment_closure')
 ws.append(['Comment','Rev11 action','Drawing / register','Status'])
 for row in [
- ('3.30 m clear height below 4.00 m slab','Limit indoor depth to 400 mm; propose bare BOD +3.400 m, roof common mains and separate room drops','D-020 / D-022 / Headroom_register','Duct envelope checked; option / structural / OEM selections pending'),
+ ('3.30 m clear height below 4.00 m slab','Limit indoor depth to 400 mm; propose bare BOD +3.400 m, roof common mains and separate room drops','D-020 / D-022 / Headroom_register','Duct envelope checked; Roof strategy selected; structural / OEM selections pending'),
  ('Multiple duct crossings','Perimeter return trees / independent room feeds replace ceiling common mains','D-001 to D-006 / D-019','Zero bare indoor crossings; separate-service 50 mm insulation envelopes do not overlap'),
  ('Connections / controls','Continuous exterior, replacement neck adapters, actual formed junctions and serial branch devices','D-019 / Device_locations / Formed_junctions','Connected room trees / station bodies checked; fabrication and access pending'),
  ('Instrumentation','Retain 85 requirements / I/O and relocate common-duct context to roof plant','D-012 to D-016 / Instrument_drawing_index','All tags referenced; roof physical mounting pending'),

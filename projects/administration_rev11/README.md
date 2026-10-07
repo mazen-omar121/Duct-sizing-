@@ -1,6 +1,6 @@
 # Administration HVAC Rev11 CAD source
 
-Read REVISION_11.md and READ_ME_FIRST.txt for the roof-distribution option, 3.30 m ceiling envelope and engineering holds. Option selection and actual roof routing / structural penetrations / OEM selections remain pending.
+Read REVISION_11.md and READ_ME_FIRST.txt for the roof-distribution option, 3.30 m ceiling envelope and engineering holds. User selected roof distribution; actual roof routing / structural penetrations / OEM selections remain pending.
 
 Use scripts/build_administration.py from the repository root; it stages this source before running generators, which rewrite derived schedules. Portable ZIP: install source/requirements.txt with Python 3.12, then run build_engineering_drawings.py, build_schematic.py and build_registers.py from source/cad-package/src, in order, with source as working directory. Do not rerun prepare_rev11_inputs.py after editing prepared inputs.
 

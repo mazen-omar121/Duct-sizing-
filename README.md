@@ -1,6 +1,6 @@
 # Administration HVAC drawing app
 
-The current delivery is **Rev11, a roof-distribution design option for 3.30 m clear height below a 4.00 m slab**. It contains 22 detailed A1 sheets, four functional schematic sheets, editable DXF, Excel registers and reproducible source. Roof option selection and actual roof routing / structural penetrations remain pending.
+The current delivery is **Rev11, a roof-distribution design option for 3.30 m clear height below a 4.00 m slab**. It contains 22 detailed A1 sheets, four functional schematic sheets, editable DXF, Excel registers and reproducible source. You selected roof distribution with room drops; actual roof routing / structural penetrations remain pending.
 
 Download the [complete Rev11 ZIP](deliverables/rev11/Administration_HVAC_Rev11.zip?raw=true). Start with the [four-page engineering review](deliverables/rev11/Administration_HVAC_Junction_Review_Rev11.pdf): D-019 actual junction enlargements, D-020 ceiling envelope, D-021 changes and D-022 proposed roof drops. The [full color drawings](deliverables/rev11/Administration_HVAC_Detailed_Drawings_Rev11.pdf), [monochrome edition](deliverables/rev11/Administration_HVAC_Detailed_Drawings_Rev11_Monochrome.pdf) and [Excel registers](deliverables/rev11/Administration_HVAC_Drawing_Registers_Rev11.xlsx?raw=true) are also available individually. On GitHub select **Download raw file** if needed.
 

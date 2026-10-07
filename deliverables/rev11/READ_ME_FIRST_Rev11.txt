@@ -7,7 +7,7 @@ Full detailed PDF: 22 A1 sheets; supplementary functional schematic: four.
 User: slab/roof underside +4.000 m; minimum clear ceiling height +3.300 m.
 Rev10's deep stacked common ducts cannot meet the new ceiling requirement.
 
-REV11 IS A ROOF-MAIN DESIGN OPTION; OPTION SELECTION IS PENDING.
+USER SELECTED ROOF DISTRIBUTION WITH ROOM DROPS FOR REV11.
 Fifteen independent room supply/return drops replace indoor common-main
 feeders. Physical roof routes, lengths, BOD and outdoor insulation are TBC;
 the roof main schedule is a functional flow/clear-size basis only. All new

@@ -54,7 +54,8 @@
     "ceiling_datum_source": "User requires 3.3 m below 4.0 m slab/roof underside",
     "proposed_indoor_bod_mm_affl": 3400,
     "ceiling_to_insulation_allowance_mm": 50,
-    "distribution_strategy": "Roof common mains with 15 independent room supply/return drops - proposed option, user selection pending"
+    "distribution_strategy": "Roof common mains with 15 independent room supply/return drops - selected by user; actual roof routing / structural coordination pending",
+    "distribution_selection_source": "User selected roof distribution with room drops"
   },
   "minimum_ceiling_clearance_mm": 50,
   "minimum_slab_clearance_mm": 150,
@@ -62,7 +63,7 @@
   "native_AutoCAD_plot": "not run",
   "DWG_export": "AutoCAD Save As from DXF",
   "engineering_holds": [
-    "Roof option selection; actual roof routing / structure / penetrations / loads / curbs / weather insulation / vertical development; OEM terminal plenums, flanges, actuators, supports and access within the proposed ceiling envelope",
+    "User-selected roof distribution; actual roof routing / structure / penetrations / loads / curbs / weather insulation / vertical development; OEM terminal plenums, flanges, actuators, supports and access within the proposed ceiling envelope",
     "pressure / outdoor-air balance",
     "selected fitting K / fan ESP / OEM selections",
     "fire boundaries / I&C settings and final wiring"

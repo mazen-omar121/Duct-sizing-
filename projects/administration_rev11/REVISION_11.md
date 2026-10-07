@@ -2,7 +2,7 @@
 
 User datums: underside of the structural slab/roof at +4.000 m and minimum finished ceiling / clear headroom +3.300 m. This leaves 700 mm. Rev10 CX-08's lowest insulated surface at +2.050 m fails the requirement by 1250 mm; the old stacked arrangement is superseded for this option.
 
-Rev11 proposes common supply/return distribution on the roof with 15 independent room drops. **Option selection is pending.** A physical roof route has not been designed without a roof survey. Roof main flows and clear sizes are a functional basis, separated from the indoor measured section schedule. All new slab penetrations require structural/architectural coordination, selected sleeves/curbs, weatherproofing, fire ratings, access and roof loads.
+Rev11 proposes common supply/return distribution on the roof with 15 independent room drops. **User selected roof distribution with room drops.** A physical roof route has not been designed without a roof survey. Roof main flows and clear sizes are a functional basis, separated from the indoor measured section schedule. All new slab penetrations require structural/architectural coordination, selected sleeves/curbs, weatherproofing, fire ratings, access and roof loads.
 
 The indoor proposal contains 116 section paths: nine supply, six return and two extract connected room trees. Perimeter returns in the electrical and telecom rooms replace return cross-bars through the supply trees. No bare indoor service crossings, insulated separate-service overlaps, unregistered same-service overlaps or retraced centerlines are permitted. Every terminal connects to its allocated room tree; each tree ends at its registered riser or dedicated extract outlet. Scheduled node flows conserve airflow.
 

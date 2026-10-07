@@ -5,5 +5,5 @@
   "reference_sha256": "34ed89731be05b599c6cb43770ea6a68fbf6713d11659423fb047acb61719653",
   "changes": "See REVISION_11.md and Rev11 route / terminal / size change CSVs",
   "baseline_source": "projects/administration_rev10",
-  "claims": "Roof-distribution option for confirmed 3.30 m clear height below 4.00 m slab. Indoor geometry checked; roof routing / structural penetrations / outdoor specification / OEM clearances and option selection pending, not for construction."
+  "claims": "User-selected roof distribution with room drops for confirmed 3.30 m clear height below 4.00 m slab. Indoor duct geometry checked; roof routing / structural penetrations / outdoor specification / OEM clearances pending, not for construction."
 }

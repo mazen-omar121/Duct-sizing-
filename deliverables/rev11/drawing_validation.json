@@ -79,7 +79,7 @@
   "flows_and_selected_sizes": "Room duties retained; changed section sizes and terminal positions documented in Rev11 registers / D-021",
   "routing_revision": "Rev11_route_changes.csv",
   "roof_riser_proposals": 15,
-  "distribution_option": "Roof common mains / separate room drops; selection pending",
+  "distribution_option": "Roof common mains / separate room drops; user selected",
   "terminal_moves": "Rev11_terminal_changes.csv",
   "coordination_basis": {
     "structural_underside_mm_affl": 4000,
@@ -97,7 +97,8 @@
     "ceiling_datum_source": "User requires 3.3 m below 4.0 m slab/roof underside",
     "proposed_indoor_bod_mm_affl": 3400,
     "ceiling_to_insulation_allowance_mm": 50,
-    "distribution_strategy": "Roof common mains with 15 independent room supply/return drops - proposed option, user selection pending"
+    "distribution_strategy": "Roof common mains with 15 independent room supply/return drops - selected by user; actual roof routing / structural coordination pending",
+    "distribution_selection_source": "User selected roof distribution with room drops"
   },
   "pressure_OA_levels_catalogues": "Pending"
 }

@@ -281,7 +281,7 @@ def enhance(g):
     table(s,18,52,394,['Drawing number','Drawing title','Scale'],rows,[1.5,4.2,.7],2.5,11.5)
     heading(s,427,43,'REVISION 11 - ROOF DISTRIBUTION OPTION',394)
     y=57
-    for text in ['Ceiling constraint: 3.300 m clear below 4.000 m slab. Proposed roof common mains with independent room drops eliminate all indoor duct crossings; local bare duct depth limited to 400 mm. Roof option selection and structural survey pending.',
+    for text in ['Ceiling constraint: 3.300 m clear below 4.000 m slab. Proposed roof common mains with independent room drops eliminate all indoor duct crossings; local bare duct depth limited to 400 mm. Roof distribution selected by user; structural survey pending.',
                  'Complete tagged fan / heater protection and basement / energy interfaces are added. Existing 85 instrument requirements and room duties are retained. Proposed section size changes and terminal relocations are scheduled on D-021.',
                  'Reference D-113391-ADDC-AES-ME-AC-001_REV.1 is a drafting benchmark; its building duties and instrument requirements are not substituted for this Administration design.']:
         y+=s.para(427,y,text,388,2.8)+8
