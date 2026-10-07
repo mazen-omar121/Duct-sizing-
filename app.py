@@ -15,7 +15,7 @@ from flask import Flask, jsonify, render_template, request, send_file
 app = Flask(__name__)
 app.config['MAX_CONTENT_LENGTH'] = 256 * 1024
 ROOT = Path(__file__).resolve().parent
-ADMIN_SOURCE = ROOT / 'projects' / 'administration_rev09'
+ADMIN_SOURCE = ROOT / 'projects' / 'administration_rev10'
 ADMIN_OUTPUT = ROOT / 'generated' / 'administration'
 SAMPLE = {
     'title': 'Supply air plan',
@@ -197,7 +197,7 @@ def administration():
         terminals = list(csv.DictReader(f))
     report_path = ADMIN_OUTPUT / 'drawing_validation.json'
     report = json.loads(report_path.read_text()) if report_path.is_file() else None
-    return jsonify(revision=9, sections=len(sections), terminals=len(terminals),
+    return jsonify(revision=10, sections=len(sections), terminals=len(terminals),
                    supply_l_s=3697.80, assumed_return_l_s=3006.68,
                    outdoor_air_reference_l_s=420.70, implied_makeup_l_s=691.12,
                    report=report, ready=bool(report), dwg_available=bool(converter()),
@@ -211,8 +211,8 @@ def administration_export(kind):
     files = {'dxf': 'Administration_HVAC_Detailed_Layout.dxf',
              'pdf': 'Administration_Detailed_HVAC_Duct_Flow_Diagram.pdf',
              'mono': 'Administration_Detailed_HVAC_Duct_Flow_Diagram_Monochrome.pdf',
-             'zip': 'Administration_HVAC_Rev09.zip',
-             'xlsx': 'Administration_HVAC_Drawing_Registers_Rev09.xlsx',
+             'zip': 'Administration_HVAC_Rev10.zip',
+             'xlsx': 'Administration_HVAC_Drawing_Registers_Rev10.xlsx',
              'dwg': 'Administration_HVAC_Detailed_Layout.dxf'}
     if kind not in files:
         return jsonify(error='Choose PDF, monochrome PDF, ZIP, XLSX, DXF or DWG'), 400

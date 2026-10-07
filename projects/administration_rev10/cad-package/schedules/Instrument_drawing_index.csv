@@ -1,0 +1,86 @@
+tag,io,location,provision,drawings
+TT-GF-02,AI,GF-02 Electrical panel,Required,007
+RHT-GF-02,AI,GF-02 Electrical panel,Required,007
+DPT-GF-02,AI,GF-02 Electrical panel,Additional proposal,007
+TT-GF-04,AI,GF-04 Meeting,Required,007
+RHT-GF-04,AI,GF-04 Meeting,Required,007
+DPT-GF-04,AI,GF-04 Meeting,Additional proposal,007
+TSHH-EH-04,DI,EH-04,OEM safety provision,014
+TT-GF-08,AI,GF-08 Telecom panel,Required,007
+RHT-GF-08,AI,GF-08 Telecom panel,Required,007
+DPT-GF-08,AI,GF-08 Telecom panel,Additional proposal,007
+TT-GF-05,AI,GF-05 Operator console,Required,007
+RHT-GF-05,AI,GF-05 Operator console,Required,007
+DPT-GF-05,AI,GF-05 Operator console,Additional proposal,007
+TSHH-EH-05,DI,EH-05,OEM safety provision,014
+TT-GF-06,AI,GF-06 Reception / corridor,Required,007
+RHT-GF-06,AI,GF-06 Reception / corridor,Required,007
+DPT-GF-06,AI,GF-06 Reception / corridor,Required,007
+TSHH-EH-06,DI,EH-06,OEM safety provision,014
+TT-GF-09,AI,GF-09 Toilet group: two cubicles,Required,007
+RHT-GF-09,AI,GF-09 Toilet group: two cubicles,Required,007
+DPT-GF-09,AI,GF-09 Toilet group: two cubicles,Additional proposal,007
+TT-GF-07,AI,GF-07 Bedroom / Resting Room,Required,007
+RHT-GF-07,AI,GF-07 Bedroom / Resting Room,Required,007
+DPT-GF-07,AI,GF-07 Bedroom / Resting Room,Additional proposal,007
+TSHH-EH-07,DI,EH-07,OEM safety provision,014
+TT-GF-03,AI,GF-03 Kitchen / kitchenette,Required,007
+RHT-GF-03,AI,GF-03 Kitchen / kitchenette,Required,007
+DPT-GF-03,AI,GF-03 Kitchen / kitchenette,Additional proposal,007
+TSHH-EH-03,DI,EH-03,OEM safety provision,014
+TT-GF-01,AI,GF-01 Clean-agent cylinder room,Required,007
+RHT-GF-01,AI,GF-01 Clean-agent cylinder room,Additional proposal,007
+DPT-GF-01,AI,GF-01 Clean-agent cylinder room,Additional proposal,007
+TT-SA-01,AI,Common supply,Required,007 / 008 / 012
+TT-RA-01,AI,Common return,Required,007 / 012
+RHT-RA-01,AI,Common return,Required,007 / 012
+FIT-SA-01,AI,Common supply straight length per manufacturer,Required,007 / 008 / 012
+FIT-RA-01,AI,Common return straight length per manufacturer,Required,007 / 012
+PDT-OA-01,AI,F-OA-01,Additional proposal,012
+PDI-OA-01,LOCAL,F-OA-01,Additional proposal,012
+TSHH-EH-COM-01,DI,EH-COM-01,OEM safety provision,014
+PDT-F1-A,AI,PAU-A filter 1,Required,012
+PDI-F1-A,LOCAL,PAU-A filter 1,Required,012
+PDT-F2-A,AI,PAU-A filter 2,Required,012
+PDI-F2-A,LOCAL,PAU-A filter 2,Required,012
+DPT-SF-A,AI,PAU-A fan,Required,012
+VS-PAU-A,AI,PAU-A frame / fan bearing,Required,012
+PDT-F1-B,AI,PAU-B filter 1,Required,012
+PDI-F1-B,LOCAL,PAU-B filter 1,Required,012
+PDT-F2-B,AI,PAU-B filter 2,Required,012
+PDI-F2-B,LOCAL,PAU-B filter 2,Required,012
+DPT-SF-B,AI,PAU-B fan,Required,012
+VS-PAU-B,AI,PAU-B frame / fan bearing,Required,012
+PDT-F1-C,AI,PAU-C filter 1,Required,012
+PDI-F1-C,LOCAL,PAU-C filter 1,Required,012
+PDT-F2-C,AI,PAU-C filter 2,Required,012
+PDI-F2-C,LOCAL,PAU-C filter 2,Required,012
+DPT-SF-C,AI,PAU-C fan,Required,012
+VS-PAU-C,AI,PAU-C frame / fan bearing,Required,012
+DPT-EF-03-01,AI,EF-03-01,Additional proposal,013
+VS-EF-03-01,AI,EF-03-01,Required,013
+DPT-EF-03-02,AI,EF-03-02,Additional proposal,013
+VS-EF-03-02,AI,EF-03-02,Required,013
+DPT-EF-09-01,AI,EF-09-01,Additional proposal,013
+VS-EF-09-01,AI,EF-09-01,Required,013
+DPT-EF-09-02,AI,EF-09-02,Additional proposal,013
+VS-EF-09-02,AI,EF-09-02,Required,013
+DPT-EF-01-01,AI,EF-01-01,Additional proposal,013
+VS-EF-01-01,AI,EF-01-01,Required,013
+DPT-SF-B1-01,AI,SF-B1-01,Additional proposal,013
+VS-SF-B1-01,AI,SF-B1-01,Required,013
+DPT-SF-B1-02,AI,SF-B1-02,Additional proposal,013
+VS-SF-B1-02,AI,SF-B1-02,Required,013
+DPT-EF-B1-01,AI,EF-B1-01,Additional proposal,013
+VS-EF-B1-01,AI,EF-B1-01,Required,013
+DPT-EF-B1-02,AI,EF-B1-02,Additional proposal,013
+VS-EF-B1-02,AI,EF-B1-02,Required,013
+TT-B1-01,AI,Cable basement,Required,015
+DPT-B1-01,AI,Cable basement,Additional proposal,015
+EM-HPCP-01,COMM,HPCP feeders >7.5 kW,Required where threshold met,015
+AFS-EH-04,DI,Electric heater EH-04,Proposed; OEM proof technology / setpoint TBC,014
+AFS-EH-05,DI,Electric heater EH-05,Proposed; OEM proof technology / setpoint TBC,014
+AFS-EH-06,DI,Electric heater EH-06,Proposed; OEM proof technology / setpoint TBC,014
+AFS-EH-07,DI,Electric heater EH-07,Proposed; OEM proof technology / setpoint TBC,014
+AFS-EH-03,DI,Electric heater EH-03,Proposed; OEM proof technology / setpoint TBC,014
+AFS-EH-COM-01,DI,Electric heater EH-COM-01,Proposed; OEM proof technology / setpoint TBC,014

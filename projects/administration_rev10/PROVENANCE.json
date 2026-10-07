@@ -1,0 +1,9 @@
+{
+  "revision": 10,
+  "base": "Published Administration HVAC Rev09 / f13bd0dd8e81102523ddae458bf83e78cf21e03f",
+  "reference_dwg": "D-113391-ADDC-AES-ME-AC-001_REV.1.dwg",
+  "reference_sha256": "34ed89731be05b599c6cb43770ea6a68fbf6713d11659423fb047acb61719653",
+  "changes": "See REVISION_10.md and Rev10 route / terminal change CSVs",
+  "baseline_source": "projects/administration_rev09",
+  "claims": "Room duties and instrument requirements retained; routing, selected section dimensions and proposed terminal positions changed. Levels, engineering approval and OEM selections pending."
+}

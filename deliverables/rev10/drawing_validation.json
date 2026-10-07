@@ -1,0 +1,86 @@
+{
+  "revision": 10,
+  "instrumentation_coverage": {
+    "scheduled": 85,
+    "unique_graphically_referenced": 85,
+    "missing_tags": [],
+    "result": "passed",
+    "index": "Instrument_drawing_index.csv"
+  },
+  "native_dimensions": 11,
+  "sheets": 21,
+  "CAD_blocks": 22,
+  "reference_vector_symbols": [
+    "HVAC_VCD",
+    "HVAC_MD",
+    "HVAC_MFD",
+    "HVAC_EH",
+    "HVAC_SILENCER"
+  ],
+  "model_variants": [
+    "COORDINATION_D001",
+    "SUPPLY_D002",
+    "RETURN_EXTRACT_D003",
+    "NORTH_DETAIL_D004",
+    "SOUTH_DETAIL_D005",
+    "SOUTH_DETAIL_D006",
+    "INSTRUMENTATION_D007",
+    "SETTING_OUT_D017",
+    "JUNCTION_A_D019",
+    "JUNCTION_B_D019",
+    "JUNCTION_C_D019",
+    "JUNCTION_D_D019",
+    "JUNCTION_E_D019",
+    "JUNCTION_F_D019"
+  ],
+  "DXF_audit": "passed",
+  "room_terminal_totals": "passed",
+  "dimensions": "A1 landscape",
+  "annotation_method": "Continuous topology-aware profiles / separate instruments / access tags / match lines",
+  "duct_geometry": {
+    "valid_section_polygons": 122,
+    "main_transitions": 13,
+    "branch_and_terminal_adaptors": 51,
+    "topological_connections": 157,
+    "formed_junctions": 50,
+    "unintended_same_service_intersections": [],
+    "duplicated_centerlines": "none",
+    "balanced_airflow_nodes": 70,
+    "independent_service_crossings": 20,
+    "crossings_status": "Explicit numbered proposals; elevations and insulation clearance still require coordination",
+    "outline_method": "One continuous exterior per service; no per-section wall masking"
+  },
+  "branch_device_body_or_AD_wall_checks": {
+    "count": 55,
+    "result": "passed"
+  },
+  "common_probe_attachment_checks": {
+    "count": 5,
+    "result": "passed"
+  },
+  "access_doors": 21,
+  "retained_heater_airflow_proof_DI": 6,
+  "io_counts": {
+    "AI": 65,
+    "AO": 22,
+    "DI": 141,
+    "DO": 44
+  },
+  "flows_and_selected_sizes": "Room duties retained; changed section sizes and terminal positions documented in Rev10 registers / D-021",
+  "routing_revision": "Rev10_route_changes.csv",
+  "terminal_moves": "Rev10_terminal_changes.csv",
+  "coordination_basis": {
+    "structural_underside_mm_affl": 4000,
+    "structural_datum_source": "User confirmed 4 m is structural slab/roof underside; AFFL datum to verify on site",
+    "external_insulation_mm": 50,
+    "insulation_status": "Indoor coordination assumption only; not a verified UAE average or project specification. Outdoor insulation, fire performance and vapour barrier require selection.",
+    "clear_gap_between_insulation_mm": 100,
+    "clear_gap_status": "Proposed coordination allowance; OEM access / supports may require more",
+    "structure_to_insulation_allowance_mm": 100,
+    "structure_allowance_status": "Assumed hanger / structure allowance for envelope check; beams / services / selected supports not surveyed",
+    "finished_ceiling_mm_affl": null,
+    "installed_duct_bod_mm_affl": null,
+    "calculation_status": "Local maximum elevation envelope only; not a connected-network BOD assignment or cleared ceiling design"
+  },
+  "pressure_OA_levels_catalogues": "Pending"
+}

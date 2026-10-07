@@ -1,0 +1,276 @@
+tag,type,signal,action,basis,status
+TT-GF-02,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-02,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-02,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-04,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-04,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-04,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TSHH-EH-04,DI,Heater high temperature limit,Trip / inhibit heater; reset per OEM,Proposed heater protection,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-08,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-08,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-08,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-05,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-05,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-05,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TSHH-EH-05,DI,Heater high temperature limit,Trip / inhibit heater; reset per OEM,Proposed heater protection,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-06,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-06,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-06,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TSHH-EH-06,DI,Heater high temperature limit,Trip / inhibit heater; reset per OEM,Proposed heater protection,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-09,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-09,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-09,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-07,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-07,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-07,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TSHH-EH-07,DI,Heater high temperature limit,Trip / inhibit heater; reset per OEM,Proposed heater protection,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-03,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-03,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-03,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TSHH-EH-03,DI,Heater high temperature limit,Trip / inhibit heater; reset per OEM,Proposed heater protection,Draft point allocation; safety integrity / module allocation TBC
+TT-GF-01,AI,Dry bulb temperature,Monitor / alarm; final range and limits TBC,8.4.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RHT-GF-01,AI,Relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 humidity provision,Draft point allocation; safety integrity / module allocation TBC
+DPT-GF-01,AI,Room pressure vs outdoor,Monitor / alarm; final range and limits TBC,7.13.2 / 8.4.1 minimum; added room balancing provision,Draft point allocation; safety integrity / module allocation TBC
+TT-SA-01,AI,Supply air temperature,Monitor / alarm; final range and limits TBC,8.4.1 air temperature / humidity / airflow,Draft point allocation; safety integrity / module allocation TBC
+TT-RA-01,AI,Return air temperature,Monitor / alarm; final range and limits TBC,8.4.1 air temperature / humidity / airflow,Draft point allocation; safety integrity / module allocation TBC
+RHT-RA-01,AI,Return relative humidity,Monitor / alarm; final range and limits TBC,8.4.1 air temperature / humidity / airflow,Draft point allocation; safety integrity / module allocation TBC
+FIT-SA-01,AI,Common supply airflow,Monitor / alarm; final range and limits TBC,8.4.1 air temperature / humidity / airflow,Draft point allocation; safety integrity / module allocation TBC
+FIT-RA-01,AI,Common return airflow,Monitor / alarm; final range and limits TBC,8.4.1 air temperature / humidity / airflow,Draft point allocation; safety integrity / module allocation TBC
+PDT-OA-01,AI,Outdoor intake filter differential pressure,Monitor / alarm; final range and limits TBC,Additional intake filter monitoring,Draft point allocation; safety integrity / module allocation TBC
+TSHH-EH-COM-01,DI,Common heater high-limit,Trip common heater; reset per OEM,Proposed OEM heater safety,Draft point allocation; safety integrity / module allocation TBC
+PDT-F1-A,AI,Filter differential pressure,Dirty filter alarm; OEM threshold TBC,9.3.4,Draft point allocation; safety integrity / module allocation TBC
+PDT-F2-A,AI,Filter differential pressure,Dirty filter alarm; OEM threshold TBC,9.3.4,Draft point allocation; safety integrity / module allocation TBC
+DPT-SF-A,AI,Evaporator fan differential pressure,Fan proof / alarm; limit TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+VS-PAU-A,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+PDT-F1-B,AI,Filter differential pressure,Dirty filter alarm; OEM threshold TBC,9.3.4,Draft point allocation; safety integrity / module allocation TBC
+PDT-F2-B,AI,Filter differential pressure,Dirty filter alarm; OEM threshold TBC,9.3.4,Draft point allocation; safety integrity / module allocation TBC
+DPT-SF-B,AI,Evaporator fan differential pressure,Fan proof / alarm; limit TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+VS-PAU-B,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+PDT-F1-C,AI,Filter differential pressure,Dirty filter alarm; OEM threshold TBC,9.3.4,Draft point allocation; safety integrity / module allocation TBC
+PDT-F2-C,AI,Filter differential pressure,Dirty filter alarm; OEM threshold TBC,9.3.4,Draft point allocation; safety integrity / module allocation TBC
+DPT-SF-C,AI,Evaporator fan differential pressure,Fan proof / alarm; limit TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+VS-PAU-C,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-03-01,AI,Extract fan pressure proof,Fault changeover / alarm; final OEM proof method TBC,Additional fan-proof proposal,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-03-01,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-03-02,AI,Extract fan pressure proof,Fault changeover / alarm; final OEM proof method TBC,Additional fan-proof proposal,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-03-02,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-09-01,AI,Extract fan pressure proof,Fault changeover / alarm; final OEM proof method TBC,Additional fan-proof proposal,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-09-01,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-09-02,AI,Extract fan pressure proof,Fault changeover / alarm; final OEM proof method TBC,Additional fan-proof proposal,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-09-02,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-01-01,AI,Extract fan pressure proof,Fault changeover / alarm; final OEM proof method TBC,Additional fan-proof proposal,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-01-01,AI,RMS vibration velocity,Alarm / trip limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-SF-B1-01,AI,Fan pressure proof,Monitor / alarm; final range and limits TBC,Additional fan proof provision,Draft point allocation; safety integrity / module allocation TBC
+VS-SF-B1-01,AI,RMS vibration velocity,Monitor / alarm; final range and limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-SF-B1-02,AI,Fan pressure proof,Monitor / alarm; final range and limits TBC,Additional fan proof provision,Draft point allocation; safety integrity / module allocation TBC
+VS-SF-B1-02,AI,RMS vibration velocity,Monitor / alarm; final range and limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-B1-01,AI,Fan pressure proof,Monitor / alarm; final range and limits TBC,Additional fan proof provision,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-B1-01,AI,RMS vibration velocity,Monitor / alarm; final range and limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-EF-B1-02,AI,Fan pressure proof,Monitor / alarm; final range and limits TBC,Additional fan proof provision,Draft point allocation; safety integrity / module allocation TBC
+VS-EF-B1-02,AI,RMS vibration velocity,Monitor / alarm; final range and limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+TT-B1-01,AI,Cable basement air temperature,Monitor / alarm; final range and limits TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+DPT-B1-01,AI,Basement pressure vs outdoor,Monitor / alarm; final range and limits TBC,Additional coordination provision,Draft point allocation; safety integrity / module allocation TBC
+EM-HPCP-01,COMM,"Energy metering: V, I, kW, kWh, PF, Hz; THD for VFD",Power ratings / feeder quantity / protocol TBC,8.4.1,Draft point allocation; safety integrity / module allocation TBC
+PAU-A-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-A-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-A-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-A-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-A-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-A-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+PAU-B-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-B-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-B-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-B-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-B-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-B-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+PAU-C-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-C-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-C-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-C-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-C-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+PAU-C-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-03-01-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-03-02-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-09-01-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-09-02-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-01-01-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-01-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+SF-B1-02-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-01-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-RUN,DI,Run feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-FLT,DI,Fault feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-RDY,DI,Ready feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-AUTO,DI,Auto / local selector feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-EST,DI,Local lockable E-stop feedback,Display / interlock,7.20.4 / 8.3.1 / 15.5,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-START,DO,Start / stop command,Normal automatic operation; fire ESD inhibits,8.2.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+EF-B1-02-SPD,AO,Speed demand,Proposed EC/VFD speed control; fan drive and ACH lower limit TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+RCD-R02-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RCD-R02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R04-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RCD-R04-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R04-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R08-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RCD-R08-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R08-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R05-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RCD-R05-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R05-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R06-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RCD-R06-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R06-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R07-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+RCD-R07-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+RCD-R07-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE09-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-IE09-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE09-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E09-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-E09-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E09-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE09-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-IE09-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE09-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E09-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-E09-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E09-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE03-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-IE03-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE03-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E03-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-E03-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E03-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE03-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-IE03-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IE03-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E03-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-E03-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E03-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E01-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-E01-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-E01-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-01-CMD,AO,Position demand,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-A-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-A-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-A-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-A-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-A-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-A-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-A-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-A-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-A-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-B-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-B-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-B-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-B-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-B-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-B-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-B-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-B-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-B-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-C-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-C-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-RA-C-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-C-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-C-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-OA-C-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-C-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-C-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SA-C-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SF-B1-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-SF-B1-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SF-B1-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-ISF-B1-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-ISF-B1-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-ISF-B1-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SF-B1-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-SF-B1-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-SF-B1-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-ISF-B1-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-ISF-B1-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-ISF-B1-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-EF-B1-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-EF-B1-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-EF-B1-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IEF-B1-01-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-IEF-B1-01-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IEF-B1-01-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-EF-B1-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-EF-B1-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-EF-B1-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IEF-B1-02-CMD,DO,Open / close command,Pressure / standby isolation; final fail state TBC,7.14.1 / 15.10.1,Draft point allocation; safety integrity / module allocation TBC
+MD-IEF-B1-02-OPEN,DI,OPEN limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+MD-IEF-B1-02-CLOSED,DI,CLOSED limit feedback,Proof / travel fault alarm,7.20.4,Draft point allocation; safety integrity / module allocation TBC
+EH-04-ENABLE,DO,Heater enable,Only with healthy high-limit and airflow proof,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-04-DUTY,AO,Heating demand,Room / supply temperature control; staged or modulating OEM interface TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-05-ENABLE,DO,Heater enable,Only with healthy high-limit and airflow proof,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-05-DUTY,AO,Heating demand,Room / supply temperature control; staged or modulating OEM interface TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-06-ENABLE,DO,Heater enable,Only with healthy high-limit and airflow proof,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-06-DUTY,AO,Heating demand,Room / supply temperature control; staged or modulating OEM interface TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-07-ENABLE,DO,Heater enable,Only with healthy high-limit and airflow proof,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-07-DUTY,AO,Heating demand,Room / supply temperature control; staged or modulating OEM interface TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-03-ENABLE,DO,Heater enable,Only with healthy high-limit and airflow proof,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-03-DUTY,AO,Heating demand,Room / supply temperature control; staged or modulating OEM interface TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-COM-01-ENABLE,DO,Heater enable,Only with healthy high-limit and airflow proof,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+EH-COM-01-DUTY,AO,Heating demand,Room / supply temperature control; staged or modulating OEM interface TBC,Proposed interface; confirm OEM / I&C,Draft point allocation; safety integrity / module allocation TBC
+FACP-FIRE-01,DI,Confirmed fire from FACP,Stop entire HVAC; latch fire ESD,8.2.1 / 8.5.1 / 15.11.11,Draft point allocation; safety integrity / module allocation TBC
+HPCP-ESTOP-01,DI,Panel emergency stop,Stop / isolate per approved ESD,8.2.1 / 8.5.1 / 15.11.11,Draft point allocation; safety integrity / module allocation TBC
+RESET-01,DI,Local manual reset,Only after fire signal / fault clears,8.2.1 / 8.5.1 / 15.11.11,Draft point allocation; safety integrity / module allocation TBC
+BMS-START-01,COMM,Initial start,Normal permissives apply,8.2.1 / 8.5.1 / 15.11.11,Draft point allocation; safety integrity / module allocation TBC
+BMS-ESD-01,COMM,Remote emergency stop,Stop HVAC; approved mapping TBC,8.2.1 / 8.5.1 / 15.11.11,Draft point allocation; safety integrity / module allocation TBC
+AFS-EH-04,DI,Heater airflow proof healthy / failed,Heater enable inhibited unless airflow is proved; hardwired OEM safety circuit and PLC status,Rev07 explicit heater airflow-proof provision; confirm OEM interface,Draft allocation; OEM / I&C confirmation pending
+AFS-EH-05,DI,Heater airflow proof healthy / failed,Heater enable inhibited unless airflow is proved; hardwired OEM safety circuit and PLC status,Rev07 explicit heater airflow-proof provision; confirm OEM interface,Draft allocation; OEM / I&C confirmation pending
+AFS-EH-06,DI,Heater airflow proof healthy / failed,Heater enable inhibited unless airflow is proved; hardwired OEM safety circuit and PLC status,Rev07 explicit heater airflow-proof provision; confirm OEM interface,Draft allocation; OEM / I&C confirmation pending
+AFS-EH-07,DI,Heater airflow proof healthy / failed,Heater enable inhibited unless airflow is proved; hardwired OEM safety circuit and PLC status,Rev07 explicit heater airflow-proof provision; confirm OEM interface,Draft allocation; OEM / I&C confirmation pending
+AFS-EH-03,DI,Heater airflow proof healthy / failed,Heater enable inhibited unless airflow is proved; hardwired OEM safety circuit and PLC status,Rev07 explicit heater airflow-proof provision; confirm OEM interface,Draft allocation; OEM / I&C confirmation pending
+AFS-EH-COM-01,DI,Heater airflow proof healthy / failed,Heater enable inhibited unless airflow is proved; hardwired OEM safety circuit and PLC status,Rev07 explicit heater airflow-proof provision; confirm OEM interface,Draft allocation; OEM / I&C confirmation pending

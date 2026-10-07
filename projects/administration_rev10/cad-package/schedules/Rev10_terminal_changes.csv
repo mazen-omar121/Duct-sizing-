@@ -1,0 +1,23 @@
+tag,old_x_mm,old_y_mm,new_x_mm,new_y_mm,flow_l_s,reason,status
+RG-02-01,1200,17000,5400,17000,151.36584740090174,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-02-03,1200,11900,5400,11900,151.36584740090174,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-04-02,4300,4300,4100,4300,149.73333333333332,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-04-01,700,7000,700,7200,129.95446320120234,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-04-02,4900,4300,5000,4300,129.95446320120234,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-08-01,5900,7100,6400,7150,137.54389826726785,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-08-02,11200,7100,11500,7150,137.54389826726785,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-08-04,11200,4600,11500,4600,137.54389826726785,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-08-06,11200,900,11500,900,137.54389826726785,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-05-01,9700,18800,9900,18800,143.6726779207214,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-05-03,9700,14600,9900,14600,143.6726779207214,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-05-05,15100,10700,15100,12000,143.6726779207214,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-06-01,5400,9800,5400,10150,139.4,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-06-02,14700,9800,14700,10150,139.4,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-06-03,16300,6000,18300,10150,139.4,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-06-01,3100,8550,4500,8875,89.71584740090175,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-06-02,9700,8550,9700,8875,89.71584740090175,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-06-03,17200,8550,17200,8875,89.71584740090175,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+RG-06-04,15100,5600,18300,8875,89.71584740090175,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-09-01,13200,7000,13600,7000,23.1,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-09-02,13200,5200,13600,5200,23.1,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
+SD-01-01,18100,3200,18100,3000,141.3,Proposed relocation for separated routing / corridor service,Coordinate ceiling layout and diffuser / grille performance before approval
