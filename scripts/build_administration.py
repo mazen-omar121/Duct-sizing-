@@ -1,4 +1,4 @@
-"""Rebuild the Rev11 engineering package in an isolated staging copy, preserving inputs."""
+"""Rebuild the Rev12 engineering package in an isolated staging copy, preserving inputs."""
 from pathlib import Path
 import json
 import shutil
@@ -7,7 +7,7 @@ import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'projects' / 'administration_rev11'
+SOURCE = ROOT / 'projects' / 'administration_rev12'
 DEST = ROOT / 'generated' / 'administration'
 
 
@@ -17,11 +17,11 @@ def main():
         stage = Path(temp) / 'package'
         shutil.copytree(SOURCE, stage)
         # The original generators rewrite some CSVs; do so only in this staging copy.
-        for script in ('build_engineering_drawings.py', 'build_schematic.py', 'build_registers.py'):
+        for script in ('design_rev12.py', 'build_engineering_drawings.py', 'build_schematic.py', 'build_registers.py'):
             subprocess.run([sys.executable, str(stage / 'cad-package' / 'src' / script)],
                            cwd=stage, check=True)
         report = json.loads((stage / 'drawing_validation.json').read_text())
-        assert report['sheets'] == 22 and report['DXF_audit'] == 'passed'
+        assert report['sheets'] == 32 and report['DXF_audit'] == 'passed'
         assert report['duct_geometry']['valid_section_polygons'] == 116
         assert report['duct_geometry']['unintended_same_service_intersections'] == []
         assert report['duct_geometry']['duplicated_centerlines'] == 'none'
@@ -39,7 +39,7 @@ def main():
                 raise
         else:
             stage.rename(DEST)
-    print(f'Validated Rev11 outputs: {DEST}')
+    print(f'Validated Rev12 outputs: {DEST}')
 
 
 if __name__ == '__main__':

@@ -13,8 +13,8 @@ class AdministrationTests(unittest.TestCase):
         self.assertEqual(data['sections'],116)
         self.assertEqual(data['terminals'],53)
         self.assertTrue(data['ready'], 'Run scripts/build_administration.py before project validation')
-        self.assertEqual(data['report']['sheets'],22)
-        self.assertEqual(data['revision'],11)
+        self.assertEqual(data['report']['sheets'],32)
+        self.assertEqual(data['revision'],12)
         self.assertEqual(data['report']['instrumentation_coverage']['scheduled'],85)
         self.assertEqual(data['report']['instrumentation_coverage']['missing_tags'],[])
         self.assertEqual(data['report']['duct_geometry']['main_transitions'],0)
@@ -30,9 +30,9 @@ class AdministrationTests(unittest.TestCase):
     def test_downloads_match_generated_outputs(self):
         for kind,name in [('pdf','Administration_Detailed_HVAC_Duct_Flow_Diagram.pdf'),
                           ('mono','Administration_Detailed_HVAC_Duct_Flow_Diagram_Monochrome.pdf'),
-                          ('zip','Administration_HVAC_Rev11.zip'),
+                          ('zip','Administration_HVAC_Rev12.zip'),
                           ('dxf','Administration_HVAC_Detailed_Layout.dxf'),
-                          ('xlsx','Administration_HVAC_Drawing_Registers_Rev11.xlsx')]:
+                          ('xlsx','Administration_HVAC_Drawing_Registers_Rev12.xlsx')]:
             with self.subTest(kind=kind):
                 response=self.client.get('/api/administration/export/'+kind)
                 self.assertEqual(response.status_code,200)

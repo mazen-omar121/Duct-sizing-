@@ -1,0 +1,12 @@
+tag,lower,upper,x_mm,y_mm,clear_between_insulation_mm,status
+RCX-01,R-SA-02-04,R-RA-M01,3600,17000,150.0,Proposed separated levels; structural / support coordination pending
+RCX-02,R-SA-04A,R-RA-M01,3600,16624,200.0,Proposed separated levels; structural / support coordination pending
+RCX-03,R-SA-08A,R-RA-M03,8200,17000,200.0,Proposed separated levels; structural / support coordination pending
+RCX-04,R-SA-05-06,R-RA-M05,12500,17000,200.0,Proposed separated levels; structural / support coordination pending
+RCX-05,R-SA-05-06,R-RA-07A,12838,14900,200.0,Proposed separated levels; structural / support coordination pending
+RCX-06,R-SA-06A,R-RA-07A,12833,12768,300.0,Proposed separated levels; structural / support coordination pending
+RCX-07,R-SA-09A,R-RA-07A,13238,12600,450.0,Proposed separated levels; structural / support coordination pending
+RCX-08,R-SA-09A,R-RA-M06,13400,17000,450.0,Proposed separated levels; structural / support coordination pending
+RCX-09,R-SA-07A,R-RA-M06,15500,17000,350.0,Proposed separated levels; structural / support coordination pending
+RCX-10,R-SA-03A,R-RA-M06,17000,17000,400.0,Proposed separated levels; structural / support coordination pending
+RCX-11,R-SA-01A,R-RA-M06,18100,17000,400.0,Proposed separated levels; structural / support coordination pending

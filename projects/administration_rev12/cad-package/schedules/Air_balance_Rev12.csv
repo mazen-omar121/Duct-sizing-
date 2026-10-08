@@ -1,0 +1,10 @@
+room,supply_l_s,return_l_s,known_extract_l_s,unresolved_extract,residual_to_transfer_or_leakage_l_s,pressure_target_pa,target_verification,engineering_action
+02,664.8,605.463389603607,0,False,59.33661,50,Not established; leakage / transfer openings and EA selection required,Balance RA then verify pressure under door / leakage conditions
+04,449.2,389.863389603607,0,False,59.33661,50,Not established; leakage / transfer openings and EA selection required,Balance RA then verify pressure under door / leakage conditions
+08,884.6,825.263389603607,0,False,59.33661,50,Not established; leakage / transfer openings and EA selection required,Balance RA then verify pressure under door / leakage conditions
+05,777.7,718.3633896036071,0,False,59.33661,50,Not established; leakage / transfer openings and EA selection required,Balance RA then verify pressure under door / leakage conditions
+06,418.2,358.863389603607,0,False,59.33661,50,Not established; leakage / transfer openings and EA selection required,Balance RA then verify pressure under door / leakage conditions
+09,46.2,0.0,64.88888888888889,False,-18.688889,25,Not established; leakage / transfer openings and EA selection required,Resolve positive-pressure requirement versus hygiene extract and transfer design
+07,168.2,108.863389603607,0,False,59.33661,50,Not established; leakage / transfer openings and EA selection required,Balance RA then verify pressure under door / leakage conditions
+03,147.6,0.0,147.6,False,0.0,25,Not established; leakage / transfer openings and EA selection required,Resolve positive-pressure requirement versus hygiene extract and transfer design
+01,141.3,0.0,0,True,141.3,25,Not established; leakage / transfer openings and EA selection required,Resolve positive-pressure requirement versus hygiene extract and transfer design

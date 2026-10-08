@@ -1,0 +1,9 @@
+{
+  "revision": 12,
+  "base": "Published Administration HVAC Rev11 / 999826621e5b9752322942d80529814928a3e24c",
+  "reference_dwg": "D-113391-ADDC-AES-ME-AC-001_REV.1.dwg",
+  "reference_sha256": "34ed89731be05b599c6cb43770ea6a68fbf6713d11659423fb047acb61719653",
+  "changes": "See REVISION_12.md and explicitly assumed Rev12 engineering schedules",
+  "baseline_source": "projects/administration_rev11",
+  "claims": "Connected proposed roof routes and calculated path estimates; roof survey, OEM losses / dimensions, structure and final approval pending. Not for construction."
+}

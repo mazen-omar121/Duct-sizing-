@@ -1,4 +1,4 @@
-"""Check delivered Rev11 CAD/PDF/registers, traceable revisions and conserved duties."""
+"""Check delivered Rev12 CAD/PDF/registers, traceable revisions and conserved duties."""
 import csv
 import json
 import math
@@ -15,7 +15,7 @@ from shapely.ops import unary_union, transform
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'generated' / 'administration'
-SOURCE = ROOT / 'projects' / 'administration_rev11' / 'cad-package'
+SOURCE = ROOT / 'projects' / 'administration_rev12' / 'cad-package'
 BASELINE = ROOT / 'projects' / 'administration_rev10' / 'cad-package' / 'schedules'
 
 
@@ -134,7 +134,8 @@ def main():
         assert (float(r['x_mm']),float(r['y_mm']))==(x,y)
         assert abs(float(r['flow_l_s'])-float(branch['flow_l_s']))<.00001
         assert (r['width_mm'],r['height_mm'])==(branch['width_mm'],branch['height_mm'])
-        assert r['roof_bod_mm_affl']==r['vertical_length_m']=='TBC'
+        assert int(r['roof_bod_mm_affl'])==(4800 if r['air_type']=='SA' else 5550)
+        assert abs(float(r['vertical_length_m'])-(int(r['roof_bod_mm_affl'])-3400)/1000)<1e-9
         ends.add((r['air_type'],(x,19500-y)))
     # No concealed free branch end: every singleton graph node must be a
     # scheduled terminal, roof drop or dedicated extract outlet.
@@ -164,10 +165,10 @@ def main():
         assert (along-core if sec['air_type']=='SA' else total-along-core)>=clearance-1,(r['tag'],'Riser elbow separation')
     detailed=ezdxf.readfile(OUT/'Administration_HVAC_Detailed_Layout.dxf')
     assert detailed.units==ezdxf.units.MM and not detailed.audit().has_errors
-    assert len([n for n in detailed.layouts.names() if n.startswith('D') and n.endswith('_A1')])==22
+    assert len([n for n in detailed.layouts.names() if n.startswith('D') and n.endswith('_A1')])==32
     dimensions=[e for block in detailed.blocks for e in block.query('DIMENSION')]
-    assert len(dimensions)==11
-    assert sorted(round(e.get_measurement()) for e in dimensions)==sorted([1500,3300,3700,11500,20000,5600,3250,1850,5900,2900,19500])
+    assert len(dimensions)==24
+    assert sorted(round(e.get_measurement()) for e in dimensions)==sorted([1500,3300,3700,11500,20000,5600,3250,1850,5900,2900,19500,1300,4600,4300,900,2100,1500,1100,3250,200,1350,600,6600,1150])
     plan=detailed.blocks.get('PLAN_COORDINATION_D001')
     coverage={}
     for air in ['SA','RA','EA']:
@@ -205,7 +206,7 @@ def main():
     assert not schematic.audit().has_errors
     checked_refs=0
     with fitz.open(OUT/'Administration_Detailed_HVAC_Duct_Flow_Diagram.pdf') as pdf:
-        assert len(pdf)==22
+        assert len(pdf)==32
         texts=[p.get_text() for p in pdf]
         for p in pdf:assert abs(p.rect.width*25.4/72-841)<.01 and abs(p.rect.height*25.4/72-594)<.01
         for r in index:
@@ -217,7 +218,7 @@ def main():
             assert r['tag'] in texts[0] and r['tag'] in texts[19],r['tag']
         assert '+4.000' in texts[19] and '+3.300' in texts[19] and '+3.400' in texts[19]
         assert all(r['tag'] in texts[0] and r['tag'] in texts[21] for r in risers)
-        for i,txt in enumerate(texts,1):assert f'SHEET {i} OF 22' in txt and 'REVISION' in txt
+        for i,txt in enumerate(texts,1):assert f'SHEET {i} OF 32' in txt and 'REVISION' in txt
         assert all(r['tag'] in texts[20] for r in moves)
         overflow=[]
         for number,page in enumerate(pdf,1):
@@ -226,29 +227,31 @@ def main():
                     for span in line['spans']:
                         if not page.rect.contains(fitz.Rect(span['bbox'])):overflow.append((number,span['text']))
         assert not overflow,overflow
-    for name,count in [('Administration_Detailed_HVAC_Duct_Flow_Diagram_Monochrome.pdf',22),('Administration_HVAC_Schematic.pdf',4)]:
+    for name,count in [('Administration_Detailed_HVAC_Duct_Flow_Diagram_Monochrome.pdf',32),('Administration_HVAC_Schematic.pdf',4)]:
         with fitz.open(OUT/name) as pdf:assert len(pdf)==count
-    wb=openpyxl.load_workbook(OUT/'Administration_HVAC_Drawing_Registers_Rev11.xlsx',data_only=True)
-    assert len(wb.sheetnames)==23 and wb['Instruments'].max_row==86
+    wb=openpyxl.load_workbook(OUT/'Administration_HVAC_Drawing_Registers_Rev12.xlsx',data_only=True)
+    assert len(wb.sheetnames)==35 and wb['Instruments'].max_row==86
     assert wb['Instrument_drawing_index'].max_row==86 and wb['Sizing_check'].max_row==117
     assert wb['Crossing_register'].max_row==1 and wb['Rev11_terminal_changes'].max_row==14
     assert wb['Rev11_size_changes'].max_row==len(resized)+1
     for row in list(wb['Sizing_check'].values)[1:]:
         flow,w,h,d=row[3:7];area=math.pi*(d/1000)**2/4 if d else w*h/1e6
         assert abs(flow/1000/area-row[8])<1e-9
-    report={'revision':11,'detailed_sheets':22,'schematic_sheets':4,'monochrome_sheets':22,
+    report={'revision':12,'detailed_sheets':32,'schematic_sheets':4,'monochrome_sheets':32,
             'duct_sections':116,'terminal_duties':53,'documented_terminal_moves':13,'documented_size_changes':len(resized),
-            'instrument_tags':85,'instrument_sheet_references_checked':checked_refs,'native_dimensions':11,
+            'instrument_tags':85,'instrument_sheet_references_checked':checked_refs,'native_dimensions':24,
             'room_signal_trunks':9,'outdoor_reference_annotations':9,'DXF_audits':'passed','delivered_DXF_exteriors_m':coverage,
             'same_service_centerline_clashes':[],'same_service_polygon_clashes':[],'terminal_faces_over_passing_other_service_or_room_ducts':[],
             'legacy_centerline_regressions_rejected':len(legacy_clashes),'balanced_airflow_nodes':len(balanced),
             'instrument_and_IO_requirements':'unchanged from published Rev10','terminal_duties_neck_face_sizes':'unchanged from Rev10',
             'graph_terminal_connections':52,'CAG_extract_marker':'Dedicated schematic connection shown; airflow / final pickup elevation TBC',
-            'workbook_sheets':23,'velocities_lengths_friction_recalculated':116,'separate_service_crossings':0,'insulated_separate_service_clashes':[],'roof_riser_proposals':15,'roof_functional_main_sections':15,'indoor_room_trees':geometry['indoor_room_trees'],
+            'workbook_sheets':35,'velocities_lengths_friction_recalculated':116,'separate_service_crossings':0,'insulated_separate_service_clashes':[],'roof_riser_proposals':15,'roof_functional_main_sections':15,'indoor_room_trees':geometry['indoor_room_trees'],
             'coordination_basis':basis,'minimum_ceiling_clearance_mm':50,'minimum_slab_clearance_mm':150,'maximum_indoor_bare_depth_mm':400,'native_AutoCAD_plot':'not run','DWG_export':'AutoCAD Save As from DXF',
             'engineering_holds':['User-selected roof distribution; actual roof routing / structure / penetrations / loads / curbs / weather insulation / vertical development; OEM terminal plenums, flanges, actuators, supports and access within the proposed ceiling envelope',
                                  'pressure / outdoor-air balance','selected fitting K / fan ESP / OEM selections',
                                  'fire boundaries / I&C settings and final wiring']}
+    from validate_roof_rev12 import validate as validate_roof
+    report['engineering_rev12']=validate_roof(OUT,detailed,wb)
     (OUT/'independent_validation.json').write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report))
 

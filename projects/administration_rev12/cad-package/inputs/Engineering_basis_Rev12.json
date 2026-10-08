@@ -1,0 +1,34 @@
+{
+  "revision": 12,
+  "source_plan_extent_mm": [
+    20000,
+    19500
+  ],
+  "roof_surface_mm_affl": 4200,
+  "slab_thickness_assumption_mm": 200,
+  "roof_sa_bod_mm_affl": 4800,
+  "roof_ra_bod_mm_affl": 5550,
+  "outdoor_insulation_assumption_mm": 75,
+  "indoor_insulation_assumption_mm": 50,
+  "minimum_roof_crossing_clearance_mm": 150,
+  "PAU_reservation_each_mm": [
+    1600,
+    2500
+  ],
+  "PAU_service_strip_width_mm": 1000,
+  "roof_support_spacing_max_proposal_mm": 1500,
+  "curb_upstand_proposal_mm": 300,
+  "curb_annular_allowance_each_side_mm": 100,
+  "elbow_centerline_radius_factor": 1.0,
+  "taper_included_angle_max_proposal_deg": 30,
+  "assumed_K_elbow": 0.5,
+  "assumed_K_tee_branch": 1.0,
+  "assumed_K_tee_run": 0.2,
+  "assumed_K_adapter": 0.25,
+  "assumed_K_balancing_damper": 2.0,
+  "assumed_K_fire_damper": 1.0,
+  "assumed_terminal_loss_pa": 30,
+  "assumed_common_external_equipment_loss_pa": 150,
+  "fan_budget_margin_percent": 20,
+  "status": "COORDINATION PROPOSAL. All roof levels, slab thickness, footprints, insulation, K and device loss allowances require site / OEM confirmation. No selected fan or certified acoustic performance."
+}

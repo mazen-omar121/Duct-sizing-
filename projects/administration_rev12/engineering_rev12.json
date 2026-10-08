@@ -1,0 +1,87 @@
+{
+  "roof_routes": 31,
+  "roof_crossings": 11,
+  "roof_conflicts": [],
+  "roof_curbs": 15,
+  "roof_support_reservations": 157,
+  "pressure_paths": 52,
+  "fitting_allowances": 236,
+  "instrument_installation_rows": 85,
+  "terminal_performance_rows": 53,
+  "supply_l_s": 3697.7999999999997,
+  "return_l_s": 3006.6803376216426,
+  "known_extract_l_s": 212.48888888888888,
+  "minimum_mass_balance_makeup_l_s": 691.1196623783571,
+  "unallocated_exfiltration_less_CAG_extract_l_s": 478.63077348946825,
+  "OA_reference_shortfall_l_s": 270.41966237835715,
+  "fan_budgets": [
+    {
+      "system": "PAU bank - combined external SA + RA path",
+      "duty_flow_each_l_s": 1848.9,
+      "configuration": "2 duty + 1 standby; all three individually rated for 50% total flow",
+      "estimated_external_loss_pa": 329.87,
+      "provisional_ESP_with_20_percent_margin_pa": 400,
+      "low_sensitivity_pa": 169.669,
+      "high_sensitivity_pa": 490.071,
+      "internal_unit_losses": "OEM to include filters at dirty condition / coils / internal dampers; do not add twice to external budget",
+      "selection_status": "No fan selected; include PAU nozzle / common-plant routing / OA intake and dirty-filter interpretation before fan curve approval"
+    },
+    {
+      "system": "EF-03 duty / standby",
+      "duty_flow_each_l_s": 147.6,
+      "configuration": "One duty and one standby at full room extract",
+      "estimated_external_loss_pa": 30.667,
+      "provisional_ESP_with_20_percent_margin_pa": 40,
+      "low_sensitivity_pa": 15.667,
+      "high_sensitivity_pa": 45.667,
+      "internal_unit_losses": "Outlet / louver / standby branch / discharge loss pending",
+      "selection_status": "No fan selected; final discharge and curve verification pending"
+    },
+    {
+      "system": "EF-09 duty / standby",
+      "duty_flow_each_l_s": 64.88888888888889,
+      "configuration": "One duty and one standby at full room extract",
+      "estimated_external_loss_pa": 33.603,
+      "provisional_ESP_with_20_percent_margin_pa": 50,
+      "low_sensitivity_pa": 17.642,
+      "high_sensitivity_pa": 49.563,
+      "internal_unit_losses": "Outlet / louver / standby branch / discharge loss pending",
+      "selection_status": "No fan selected; final discharge and curve verification pending"
+    }
+  ],
+  "basis": {
+    "revision": 12,
+    "source_plan_extent_mm": [
+      20000,
+      19500
+    ],
+    "roof_surface_mm_affl": 4200,
+    "slab_thickness_assumption_mm": 200,
+    "roof_sa_bod_mm_affl": 4800,
+    "roof_ra_bod_mm_affl": 5550,
+    "outdoor_insulation_assumption_mm": 75,
+    "indoor_insulation_assumption_mm": 50,
+    "minimum_roof_crossing_clearance_mm": 150,
+    "PAU_reservation_each_mm": [
+      1600,
+      2500
+    ],
+    "PAU_service_strip_width_mm": 1000,
+    "roof_support_spacing_max_proposal_mm": 1500,
+    "curb_upstand_proposal_mm": 300,
+    "curb_annular_allowance_each_side_mm": 100,
+    "elbow_centerline_radius_factor": 1.0,
+    "taper_included_angle_max_proposal_deg": 30,
+    "assumed_K_elbow": 0.5,
+    "assumed_K_tee_branch": 1.0,
+    "assumed_K_tee_run": 0.2,
+    "assumed_K_adapter": 0.25,
+    "assumed_K_balancing_damper": 2.0,
+    "assumed_K_fire_damper": 1.0,
+    "assumed_terminal_loss_pa": 30,
+    "assumed_common_external_equipment_loss_pa": 150,
+    "fan_budget_margin_percent": 20,
+    "status": "COORDINATION PROPOSAL. All roof levels, slab thickness, footprints, insulation, K and device loss allowances require site / OEM confirmation. No selected fan or certified acoustic performance."
+  },
+  "scope": "Connected roof routing proposal; provisional levels / loads / K / OEM selections; not construction approved"
+}
