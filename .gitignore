@@ -13,3 +13,5 @@ generated/
 
 !projects/administration_rev12/reference/D-113391-ADDC-AES-ME-AC-001_REV.1.dwg
 !deliverables/rev12/*.dxf
+!deliverables/main-duct-and-return/*.dxf
+!projects/main_duct_and_return/inputs/Rev12_reference.dxf

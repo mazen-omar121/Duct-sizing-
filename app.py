@@ -17,6 +17,7 @@ app.config['MAX_CONTENT_LENGTH'] = 256 * 1024
 ROOT = Path(__file__).resolve().parent
 ADMIN_SOURCE = ROOT / 'projects' / 'administration_rev12'
 ADMIN_OUTPUT = ROOT / 'generated' / 'administration'
+MAIN_RETURN_DELIVERY = ROOT / 'deliverables' / 'main-duct-and-return'
 SAMPLE = {
     'title': 'Supply air plan',
     'routes': [
@@ -237,6 +238,30 @@ def administration_overview():
     path = ADMIN_OUTPUT / 'Administration_HVAC_Overview.png'
     if not path.is_file():
         return jsonify(error='Rebuild the Administration project first'), 503
+    return send_file(path, mimetype='image/png')
+
+
+@app.get('/api/main-duct-return/export/<kind>')
+def main_duct_return_export(kind):
+    files = {'pdf': 'Main duct and return.pdf',
+             'mono': 'Main duct and return - Monochrome.pdf',
+             'review': 'Main duct and return - Method review.pdf',
+             'dxf': 'Main duct and return.dxf',
+             'xlsx': 'Main duct and return - Registers.xlsx',
+             'zip': 'Main duct and return.zip'}
+    if kind not in files:
+        return jsonify(error='Choose PDF, monochrome PDF, review PDF, DXF, XLSX or ZIP'), 400
+    path = MAIN_RETURN_DELIVERY / files[kind]
+    if not path.is_file():
+        return jsonify(error='Main duct and return package is not available; see README.md'), 503
+    return send_file(path, as_attachment=True)
+
+
+@app.get('/api/main-duct-return/overview')
+def main_duct_return_overview():
+    path = MAIN_RETURN_DELIVERY / 'Main duct and return - Overview.png'
+    if not path.is_file():
+        return jsonify(error='Main duct and return preview is not available'), 503
     return send_file(path, mimetype='image/png')
 
 

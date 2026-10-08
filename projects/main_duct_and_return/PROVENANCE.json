@@ -1,0 +1,26 @@
+{
+  "name": "Main duct and return",
+  "method_revision": 1,
+  "date": "2026-10-08",
+  "baseline": "Published Administration HVAC Rev12 / 7f8fbf74a2a62ddb2e96540cb64ac98cec45fc87",
+  "user_choice": "Roof common mains with room drops; slab underside4000 mm / ceiling3300 mm",
+  "reference_dwg": "projects/administration_rev12/reference/D-113391-ADDC-AES-ME-AC-001_REV.1.dwg",
+  "reference_dwg_sha256": "34ed89731be05b599c6cb43770ea6a68fbf6713d11659423fb047acb61719653",
+  "drafting_primitives": "Adapted from preserved Rev12 cad-package/src/build_schematic.py; new diagrams use unioned open branch outlines, CAD masks, fills and lineweights",
+  "preserved_data": "85 retained instruments,275 I/O,53 terminals; original duties; unchanged Rev12 physical reference inputs",
+  "new_scope": "11 method/control/instrument/section sheets plus3 clearly labelled original Rev12 physical reference plans;22 separate DX OEM-review candidates",
+  "claims": "Detailed functional method and proposed physical references; no surveyed route, OEM selection, fan capacity, certified thermal design or native AutoCAD plot",
+  "input_sha256": {
+    "Components.csv": "10097de84e9d06e010e459eb1e378ca763f9402bc8ba8ca7fde766f8e32f9ad4",
+    "Design_basis.json": "4378570b78a097e2b99642c24de07da49bd7ad34c9a0d10639fa87e1783a2070",
+    "IO_points.csv": "3821dc5a8705e0db5a82ff29ca9df5b640e0277f03cf0db2e4b91db725cce2f2",
+    "Instrument_installation_Rev12.csv": "6127814f8084a4ae9b185ada7013272368fb7fb378a0637690ff733b5e95886b",
+    "Instruments.csv": "69813725509295202aaaf8355bf26f45f467dd4d7e9e18ef113474d6f47f2f26",
+    "Rev12_reference.dxf": "52acfc997b102d28600732889f512b0c80373812080b644ce75b33778f15bbf2",
+    "Rev12_reference.pdf": "9ca6dc7068ee66253957baae892cf05f8284368e6043a7a3a37ddb917f5716dd",
+    "Rev12_reference_mono.pdf": "8178d360e65a8d405a93ef96170795279f75c47664bc570cc915b15c9233d236",
+    "Roof_risers.csv": "f55d6be2e5fdd1fae6142f4c6a13b9117d5f4b62599ccdd1b6038d878b94202a",
+    "Roof_routes_Rev12.csv": "7fc706c54d4ec927bb7d41c99316a14722160b155a3aa57ee6ecf5c4ba0a2552",
+    "Terminals.csv": "c83ed8c94ffe5f921e624d48e9a660a8d87ff7aee261743ae14edd66ea60e0f5"
+  }
+}
