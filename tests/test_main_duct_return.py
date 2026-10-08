@@ -14,6 +14,7 @@ class MainDuctReturnTests(unittest.TestCase):
         files = [('pdf', 'Main duct and return.pdf'),
                  ('mono', 'Main duct and return - Monochrome.pdf'),
                  ('review', 'Main duct and return - Method review.pdf'),
+                 ('engineering', 'Main duct and return - Engineering review.pdf'),
                  ('dxf', 'Main duct and return.dxf'),
                  ('xlsx', 'Main duct and return - Registers.xlsx'),
                  ('zip', 'Main duct and return.zip')]

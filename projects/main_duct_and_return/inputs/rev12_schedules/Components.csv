@@ -1,0 +1,177 @@
+tag,service,basis,selection_status
+VCD-S02,Supply branch balancing damper,Room GF-02,Proposed; OEM selection TBC
+FSD-S02,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-02-01,Supply diffuser with integral OBD,Room GF-02; 166.200 L/s,Proposed; OEM selection TBC
+SD-02-02,Supply diffuser with integral OBD,Room GF-02; 166.200 L/s,Proposed; OEM selection TBC
+SD-02-03,Supply diffuser with integral OBD,Room GF-02; 166.200 L/s,Proposed; OEM selection TBC
+SD-02-04,Supply diffuser with integral OBD,Room GF-02; 166.200 L/s,Proposed; OEM selection TBC
+RCD-R02,Modulating room return damper,Proposed +50 Pa pressure control; provisional fixed-return starting balance,Proposed; OEM selection TBC
+FSD-R02,Conditional fire/smoke damper,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+RG-02-01,Ducted return grille with OBD,Room GF-02; 151.366 L/s,Proposed; OEM selection TBC
+RG-02-02,Ducted return grille with OBD,Room GF-02; 151.366 L/s,Proposed; OEM selection TBC
+RG-02-03,Ducted return grille with OBD,Room GF-02; 151.366 L/s,Proposed; OEM selection TBC
+RG-02-04,Ducted return grille with OBD,Room GF-02; 151.366 L/s,Proposed; OEM selection TBC
+VCD-S04,Supply branch balancing damper,Room GF-04,Proposed; OEM selection TBC
+FSD-S04,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-04-01,Supply diffuser with integral OBD,Room GF-04; 149.733 L/s,Proposed; OEM selection TBC
+SD-04-02,Supply diffuser with integral OBD,Room GF-04; 149.733 L/s,Proposed; OEM selection TBC
+SD-04-03,Supply diffuser with integral OBD,Room GF-04; 149.733 L/s,Proposed; OEM selection TBC
+RCD-R04,Modulating room return damper,Proposed +50 Pa pressure control; provisional fixed-return starting balance,Proposed; OEM selection TBC
+FSD-R04,Conditional fire/smoke damper,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+RG-04-01,Ducted return grille with OBD,Room GF-04; 129.954 L/s,Proposed; OEM selection TBC
+RG-04-02,Ducted return grille with OBD,Room GF-04; 129.954 L/s,Proposed; OEM selection TBC
+RG-04-03,Ducted return grille with OBD,Room GF-04; 129.954 L/s,Proposed; OEM selection TBC
+EH-04,Indoor room comfort duct heater,7.8.2; load / losses / high-limit and airflow proof TBC,Proposed; OEM selection TBC
+VCD-S08,Supply branch balancing damper,Room GF-08,Proposed; OEM selection TBC
+FSD-S08,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-08-01,Supply diffuser with integral OBD,Room GF-08; 147.433 L/s,Proposed; OEM selection TBC
+SD-08-02,Supply diffuser with integral OBD,Room GF-08; 147.433 L/s,Proposed; OEM selection TBC
+SD-08-03,Supply diffuser with integral OBD,Room GF-08; 147.433 L/s,Proposed; OEM selection TBC
+SD-08-04,Supply diffuser with integral OBD,Room GF-08; 147.433 L/s,Proposed; OEM selection TBC
+SD-08-05,Supply diffuser with integral OBD,Room GF-08; 147.433 L/s,Proposed; OEM selection TBC
+SD-08-06,Supply diffuser with integral OBD,Room GF-08; 147.433 L/s,Proposed; OEM selection TBC
+RCD-R08,Modulating room return damper,Proposed +50 Pa pressure control; provisional fixed-return starting balance,Proposed; OEM selection TBC
+FSD-R08,Conditional fire/smoke damper,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+RG-08-01,Ducted return grille with OBD,Room GF-08; 137.544 L/s,Proposed; OEM selection TBC
+RG-08-02,Ducted return grille with OBD,Room GF-08; 137.544 L/s,Proposed; OEM selection TBC
+RG-08-03,Ducted return grille with OBD,Room GF-08; 137.544 L/s,Proposed; OEM selection TBC
+RG-08-04,Ducted return grille with OBD,Room GF-08; 137.544 L/s,Proposed; OEM selection TBC
+RG-08-05,Ducted return grille with OBD,Room GF-08; 137.544 L/s,Proposed; OEM selection TBC
+RG-08-06,Ducted return grille with OBD,Room GF-08; 137.544 L/s,Proposed; OEM selection TBC
+VCD-S05,Supply branch balancing damper,Room GF-05,Proposed; OEM selection TBC
+FSD-S05,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-05-01,Supply diffuser with integral OBD,Room GF-05; 155.540 L/s,Proposed; OEM selection TBC
+SD-05-02,Supply diffuser with integral OBD,Room GF-05; 155.540 L/s,Proposed; OEM selection TBC
+SD-05-03,Supply diffuser with integral OBD,Room GF-05; 155.540 L/s,Proposed; OEM selection TBC
+SD-05-04,Supply diffuser with integral OBD,Room GF-05; 155.540 L/s,Proposed; OEM selection TBC
+SD-05-05,Supply diffuser with integral OBD,Room GF-05; 155.540 L/s,Proposed; OEM selection TBC
+RCD-R05,Modulating room return damper,Proposed +50 Pa pressure control; provisional fixed-return starting balance,Proposed; OEM selection TBC
+FSD-R05,Conditional fire/smoke damper,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+RG-05-01,Ducted return grille with OBD,Room GF-05; 143.673 L/s,Proposed; OEM selection TBC
+RG-05-02,Ducted return grille with OBD,Room GF-05; 143.673 L/s,Proposed; OEM selection TBC
+RG-05-03,Ducted return grille with OBD,Room GF-05; 143.673 L/s,Proposed; OEM selection TBC
+RG-05-04,Ducted return grille with OBD,Room GF-05; 143.673 L/s,Proposed; OEM selection TBC
+RG-05-05,Ducted return grille with OBD,Room GF-05; 143.673 L/s,Proposed; OEM selection TBC
+EH-05,Indoor room comfort duct heater,7.8.2; load / losses / high-limit and airflow proof TBC,Proposed; OEM selection TBC
+VCD-S06,Supply branch balancing damper,Room GF-06,Proposed; OEM selection TBC
+FSD-S06,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-06-01,Supply diffuser with integral OBD,Room GF-06; 139.400 L/s,Proposed; OEM selection TBC
+SD-06-02,Supply diffuser with integral OBD,Room GF-06; 139.400 L/s,Proposed; OEM selection TBC
+SD-06-03,Supply diffuser with integral OBD,Room GF-06; 139.400 L/s,Proposed; OEM selection TBC
+RCD-R06,Modulating room return damper,Proposed +50 Pa pressure control; provisional fixed-return starting balance,Proposed; OEM selection TBC
+FSD-R06,Conditional fire/smoke damper,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+RG-06-01,Ducted return grille with OBD,Room GF-06; 89.716 L/s,Proposed; OEM selection TBC
+RG-06-02,Ducted return grille with OBD,Room GF-06; 89.716 L/s,Proposed; OEM selection TBC
+RG-06-03,Ducted return grille with OBD,Room GF-06; 89.716 L/s,Proposed; OEM selection TBC
+RG-06-04,Ducted return grille with OBD,Room GF-06; 89.716 L/s,Proposed; OEM selection TBC
+EH-06,Indoor room comfort duct heater,7.8.2; load / losses / high-limit and airflow proof TBC,Proposed; OEM selection TBC
+VCD-S09,Supply branch balancing damper,Room GF-09,Proposed; OEM selection TBC
+FSD-S09,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-09-01,Supply diffuser with integral OBD,Room GF-09; 23.100 L/s,Proposed; OEM selection TBC
+SD-09-02,Supply diffuser with integral OBD,Room GF-09; 23.100 L/s,Proposed; OEM selection TBC
+VCD-S07,Supply branch balancing damper,Room GF-07,Proposed; OEM selection TBC
+FSD-S07,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-07-01,Supply diffuser with integral OBD,Room GF-07; 168.200 L/s,Proposed; OEM selection TBC
+RCD-R07,Modulating room return damper,Proposed +50 Pa pressure control; provisional fixed-return starting balance,Proposed; OEM selection TBC
+FSD-R07,Conditional fire/smoke damper,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+RG-07-01,Ducted return grille with OBD,Room GF-07; 108.863 L/s,Proposed; OEM selection TBC
+EH-07,Indoor room comfort duct heater,7.8.2; load / losses / high-limit and airflow proof TBC,Proposed; OEM selection TBC
+VCD-S03,Supply branch balancing damper,Room GF-03,Proposed; OEM selection TBC
+FSD-S03,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-03-01,Supply diffuser with integral OBD,Room GF-03; 147.600 L/s,Proposed; OEM selection TBC
+EH-03,Indoor room comfort duct heater,7.8.2; load / losses / high-limit and airflow proof TBC,Proposed; OEM selection TBC
+VCD-S01,Supply branch balancing damper,Room GF-01,Proposed; OEM selection TBC
+FSD-S01,Conditional fire/smoke damper at rated penetration,Compartment / cause-and-effect approval required,Conditional; quantity and rating TBC
+SD-01-01,Supply diffuser with integral OBD,Room GF-01; 141.300 L/s,Proposed; OEM selection TBC
+EG-09-01,Dedicated extract grille,GF-09; final pickup height / model TBC,Proposed; OEM selection TBC
+EG-09-02,Dedicated extract grille,GF-09; final pickup height / model TBC,Proposed; OEM selection TBC
+MD-IE09-01,Motorized extract fan inlet isolation,7.14.1 isolation provision; final individual outlet arrangement to confirm,Proposed; OEM selection TBC
+EF-09-01,Axial extract fan,7.19.1 2 x 100%,Proposed; OEM selection TBC
+MD-E09-01,Motorized fan isolation damper,7.14.1; standby discharge isolation,Proposed; OEM selection TBC
+MD-IE09-02,Motorized extract fan inlet isolation,7.14.1 isolation provision; final individual outlet arrangement to confirm,Proposed; OEM selection TBC
+EF-09-02,Axial extract fan,7.19.1 2 x 100%,Proposed; OEM selection TBC
+MD-E09-02,Motorized fan isolation damper,7.14.1; standby discharge isolation,Proposed; OEM selection TBC
+EG-03-01,Dedicated extract grille,GF-03; final pickup height / model TBC,Proposed; OEM selection TBC
+MD-IE03-01,Motorized extract fan inlet isolation,7.14.1 isolation provision; final individual outlet arrangement to confirm,Proposed; OEM selection TBC
+EF-03-01,Axial extract fan,7.19.1 2 x 100%,Proposed; OEM selection TBC
+MD-E03-01,Motorized fan isolation damper,7.14.1; standby discharge isolation,Proposed; OEM selection TBC
+MD-IE03-02,Motorized extract fan inlet isolation,7.14.1 isolation provision; final individual outlet arrangement to confirm,Proposed; OEM selection TBC
+EF-03-02,Axial extract fan,7.19.1 2 x 100%,Proposed; OEM selection TBC
+MD-E03-02,Motorized fan isolation damper,7.14.1; standby discharge isolation,Proposed; OEM selection TBC
+EG-01-01,Dedicated extract grille,GF-01; final pickup height / model TBC,Proposed; OEM selection TBC
+EF-01-01,Clean-agent extract fan,One fan shown; quantity / agent suitability TBC,Proposed; OEM selection TBC
+MD-E01-01,Motorized fan isolation damper,7.14.1; standby discharge isolation,Proposed; OEM selection TBC
+HPCP-01,Dedicated PLC HVAC power and control panel,15.1 / 15.10 / 15.11; 20% spare I/O and CPU; separate duty / standby modules,Proposed; OEM selection TBC
+HMI-01,"Local colour touchscreen HMI, >=10 inch","15.12.1; alarms, trends, security, operating hours and energy",Proposed; OEM selection TBC
+BMS-IF-01,BMS / SCADA interface and operator workstation,8.5.1 / 8.5.2; protocol and point mapping TBC,Proposed; OEM selection TBC
+STL-01,Outdoor sand trap louver / bird mesh,7.12.1 / 7.7.1; mesh <=13 mm; SS316L when within 5 km of sea,Proposed; OEM selection TBC
+F-OA-01,Washable MERV 8 outdoor intake filter,7.12.1; clean / dirty loss and face area TBC,Proposed; OEM selection TBC
+OA-SIL-01,Common outdoor intake sound attenuator,Catalogue insertion loss / pressure loss TBC,Proposed; OEM selection TBC
+EA-SIL-03,Dedicated extract sound attenuator,GF-03; catalogue loss / insertion loss TBC,Proposed; OEM selection TBC
+EA-SIL-09,Dedicated extract sound attenuator,GF-09; catalogue loss / insertion loss TBC,Proposed; OEM selection TBC
+EA-SIL-01,Dedicated extract sound attenuator,GF-01; catalogue loss / insertion loss TBC,Proposed; OEM selection TBC
+STL-B1,Cable basement sand trap louver / bird mesh,Proposed ventilation inlet / outlet arrangement; catalogue loss and final area TBC,Proposed; OEM selection TBC
+F-OA-B1,Basement intake MERV 8 filter,Proposed ventilation inlet / outlet arrangement; catalogue loss and final area TBC,Proposed; OEM selection TBC
+OA-SIL-B1,Basement intake sound attenuator,Proposed ventilation inlet / outlet arrangement; catalogue loss and final area TBC,Proposed; OEM selection TBC
+EA-SIL-B1-01,Basement extract sound attenuator 1,Proposed ventilation inlet / outlet arrangement; catalogue loss and final area TBC,Proposed; OEM selection TBC
+EA-SIL-B1-02,Basement extract sound attenuator 2,Proposed ventilation inlet / outlet arrangement; catalogue loss and final area TBC,Proposed; OEM selection TBC
+MD-OA-01,Common outdoor-air modulating damper,Proposed minimum OA / building pressure control; final OA TBC,Proposed; OEM selection TBC
+PRD-01,Common outdoor relief path and relief control,7.13 / user relief basis; Qrelief = QOA - 691.12 only under current assumed RA,Proposed; OEM selection TBC
+SA-SIL-01,Common supply sound attenuator,Catalogue insertion loss / pressure loss TBC,Proposed; OEM selection TBC
+RA-SIL-01,Common return sound attenuator,Catalogue insertion loss / pressure loss TBC,Proposed; OEM selection TBC
+EH-COM-01,Common electric duct heater in proposed weather-protected roof enclosure,7.8.2; heating load / high-limit / airflow proof TBC,Rev11 roof option; OEM weather suitability / enclosure / safety / duty TBC
+HUM-01,"Steam humidifier in main supply, if required",7.10.1; conditional requirement / duty TBC,Rev11 proposed weather-protected roof plant; conditional duty / mounting / maintenance access TBC
+PAU-A,"Packaged DX unit, 3 x 50% bank","7.17.1; 1848.9 L/s per unit, 2 duty + 1 available; rotating duty pair",Proposed; OEM selection TBC
+MD-RA-A,Unit return shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+MD-OA-A,Unit outdoor-air shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+MD-SA-A,Unit supply shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+F1-A,MERV 8 filter bank,9.3.2; washable prefilter / disposable bag final,Proposed; OEM selection TBC
+F2-A,MERV 14 filter bank,9.3.2; washable prefilter / disposable bag final,Proposed; OEM selection TBC
+CD-PAU-A,"Coil drain pan, trapped drain and cleanout",OEM pressure-based trap geometry; pipe route / invert TBC,Proposed; OEM selection TBC
+PAU-B,"Packaged DX unit, 3 x 50% bank","7.17.1; 1848.9 L/s per unit, 2 duty + 1 available; rotating duty pair",Proposed; OEM selection TBC
+MD-RA-B,Unit return shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+MD-OA-B,Unit outdoor-air shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+MD-SA-B,Unit supply shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+F1-B,MERV 8 filter bank,9.3.2; washable prefilter / disposable bag final,Proposed; OEM selection TBC
+F2-B,MERV 14 filter bank,9.3.2; washable prefilter / disposable bag final,Proposed; OEM selection TBC
+CD-PAU-B,"Coil drain pan, trapped drain and cleanout",OEM pressure-based trap geometry; pipe route / invert TBC,Proposed; OEM selection TBC
+PAU-C,"Packaged DX unit, 3 x 50% bank","7.17.1; 1848.9 L/s per unit, 2 duty + 1 available; rotating duty pair",Proposed; OEM selection TBC
+MD-RA-C,Unit return shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+MD-OA-C,Unit outdoor-air shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+MD-SA-C,Unit supply shut-off damper,"7.14.1; close standby paths, open / close proof",Proposed; OEM selection TBC
+F1-C,MERV 8 filter bank,9.3.2; washable prefilter / disposable bag final,Proposed; OEM selection TBC
+F2-C,MERV 14 filter bank,9.3.2; washable prefilter / disposable bag final,Proposed; OEM selection TBC
+CD-PAU-C,"Coil drain pan, trapped drain and cleanout",OEM pressure-based trap geometry; pipe route / invert TBC,Proposed; OEM selection TBC
+SF-B1-01,Cable basement axial ventilation fan,"7.18.3; each group 2 x 100%, final flow = greater of 4 ACH and heat duty",Proposed; OEM selection TBC
+MD-SF-B1-01,Basement fan motorized isolation,7.14.1; standby isolated,Proposed; OEM selection TBC
+MD-ISF-B1-01,Basement fan motorized inlet isolation,7.14.1; isolate both sides of parallel fan paths,Proposed; OEM selection TBC
+SF-B1-02,Cable basement axial ventilation fan,"7.18.3; each group 2 x 100%, final flow = greater of 4 ACH and heat duty",Proposed; OEM selection TBC
+MD-SF-B1-02,Basement fan motorized isolation,7.14.1; standby isolated,Proposed; OEM selection TBC
+MD-ISF-B1-02,Basement fan motorized inlet isolation,7.14.1; isolate both sides of parallel fan paths,Proposed; OEM selection TBC
+EF-B1-01,Cable basement axial ventilation fan,"7.18.3; each group 2 x 100%, final flow = greater of 4 ACH and heat duty",Proposed; OEM selection TBC
+MD-EF-B1-01,Basement fan motorized isolation,7.14.1; standby isolated,Proposed; OEM selection TBC
+MD-IEF-B1-01,Basement fan motorized inlet isolation,7.14.1; isolate both sides of parallel fan paths,Proposed; OEM selection TBC
+EF-B1-02,Cable basement axial ventilation fan,"7.18.3; each group 2 x 100%, final flow = greater of 4 ACH and heat duty",Proposed; OEM selection TBC
+MD-EF-B1-02,Basement fan motorized isolation,7.14.1; standby isolated,Proposed; OEM selection TBC
+MD-IEF-B1-02,Basement fan motorized inlet isolation,7.14.1; isolate both sides of parallel fan paths,Proposed; OEM selection TBC
+AD-S02,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 02,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S05,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 05,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S04,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 04,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S08,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 08,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S06,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 06,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S07,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 07,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S09,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 09,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S03,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 03,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-S01,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 01,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-R02,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 02,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-R05,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 05,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-R04,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 04,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-R08,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 08,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-R06,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 06,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-R07,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 07,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-H04,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 04,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-H05,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 05,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-H06,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 06,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-H07,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 07,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-H03,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater 03,Proposed location; access side / clear opening / ceiling hatch / OEM clearance TBC
+AD-HCOM-01,Duct access door for inspection / maintenance,Rev07 reference drafting convention; adjacent branch damper / heater COM-01,Rev11 proposed weather-protected roof plant; conditional duty / mounting / maintenance access TBC

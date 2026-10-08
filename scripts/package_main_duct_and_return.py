@@ -24,17 +24,22 @@ def digest(path):
 def main():
     subprocess.run([sys.executable, str(ROOT / 'scripts/validate_main_duct_and_return.py')], check=True)
     report = json.loads((OUT / 'validation.json').read_text())
-    assert report['detailed_A1_sheets'] == 14 and report['retained_instruments_graphically_checked'] == 85
+    assert report['detailed_A1_sheets'] == 50 and report['retained_instruments_graphically_checked'] == 85
     assert report['additional_DX_candidates_graphically_checked'] == 22
     review = OUT / (TITLE + ' - Method review.pdf')
     with fitz.open(OUT / (TITLE + '.pdf')) as full, fitz.open() as subset:
-        for page in [0, 3, 4]:
+        for page in [39, 42, 43]:
             subset.insert_pdf(full, from_page=page, to_page=page)
         subset.save(review)
         page = full[0]
         page.get_pixmap(matrix=fitz.Matrix(1700 / page.rect.width, 1700 / page.rect.width)).save(OUT / (TITLE + ' - Overview.png'))
+    detail_review = OUT / (TITLE + ' - Engineering review.pdf')
+    with fitz.open(OUT / (TITLE + '.pdf')) as full, fitz.open() as subset:
+        for page in [0, 3, 4, 5, 18, 22, 23, 24, 27, 28, 29, 30, 31, *range(32, 39)]:
+            subset.insert_pdf(full, from_page=page, to_page=page)
+        subset.save(detail_review)
     files = [TITLE + '.pdf', TITLE + ' - Monochrome.pdf', TITLE + '.dxf',
-             TITLE + ' - Registers.xlsx', review.name, TITLE + ' - Overview.png', 'Common_main_sizing.csv',
+             TITLE + ' - Registers.xlsx', review.name, detail_review.name, TITLE + ' - Overview.png', 'Drawing_index.csv', 'DX_bank_connections.csv', 'DX_cause_and_effect.csv', 'DX_interface_schedule.csv', 'DX_equipment_schedule.csv', 'Common_main_sizing.csv',
              'Additional_DX_proposals.csv', 'Instrument_drawing_index.csv',
              'method_basis.json', 'validation.json']
     contents = {name: OUT / name for name in files}

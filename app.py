@@ -246,11 +246,12 @@ def main_duct_return_export(kind):
     files = {'pdf': 'Main duct and return.pdf',
              'mono': 'Main duct and return - Monochrome.pdf',
              'review': 'Main duct and return - Method review.pdf',
+             'engineering': 'Main duct and return - Engineering review.pdf',
              'dxf': 'Main duct and return.dxf',
              'xlsx': 'Main duct and return - Registers.xlsx',
              'zip': 'Main duct and return.zip'}
     if kind not in files:
-        return jsonify(error='Choose PDF, monochrome PDF, review PDF, DXF, XLSX or ZIP'), 400
+        return jsonify(error='Choose PDF, monochrome PDF, method or engineering review, DXF, XLSX or ZIP'), 400
     path = MAIN_RETURN_DELIVERY / files[kind]
     if not path.is_file():
         return jsonify(error='Main duct and return package is not available; see README.md'), 503

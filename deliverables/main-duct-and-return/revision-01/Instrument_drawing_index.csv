@@ -1,0 +1,86 @@
+tag,parameter,location,io,graphical_sheet,status
+TT-GF-02,Dry bulb temperature,GF-02 Electrical panel,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-02,Relative humidity,GF-02 Electrical panel,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-02,Room pressure vs outdoor,GF-02 Electrical panel,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TT-GF-04,Dry bulb temperature,GF-04 Meeting,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-04,Relative humidity,GF-04 Meeting,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-04,Room pressure vs outdoor,GF-04 Meeting,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TSHH-EH-04,Heater high temperature limit,EH-04,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+TT-GF-08,Dry bulb temperature,GF-08 Telecom panel,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-08,Relative humidity,GF-08 Telecom panel,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-08,Room pressure vs outdoor,GF-08 Telecom panel,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TT-GF-05,Dry bulb temperature,GF-05 Operator console,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-05,Relative humidity,GF-05 Operator console,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-05,Room pressure vs outdoor,GF-05 Operator console,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TSHH-EH-05,Heater high temperature limit,EH-05,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+TT-GF-06,Dry bulb temperature,GF-06 Reception / corridor,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-06,Relative humidity,GF-06 Reception / corridor,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-06,Room pressure vs outdoor,GF-06 Reception / corridor,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TSHH-EH-06,Heater high temperature limit,EH-06,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+TT-GF-09,Dry bulb temperature,GF-09 Toilet group: two cubicles,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-09,Relative humidity,GF-09 Toilet group: two cubicles,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-09,Room pressure vs outdoor,GF-09 Toilet group: two cubicles,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TT-GF-07,Dry bulb temperature,GF-07 Bedroom / Resting Room,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-07,Relative humidity,GF-07 Bedroom / Resting Room,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-07,Room pressure vs outdoor,GF-07 Bedroom / Resting Room,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TSHH-EH-07,Heater high temperature limit,EH-07,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+TT-GF-03,Dry bulb temperature,GF-03 Kitchen / kitchenette,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-03,Relative humidity,GF-03 Kitchen / kitchenette,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-03,Room pressure vs outdoor,GF-03 Kitchen / kitchenette,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TSHH-EH-03,Heater high temperature limit,EH-03,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+TT-GF-01,Dry bulb temperature,GF-01 Clean-agent cylinder room,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+RHT-GF-01,Relative humidity,GF-01 Clean-agent cylinder room,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+DPT-GF-01,Room pressure vs outdoor,GF-01 Clean-agent cylinder room,AI,MDR-006,Retained requirement / settings and OEM wiring pending
+TT-SA-01,Supply air temperature,Common supply,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+TT-RA-01,Return air temperature,Common return,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+RHT-RA-01,Return relative humidity,Common return,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+FIT-SA-01,Common supply airflow,Common supply straight length per manufacturer,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+FIT-RA-01,Common return airflow,Common return straight length per manufacturer,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDT-OA-01,Outdoor intake filter differential pressure,F-OA-01,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-OA-01,Local intake filter differential pressure gauge,F-OA-01,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+TSHH-EH-COM-01,Common heater high-limit,EH-COM-01,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+PDT-F1-A,Filter differential pressure,PAU-A filter 1,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-F1-A,Local filter differential pressure gauge,PAU-A filter 1,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+PDT-F2-A,Filter differential pressure,PAU-A filter 2,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-F2-A,Local filter differential pressure gauge,PAU-A filter 2,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+DPT-SF-A,Evaporator fan differential pressure,PAU-A fan,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+VS-PAU-A,RMS vibration velocity,PAU-A frame / fan bearing,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDT-F1-B,Filter differential pressure,PAU-B filter 1,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-F1-B,Local filter differential pressure gauge,PAU-B filter 1,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+PDT-F2-B,Filter differential pressure,PAU-B filter 2,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-F2-B,Local filter differential pressure gauge,PAU-B filter 2,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+DPT-SF-B,Evaporator fan differential pressure,PAU-B fan,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+VS-PAU-B,RMS vibration velocity,PAU-B frame / fan bearing,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDT-F1-C,Filter differential pressure,PAU-C filter 1,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-F1-C,Local filter differential pressure gauge,PAU-C filter 1,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+PDT-F2-C,Filter differential pressure,PAU-C filter 2,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+PDI-F2-C,Local filter differential pressure gauge,PAU-C filter 2,LOCAL,MDR-004,Retained requirement / settings and OEM wiring pending
+DPT-SF-C,Evaporator fan differential pressure,PAU-C fan,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+VS-PAU-C,RMS vibration velocity,PAU-C frame / fan bearing,AI,MDR-004,Retained requirement / settings and OEM wiring pending
+DPT-EF-03-01,Extract fan pressure proof,EF-03-01,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+VS-EF-03-01,RMS vibration velocity,EF-03-01,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+DPT-EF-03-02,Extract fan pressure proof,EF-03-02,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+VS-EF-03-02,RMS vibration velocity,EF-03-02,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+DPT-EF-09-01,Extract fan pressure proof,EF-09-01,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+VS-EF-09-01,RMS vibration velocity,EF-09-01,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+DPT-EF-09-02,Extract fan pressure proof,EF-09-02,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+VS-EF-09-02,RMS vibration velocity,EF-09-02,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+DPT-EF-01-01,Extract fan pressure proof,EF-01-01,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+VS-EF-01-01,RMS vibration velocity,EF-01-01,AI,MDR-003,Retained requirement / settings and OEM wiring pending
+DPT-SF-B1-01,Fan pressure proof,SF-B1-01,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+VS-SF-B1-01,RMS vibration velocity,SF-B1-01,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+DPT-SF-B1-02,Fan pressure proof,SF-B1-02,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+VS-SF-B1-02,RMS vibration velocity,SF-B1-02,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+DPT-EF-B1-01,Fan pressure proof,EF-B1-01,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+VS-EF-B1-01,RMS vibration velocity,EF-B1-01,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+DPT-EF-B1-02,Fan pressure proof,EF-B1-02,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+VS-EF-B1-02,RMS vibration velocity,EF-B1-02,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+TT-B1-01,Cable basement air temperature,Cable basement,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+DPT-B1-01,Basement pressure vs outdoor,Cable basement,AI,MDR-009,Retained requirement / settings and OEM wiring pending
+EM-HPCP-01,"Energy metering: V, I, kW, kWh, PF, Hz; THD for VFD",HPCP feeders >7.5 kW,COMM,MDR-009,Retained requirement / settings and OEM wiring pending
+AFS-EH-04,Airflow proving switch for heater safety permissive,Electric heater EH-04,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+AFS-EH-05,Airflow proving switch for heater safety permissive,Electric heater EH-05,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+AFS-EH-06,Airflow proving switch for heater safety permissive,Electric heater EH-06,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+AFS-EH-07,Airflow proving switch for heater safety permissive,Electric heater EH-07,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+AFS-EH-03,Airflow proving switch for heater safety permissive,Electric heater EH-03,DI,MDR-007,Retained requirement / settings and OEM wiring pending
+AFS-EH-COM-01,Airflow proving switch for heater safety permissive,Electric heater EH-COM-01,DI,MDR-007,Retained requirement / settings and OEM wiring pending

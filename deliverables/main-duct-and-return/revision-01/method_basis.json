@@ -1,0 +1,31 @@
+{
+  "name": "Main duct and return",
+  "method_revision": 1,
+  "sheets": 14,
+  "baseline_instruments": 85,
+  "new_DX_proposals": 22,
+  "terminals": 53,
+  "baseline_IO_points": 275,
+  "common_roof_route_segments": 31,
+  "functional_header_flow_steps": 15,
+  "room_drops": 15,
+  "supply_l_s": 3697.8,
+  "return_l_s": 3006.680337621642,
+  "minimum_mass_balance_makeup_l_s": 691.119662378358,
+  "ceiling_clearance_requirement_mm": 3300,
+  "slab_underside_mm": 4000,
+  "available_void_mm": 700,
+  "main_location": "Roof common mains with room drops - user selected",
+  "bare_indoor_room_duct_depth_limit_mm": 400,
+  "assumed_insulation_each_face_mm": 50,
+  "assumed_flange_allowance_each_side_mm": 25,
+  "component_reserved_depth_mm": 550,
+  "status": "Detailed functional method and preliminary sizing, not surveyed route or construction approval",
+  "holds": [
+    "Proposed roof layout / structure / penetrations / weatherproofing / support and OEM dimensions",
+    "Room drops: beam / actuator / support / access coordination",
+    "DX capacity, refrigerant, OEM circuit and fan selection / complete route ESP",
+    "OA/pressure balance and room comfort / humidity requirements",
+    "Fire boundaries and final wiring"
+  ]
+}

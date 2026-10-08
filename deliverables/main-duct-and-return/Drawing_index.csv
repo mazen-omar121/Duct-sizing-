@@ -1,0 +1,51 @@
+number,title,type,source,layout
+MDR-001,COORDINATED DUCT PLAN,Retained detailed physical / engineering content,Rev12 D-001,MDR01_A1
+MDR-002,SUPPLY AIR DUCT PLAN,Retained detailed physical / engineering content,Rev12 D-002,MDR02_A1
+MDR-003,RETURN AIR AND EXTRACT DUCT PLAN,Retained detailed physical / engineering content,Rev12 D-003,MDR03_A1
+MDR-004,NORTH ROOMS - DUCT ENLARGEMENT,Retained detailed physical / engineering content,Rev12 D-004,MDR04_A1
+MDR-005,SOUTH-WEST ROOMS - DUCT ENLARGEMENT,Retained detailed physical / engineering content,Rev12 D-005,MDR05_A1
+MDR-006,SOUTH-EAST ROOMS - DUCT ENLARGEMENT,Retained detailed physical / engineering content,Rev12 D-006,MDR06_A1
+MDR-007,ROOM INSTRUMENTATION AND CONTROL LOCATIONS,Retained detailed physical / engineering content,Rev12 D-007,MDR07_A1
+MDR-008,PAU BANK AND PROPOSED ROOF COMMON DISTRIBUTION,Retained detailed physical / engineering content,Rev12 D-008,MDR08_A1
+MDR-009,DUCT SYMBOLS AND INSTALLATION DETAILS,Retained detailed physical / engineering content,Rev12 D-009,MDR09_A1
+MDR-010,DUCT AND TERMINAL SCHEDULES,Retained detailed physical / engineering content,Rev12 D-010,MDR10_A1
+MDR-011,TAPERED FITTINGS AND MAINTENANCE ACCESS,Retained detailed physical / engineering content,Rev12 D-011,MDR11_A1
+MDR-012,PLANT INSTRUMENTATION AND HEATER PROTECTION,Retained detailed physical / engineering content,Rev12 D-012,MDR12_A1
+MDR-013,EXTRACT AND BASEMENT FAN INSTRUMENTATION,Retained detailed physical / engineering content,Rev12 D-013,MDR13_A1
+MDR-014,ELECTRIC HEATER PROTECTION AND CONTROL,Retained detailed physical / engineering content,Rev12 D-014,MDR14_A1
+MDR-015,"FIELD SIGNALS, BASEMENT AND CONTROL INTERFACES",Retained detailed physical / engineering content,Rev12 D-015,MDR15_A1
+MDR-016,COMPLETE INSTRUMENT INDEX AND DRAWING REFERENCES,Retained detailed physical / engineering content,Rev12 D-016,MDR16_A1
+MDR-017,PLAN DIMENSIONS AND TERMINAL SETTING-OUT,Retained detailed physical / engineering content,Rev12 D-017,MDR17_A1
+MDR-018,COMPLETE DRAWING INDEX / DESIGN BASIS / ISSUE 02,Detailed Rev12 content reissued; index updated,Rev12 D-018,MDR18_A1
+MDR-019,ACTUAL DUCT JUNCTIONS - ENLARGED PLAN DETAILS,Retained detailed physical / engineering content,Rev12 D-019,MDR19_A1
+MDR-020,3.30 m CEILING - SINGLE-LAYER INDOOR DUCT ENVELOPE,Retained detailed physical / engineering content,Rev12 D-020,MDR20_A1
+MDR-021,REV11 TERMINAL MOVES AND SHALLOW DUCT SIZE CHANGES,Retained detailed physical / engineering content,Rev12 D-021,MDR21_A1
+MDR-022,ROOF DISTRIBUTION AND ROOM RISER REGISTER,Retained detailed physical / engineering content,Rev12 D-022,MDR22_A1
+MDR-023,ROOF DUCT ROUTING PROPOSAL,Retained detailed physical / engineering content,Rev12 D-023,MDR23_A1
+MDR-024,ROOF CROSSING AND ROOM DROP SECTIONS,Retained detailed physical / engineering content,Rev12 D-024,MDR24_A1
+MDR-025,FITTING DEVELOPMENT AND FABRICATION RULES,Retained detailed physical / engineering content,Rev12 D-025,MDR25_A1
+MDR-026,SYSTEM PRESSURE LOSS AND FAN DUTY BUDGET,Retained detailed physical / engineering content,Rev12 D-026,MDR26_A1
+MDR-027,AIR BALANCE AND TERMINAL SELECTION CRITERIA,Retained detailed physical / engineering content,Rev12 D-027,MDR27_A1
+MDR-028,INSTRUMENT MOUNTING AND PRESSURE TAP DETAILS,Retained detailed physical / engineering content,Rev12 D-028,MDR28_A1
+MDR-029,I&C WIRING AND HEATER SAFETY INTERFACES,Retained detailed physical / engineering content,Rev12 D-029,MDR29_A1
+MDR-030,"ROOF CURB, SUPPORT AND WEATHERPROOFING",Retained detailed physical / engineering content,Rev12 D-030,MDR30_A1
+MDR-031,CEILING COMPONENT AND ACCESS ENVELOPES,Retained detailed physical / engineering content,Rev12 D-031,MDR31_A1
+MDR-032,ROOF SETTING-OUT AND ROOM DROP REGISTER,Retained detailed physical / engineering content,Rev12 D-032,MDR32_A1
+MDR-033,DX PAU BRANCH / HEADER TRANSITION DEVELOPMENT,New DX engineering detail,Main duct and return revision02,MDR33_A1
+MDR-034,ACTUAL ROOF SPLIT / REDUCER / ELBOW DEVELOPMENT,New DX engineering detail,Main duct and return revision02,MDR34_A1
+MDR-035,ROOM DROP / ROOF CURB / FIRESTOP INSTALLATION,New DX engineering detail,Main duct and return revision02,MDR35_A1
+MDR-036,COMMON HEADER INSTRUMENTS / CONDENSATE / ACCESS,New DX engineering detail,Main duct and return revision02,MDR36_A1
+MDR-037,DX / FAN / DAMPER / FIRE CAUSE AND EFFECT,New DX engineering detail,Main duct and return revision02,MDR37_A1
+MDR-038,DX OEM / HPCP FIELD WIRING AND I/O DEVELOPMENT,New DX engineering detail,Main duct and return revision02,MDR38_A1
+MDR-039,DX EQUIPMENT SELECTION / ROOM DUTIES / COMMISSIONING,New DX engineering detail,Main duct and return revision02,MDR39_A1
+MDR-040,WHOLE SYSTEM AIRFLOW METHOD,Supporting system method / instrumentation,Main duct and return revision02,MDR40_A1
+MDR-041,"ALL ROOM DIFFUSERS, RETURN GRILLES AND EXTRACT PICKUPS",Supporting system method / instrumentation,Main duct and return revision02,MDR41_A1
+MDR-042,DEDICATED EXTRACTS AND RETURN AIR SEPARATION,Supporting system method / instrumentation,Main duct and return revision02,MDR42_A1
+MDR-043,"DX PAU BANK, COMMON HEADERS AND AIR-SIDE INSTRUMENTS",Supporting system method / instrumentation,Main duct and return revision02,MDR43_A1
+MDR-044,DX REFRIGERANT CYCLE AND PROPOSED OEM PROTECTION,Supporting system method / instrumentation,Main duct and return revision02,MDR44_A1
+MDR-045,"ROOM TEMPERATURE, HUMIDITY AND PRESSURE INSTRUMENTS",Supporting system method / instrumentation,Main duct and return revision02,MDR45_A1
+MDR-046,"HEATER PERMISSIVES, ACCESS AND HARDWIRED SAFETY",Supporting system method / instrumentation,Main duct and return revision02,MDR46_A1
+MDR-047,"ROOF CROSSING, ROOM DROPS AND CEILING ENVELOPES",Supporting system method / instrumentation,Main duct and return revision02,MDR47_A1
+MDR-048,"BASEMENT, HPCP, ENERGY METERING AND CONTROL SEQUENCE",Supporting system method / instrumentation,Main duct and return revision02,MDR48_A1
+MDR-049,COMPLETE INSTRUMENT INDEX AND DRAWING REFERENCES,Supporting system method / instrumentation,Main duct and return revision02,MDR49_A1
+MDR-050,COMMON HEADER FLOW ACCOUNTING AND ENGINEERING BASIS,Supporting system method / instrumentation,Main duct and return revision02,MDR50_A1

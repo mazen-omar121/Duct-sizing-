@@ -23,12 +23,14 @@ class Scene:
    self.rect(left-.7,y-size*.83,width+1.4,size*1.1,k,'#FFFFFF',0)
   self.ops.append(("text",x,y,str(t),size,k,bold,align,angle))
  def para(self,x,y,t,width,size=2.5,k="INK",bold=False,leading=1.45):
-  lines=[];line=""
-  for word in t.split():
-   test=(line+" "+word).strip()
-   if line and pdfmetrics.stringWidth(test,BOLD if bold else FONT,size*MM)>width*MM:lines.append(line);line=word
-   else:line=test
-  if line:lines.append(line)
+  lines=[]
+  for paragraph in t.splitlines():
+   line=''
+   for word in paragraph.split():
+    test=(line+" "+word).strip()
+    if line and pdfmetrics.stringWidth(test,BOLD if bold else FONT,size*MM)>width*MM:lines.append(line);line=word
+    else:line=test
+   if line:lines.append(line)
   for i,a in enumerate(lines):self.text(x,y+i*size*leading,a,size,k,bold)
   return len(lines)*size*leading
  def arrow(self,a,b,k="INK",lw=.25,z=2.5,dash=False):
@@ -96,6 +98,8 @@ class Scene:
  def access(self,x,y,tag="AD",k="INK",size=6):
   self.rect(x-size/2,y-size/2,size,size,k,None,.2,dash=True);self.text(x,y+size*.9,tag,size*.32,k,False,"center")
  def place(self,scene,x,y,denom=50,clip=None):self.ops.append(("place",scene,x,y,denom,clip or (0,0,scene.w,scene.h)))
+ def dimension(self,a,b,base,scale=1,angle=0):
+  self.ops.append(('dimension',a,b,base,float(scale),angle))
 
 def table(s,x,y,w,headers,rows,ratios=None,size=2.35,rh=8):
  ratios=ratios or [1]*len(headers);xs=[x]
@@ -123,6 +127,16 @@ def pdf_render_scene(c,s,origin=(0,0),factor=1,clip=None):
 def _pdf_ops(c,ops):
  for op in ops:
   typ=op[0]
+  if typ=='dimension':
+   _,a,b,base,scale,angle=op
+   horizontal=angle==0
+   aa=(a[0],base[1]) if horizontal else (base[0],a[1])
+   bb=(b[0],base[1]) if horizontal else (base[0],b[1])
+   sub=Scene();sub.line([a,aa],'DIM',.18);sub.line([b,bb],'DIM',.18);sub.line([aa,bb],'DIM',.18)
+   sub.arrow(aa,bb,'DIM',.18,1.5);sub.arrow(bb,aa,'DIM',.18,1.5)
+   value=abs(b[0]-a[0] if horizontal else b[1]-a[1])*scale
+   sub.text((aa[0]+bb[0])/2,(aa[1]+bb[1])/2-2,f'{value:g}',2.5,'INK',False,'center',mask=True)
+   _pdf_ops(c,sub.ops);continue
   if typ in ("line","poly"):
    pts,k=op[1:3];fill=None
    if typ=="line":lw,dash=op[3:5]
@@ -152,6 +166,7 @@ def make_doc():
  doc.layers.new("VIEWPORT",dxfattribs={"color":8,"plot":False})
  doc.layers.new("VIEWPORTS",dxfattribs={"color":8,"plot":False})
  doc.layers.new("M-MASK",dxfattribs={"color":7,"plot":True})
+ doc.dimstyles.new('MDR-DETAIL',dxfattribs={'dimtxsty':'Standard','dimtxt':2.5*.718,'dimasz':1.5,'dimexo':.5,'dimexe':1,'dimgap':.6,'dimdec':0})
  return doc
 
 def dxf_scene(target,s,offset=(0,0)):
@@ -166,6 +181,10 @@ def dxf_scene(target,s,offset=(0,0)):
  for op in s.ops:
   typ=op[0]
   if typ=="place":continue
+  if typ=='dimension':
+   _,a,b,base,scale,angle=op
+   target.add_linear_dim(base=p(base),p1=p(a),p2=p(b),angle=angle,dimstyle='MDR-DETAIL',dxfattribs={'layer':'M-DIM'},override={'dimlfac':scale}).render()
+   continue
   k=op[2] if typ in ["line","poly"] else op[4] if typ=="circle" else op[5]
   attrs={"layer":LAYER[k]}
   if typ in ['line','poly','circle']:
@@ -190,8 +209,9 @@ def dxf_scene(target,s,offset=(0,0)):
     from ezdxf.enums import TextEntityAlignment
     e.set_placement(p((x,y+i*z*1.4)),align={"left":TextEntityAlignment.LEFT,"right":TextEntityAlignment.RIGHT,"center":TextEntityAlignment.CENTER}[align])
 
-def export_schematic(sheets,path):
+def export_schematic(sheets,path,numbers=None):
  doc=make_doc();m=doc.modelspace()
  for i,s in enumerate(sheets):
-  dxf_scene(m,s,(i*900,0));l=doc.layouts.new(f"MDR{i+1:02d}_A1");l.page_setup(size=(841,594),margins=(0,0,0,0),units="mm");l.add_viewport(center=(420.5,297),size=(841,594),view_center_point=(i*900+420.5,297),view_height=594,dxfattribs={"layer":"VIEWPORT"})
+  number=numbers[i] if numbers is not None else i+1
+  dxf_scene(m,s,(i*900,0));l=doc.layouts.new(f"MDR{number:02d}_A1");l.page_setup(size=(841,594),margins=(0,0,0,0),units="mm");l.add_viewport(center=(420.5,297),size=(841,594),view_center_point=(i*900+420.5,297),view_height=594,dxfattribs={"layer":"VIEWPORT"})
  doc.set_modelspace_vport(height=594,center=(420.5,297));doc.saveas(path)

@@ -1,0 +1,32 @@
+tag,air_type,role,room,points_mm,flow_l_s,width_mm,height_mm,length_m,velocity_m_s,friction_pa_m,proposed_bod_mm_affl,status,inlet_width_mm,inlet_height_mm,taper_length_mm
+R-SA-M01,SA,Roof main,COM,"[[2300, 19000], [3600, 19000]]",3697.8,600,1300,1.3,4.740769,0.26037,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-02-04,SA,Roof branch,02 / 04,"[[3600, 19000], [3600, 16600.0]]",1114.0,700,450,2.4,3.536508,0.247253,4800,Proposed route / level; roof survey and structural approval pending,700,450,0
+R-SA-04A,SA,Roof branch,04,"[[3600, 16600.0], [3600, 6500.0]]",449.2,350.0,400.0,10.1,3.208571,0.330207,4800,Proposed route / level; roof survey and structural approval pending,700,450,675
+R-SA-04B,SA,Roof branch,04,"[[3600, 6500.0], [4200.0, 6500.0]]",449.2,350.0,400.0,0.6,3.208571,0.330207,4800,Proposed route / level; roof survey and structural approval pending,350.0,400.0,0
+R-SA-M02,SA,Roof main,COM,"[[3600, 19000], [8200, 19000]]",2583.8,600,1300,4.6,3.312564,0.134355,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-08A,SA,Roof branch,08,"[[8200, 19000], [8200, 5600.0]]",884.6,600.0,400.0,13.4,3.685833,0.313245,4800,Proposed route / level; roof survey and structural approval pending,600.0,400.0,0
+R-SA-08B,SA,Roof branch,08,"[[8200, 5600.0], [9800.0, 5600.0]]",884.6,600.0,400.0,1.6,3.685833,0.313245,4800,Proposed route / level; roof survey and structural approval pending,600.0,400.0,0
+R-SA-M03,SA,Roof main,COM,"[[8200, 19000], [12500, 19000]]",1699.2,600,1300,4.3,2.178462,0.06241,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-05-06,SA,Roof branch,05 / 06,"[[12500, 19000], [12500, 12800.0]]",1195.9,700,400,6.2,4.271071,0.382462,4800,Proposed route / level; roof survey and structural approval pending,700,400,0
+R-SA-06A,SA,Roof branch,06,"[[12500, 12800.0], [12500, 9475.0]]",418.2,450.0,300.0,3.325,3.097778,0.323797,4800,Proposed route / level; roof survey and structural approval pending,700,400,475
+R-SA-M04,SA,Roof main,COM,"[[12500, 19000], [13400, 19000]]",503.3,600,1300,0.9,0.645256,0.006985,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-09A,SA,Roof branch,09,"[[13400, 19000], [13400, 8200.0]]",46.2,200.0,150.0,10.8,1.54,0.23071,4800,Proposed route / level; roof survey and structural approval pending,200.0,150.0,0
+R-SA-M05,SA,Roof main,COM,"[[13400, 19000], [15500, 19000]]",457.1,600,1300,2.1,0.586026,0.005886,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-07A,SA,Roof branch,07,"[[15500, 19000], [15500, 5000.0]]",168.2,300.0,250.0,14.0,2.242667,0.253599,4800,Proposed route / level; roof survey and structural approval pending,300.0,250.0,0
+R-SA-M06,SA,Roof main,COM,"[[15500, 19000], [17000, 19000]]",288.9,600,1300,1.5,0.370385,0.002614,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-03A,SA,Roof branch,03,"[[17000, 19000], [17000, 7000.0]]",147.6,300.0,200.0,12.0,2.46,0.351113,4800,Proposed route / level; roof survey and structural approval pending,300.0,200.0,0
+R-SA-M07,SA,Roof main,COM,"[[17000, 19000], [18100, 19000]]",141.3,600,1300,1.1,0.181154,0.000747,4800,Proposed route / level; roof survey and structural approval pending,600,1300,0
+R-SA-01A,SA,Roof branch,01,"[[18100, 19000], [18100, 3500.0]]",141.3,300.0,200.0,15.5,2.355,0.324511,4800,Proposed route / level; roof survey and structural approval pending,300.0,200.0,0
+R-SA-01B,SA,Roof branch,01,"[[18100, 3500.0], [19400.0, 3500.0]]",141.3,300.0,200.0,1.3,2.355,0.324511,4800,Proposed route / level; roof survey and structural approval pending,300.0,200.0,0
+R-RA-M01,RA,Roof main,COM,"[[2700, 17000], [4800, 17000]]",3006.68034,700,900,2.1,4.772508,0.27718,5550,Proposed route / level; roof survey and structural approval pending,700,900,0
+R-RA-04A,RA,Roof branch,04,"[[4800, 17000], [4800, 8250.0]]",389.86339,500.0,350.0,8.75,2.227791,0.150816,5550,Proposed route / level; roof survey and structural approval pending,500.0,350.0,0
+R-RA-M02,RA,Roof main,COM,"[[4800, 17000], [6000, 17000]]",2616.81695,700,900,1.2,4.153678,0.214371,5550,Proposed route / level; roof survey and structural approval pending,700,900,0
+R-RA-02A,RA,Roof branch,02,"[[6000, 17000], [6000, 18150.0]]",605.46339,650.0,400.0,1.15,2.328705,0.130368,5550,Proposed route / level; roof survey and structural approval pending,650.0,400.0,0
+R-RA-M03,RA,Roof main,COM,"[[6000, 17000], [9400, 17000]]",2011.35356,700,900,3.4,3.192625,0.132041,5550,Proposed route / level; roof survey and structural approval pending,700,900,0
+R-RA-08A,RA,Roof branch,08,"[[9400, 17000], [9400, 8450.0]]",825.26339,850.0,400.0,8.55,2.427245,0.125343,5550,Proposed route / level; roof survey and structural approval pending,850.0,400.0,0
+R-RA-M04,RA,Roof main,COM,"[[9400, 17000], [11300, 17000]]",1186.09017,700,900,1.9,1.882683,0.050352,5550,Proposed route / level; roof survey and structural approval pending,700,900,0
+R-RA-06A,RA,Roof branch,06,"[[11300, 17000], [11300, 9800.0]]",358.86339,500.0,400.0,7.2,1.794317,0.09286,5550,Proposed route / level; roof survey and structural approval pending,500.0,400.0,0
+R-RA-M05,RA,Roof main,COM,"[[11300, 17000], [13000, 17000]]",827.22678,700,900,1.7,1.313058,0.02624,5550,Proposed route / level; roof survey and structural approval pending,700,900,0
+R-RA-07A,RA,Roof branch,07,"[[13000, 17000], [13000, 5000.0]]",108.86339,350.0,250.0,12.0,1.244153,0.081127,5550,Proposed route / level; roof survey and structural approval pending,350.0,250.0,0
+R-RA-M06,RA,Roof main,COM,"[[13000, 17000], [19500, 17000]]",718.36339,700,900,6.5,1.140259,0.020355,5550,Proposed route / level; roof survey and structural approval pending,700,900,0
+R-RA-05A,RA,Roof branch,05,"[[19500, 17000], [19500, 10400.0]]",718.36339,700.0,400.0,6.6,2.565584,0.150333,5550,Proposed route / level; roof survey and structural approval pending,700.0,400.0,0

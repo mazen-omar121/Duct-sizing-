@@ -1,0 +1,7 @@
+tag,unit,air_type,flow_l_s,proposed_branch_width_mm,proposed_branch_depth_mm,header_width_mm,header_depth_mm,velocity_m_s,proposed_taper_length_mm,OEM_nozzle_size,installed_length_and_level,detail,status
+DX-SA-A,PAU-A,SA,1848.9,700,650,600,1300,4.063516,1225,TBC,TBC,MDR-033,NEW coordination proposal; nozzle/tee/offset/actual component envelopes and fitting losses require OEM approval
+DX-RA-A,PAU-A,RA,1503.340168810821,700,650,700,900,3.304044,475,TBC,TBC,MDR-033,NEW coordination proposal; nozzle/tee/offset/actual component envelopes and fitting losses require OEM approval
+DX-SA-B,PAU-B,SA,1848.9,700,650,600,1300,4.063516,1225,TBC,TBC,MDR-033,NEW coordination proposal; nozzle/tee/offset/actual component envelopes and fitting losses require OEM approval
+DX-RA-B,PAU-B,RA,1503.340168810821,700,650,700,900,3.304044,475,TBC,TBC,MDR-033,NEW coordination proposal; nozzle/tee/offset/actual component envelopes and fitting losses require OEM approval
+DX-SA-C,PAU-C,SA,1848.9,700,650,600,1300,4.063516,1225,TBC,TBC,MDR-033,NEW coordination proposal; nozzle/tee/offset/actual component envelopes and fitting losses require OEM approval
+DX-RA-C,PAU-C,RA,1503.340168810821,700,650,700,900,3.304044,475,TBC,TBC,MDR-033,NEW coordination proposal; nozzle/tee/offset/actual component envelopes and fitting losses require OEM approval

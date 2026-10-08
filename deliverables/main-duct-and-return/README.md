@@ -1,44 +1,43 @@
-# Main duct and return
+# Main duct and return — detailed revision 02
 
-Method revision 01, 8 October 2026. This separate option explains **a DX PAU bank feeding common roof supply and return mains, with room drops**. The user's selected roof arrangement, +4.000 m structural underside and +3.300 m minimum ceiling are retained. Rev08–Rev12 remain available.
+The previous issue explained the system but omitted most detailed plans and engineering registers. Revision02 restores that content: **50 A1 sheets and 44 Excel tabs**, with the detailed drawings first. Roof common supply/return mains and room drops remain the user's selected arrangement; the air is cooled by the DX PAU bank.
 
-Download the [complete package](../../deliverables/main-duct-and-return/Main%20duct%20and%20return.zip?raw=true), [14-sheet PDF](../../deliverables/main-duct-and-return/Main%20duct%20and%20return.pdf), [editable DXF](../../deliverables/main-duct-and-return/Main%20duct%20and%20return.dxf?raw=true) or [registers](../../deliverables/main-duct-and-return/Main%20duct%20and%20return%20-%20Registers.xlsx?raw=true).
+[View the full drawings](../../deliverables/main-duct-and-return/Main%20duct%20and%20return.pdf), [review 20 detailed engineering sheets](../../deliverables/main-duct-and-return/Main%20duct%20and%20return%20-%20Engineering%20review.pdf) or [download the complete ZIP](../../deliverables/main-duct-and-return/Main%20duct%20and%20return.zip?raw=true). [Editable DXF](../../deliverables/main-duct-and-return/Main%20duct%20and%20return.dxf?raw=true) and [Excel registers](../../deliverables/main-duct-and-return/Main%20duct%20and%20return%20-%20Registers.xlsx?raw=true) are available separately. The three-sheet method review remains a supporting explanation.
 
-All three PAUs connect to the same headers; two 50% units operate while one is isolated on rotating standby. DX refrigeration cools the air inside the PAUs. Air ducts deliver that air to nine rooms; six return branches collect it. Kitchen, toilet and clean-agent extracts remain separate. The original 53 terminals, 85 instruments and 275 I/O rows are retained. The 22 additional DX protection/monitoring candidates are explicitly separate proposals for OEM review.
-
-| Sheet | Content |
+| Sheets | Restored or added content |
 | --- | --- |
-| MDR-001 | Whole system: PAU bank, common headers, every room drop, dampers and flows |
-| MDR-002 | All 53 terminal tags and connected room supply/return/extract headers |
-| MDR-003 | Separate extracts with connected inlet/outlet headers and duty/standby fans |
-| MDR-004 | Three PAU air paths, mixed outdoor/return air, filters, DX coils, fans and air-side instruments |
-| MDR-005 | DX refrigerant cycles, 21 unit protection/monitoring candidates and optional common static control |
-| MDR-006 | All 27 room temperature, humidity and pressure instruments |
-| MDR-007 | Six retained heater airflow/high-limit protections and hardwired safety chain |
-| MDR-008 | Roof crossing section, indoor ceiling envelope and all 15 riser levels/sizes |
-| MDR-009 | Basement instruments, energy meter, HPCP and operating/fire sequence |
-| MDR-010 | All 85 retained instruments indexed to their graphical sheets |
-| MDR-011 | Transparent functional header flow accounting, velocity/friction and selection holds |
-| MDR-012 | Retained Rev12 scaled roof routing proposal, D-023 |
-| MDR-013 | Retained Rev12 scaled indoor coordination plan, D-001 |
-| MDR-014 | Retained Rev12 room instrument locations, D-007 |
+| MDR-001–006 | Full coordinated, supply, return/extract plans and three room enlargements |
+| MDR-007–017 | Room/plant/fan instruments, PAU distribution, installation symbols, duct/terminal schedules, tapered fittings, heater protection, controls and setting-out |
+| MDR-018 | Complete 50-sheet index replacing the earlier drawing index |
+| MDR-019–025 | Actual junction enlargements, ceiling envelopes, recorded changes, all15 drops, detailed roof routing, crossing/drop sections and fitting development |
+| MDR-026–032 | Pressure/fan allowance budgets, air balance, terminal selection, instrument mounting/wiring, roof curbs/supports, component access and roof dimensions |
+| MDR-033 | New DX unit branch/header transition plans/elevations, native dimensions and six connection records |
+| MDR-034 | Registered roof split and reducer development, open throats and construction/access requirements |
+| MDR-035 | Dimensioned telecom supply/return drop, roof curb, weather/firestop and ceiling coordination |
+| MDR-036 | Common-header measurement stations, sensor/tap access and DX condensate/drain requirements |
+| MDR-037 | DX/fan/damper/fire cause-and-effect matrix covering all22 DX candidate tags |
+| MDR-038 | OEM/HPCP wiring interfaces and all22 candidate channels, explicitly unassigned |
+| MDR-039 | DX equipment duties, nine-room airflow/TAB records and procurement/commissioning holds |
+| MDR-040–050 | Eleven supporting whole-system, room terminal, extract, PAU, DX, safety and instrument diagrams |
 
-The first 11 sheets explain the method. Distribution diagrams are NTS; the sections on MDR-008 carry their own vertical scales. The last three sheets are clearly labelled references retaining their original Rev12 title blocks. Their actual grouped roof takeoffs and 31 registered segments govern the physical proposal. The 15 sequential accounting steps on MDR-001/MDR-011 explain flow conservation and are **not a fabrication main schedule**. The roof bank/nozzle connections remain functional interfaces pending actual OEM dimensions.
+The original32 engineering subjects are retained, with the drawing index replaced and the title blocks reissued as **Main duct and return / revision02**. The physical routes, wall geometry, terminal duties and original design assumptions are unchanged. Retained body references `D-xxx` correspond to the same `MDR-xxx` number on sheets001–032. New details develop the DX/common-header method; nozzle/manifold geometry and installed equipment dimensions still require the selected OEM. NTS diagrams and proposed spool development are not fabrication release drawings.
 
-The CAD reference import preserves every entity in the physical model blocks, including masks. Presentation corrections convert PDF font sizes to CAD cap heights and restore pale table-header fills; source inputs and duct coordinates are unchanged. Source mask/dash resources may have a `$0$` prefix to keep their original settings.
+**44 register tabs:** all35 baseline tabs retain their cell values and formatting, plus nine new tabs for the revised readme, drawing/instrument index, functional flow accounting, DX candidates, six bank connections, cause/effect, wiring interfaces and equipment selection. All53 terminals,85 retained instruments and275 original I/O rows remain. The22 separate DX candidates comprise7 AI,3 DI and12 OEM-local protections; factory data/reused fault contacts may change the actual additional panel count.
 
-Open `Main duct and return.dxf` in AutoCAD, inspect **MDR01_A1 through MDR14_A1**, then **Save As → DWG**. Keep all `M-MASK` layers, including prefixed copies, on and all viewport layers nonplotting. Text uses Arial/Arial Bold; install those fonts or select metrically compatible substitutes. Plot A1 at 100%, enable plot lineweights, and compare the first plot to the PDF. DXF coordinates are millimetres; NTS diagrams use drawn paper millimetres, while retained plan blocks use original building millimetres. Do not measure fabrication dimensions from the functional diagrams. Native AutoCAD plotting/conversion has not run here.
+The three PAUs connect to the same headers: two50% duty units and one isolated rotating standby. Cooling refrigerant stays within the factory DX system; air ducts serve the rooms. Nine supply drops and six return risers are retained. Toilet/kitchen/clean-agent extracts and basement ventilation remain separate. Heating and conditional HUM-01 requirements are retained pending thermal/humidity design.
 
-**Engineering coordination issue.** DX capacity/refrigerant/OEM equipment, complete fan ESP, actual roof/structural survey, penetrations, final duct elevations, insulation specification and fire/wiring approval remain pending. The retained supply 3697.80 L/s and assumed return 3006.68 L/s imply a minimum makeup 691.12 L/s; the earlier OA reference 420.70 L/s is short by 270.42 L/s. This lower bound is not an approved ventilation selection. Toilet/kitchen pressure targets and CAG extract remain unresolved. See `READ_ME_FIRST.txt` for the known RA05 curb/roof-edge hold and ceiling allowances. No fan, refrigeration circuit safety setting or pressure compliance is certified.
+Open `Main duct and return.dxf` in AutoCAD, inspect **MDR01_A1 through MDR50_A1**, then **Save As → DWG**. All mask layers, including `$0$`-prefixed imports, must be on; viewport layers are nonplotting. Arial/Arial Bold, plot lineweights and A1 at100% for stated scales. Model blocks retain original building millimetres; supporting diagrams use drawn paper millimetres. Compare the first CAD plot with the PDF. Native AutoCAD plotting/conversion has not run here.
 
-Rebuild from the repository using Python 3.12:
+**Engineering coordination issue.** User slab underside+4.000 m and minimum ceiling+3.300 m remain. Roof surface+4.200 m, outdoor75/indoor50 mm insulation, flange/support/curb and equipment reservations are proposals. RA05 curb extends25 mm beyond the nominal floor outline; roof/parapet/shaft coordination is open. Installed duct elevations, selected OEM dimensions, DX capacity/refrigerant, complete fan ESP, structure/fire approval and final engineering review remain pending. Minimum makeup691.12 L/s exceeds OA reference420.70 by270.42; CAG extract, toilet/kitchen pressure and independent room comfort/humidity remain unresolved. No selected fan, measured leakage, thermal compliance or certified terminal throw/noise is claimed.
+
+Rebuild with Python3.12:
 
 ```bash
-python3 -m venv /workspace/.venvs/administration-cad
 /workspace/.venvs/administration-cad/bin/python -m pip install -r projects/main_duct_and_return/requirements.txt
 /workspace/.venvs/administration-cad/bin/python projects/main_duct_and_return/src/build.py
 /workspace/.venvs/administration-cad/bin/python scripts/validate_main_duct_and_return.py
 /workspace/.venvs/administration-cad/bin/python scripts/package_main_duct_and_return.py
+/workspace/.venvs/duct-cad/bin/python -m unittest discover -s tests
 ```
 
-The builder uses only this project's preserved inputs. Generated files go to `generated/main_duct_and_return/`; packaging independently validates them and copies the reviewed files to `deliverables/main-duct-and-return/`. The app serves those published copies. Edit source/inputs, then regenerate; workbook edits are not imported. Run one build at a time. `PROVENANCE.json` identifies the baseline and source hashes. The ZIP includes the source, reference inputs, validation/package scripts and checksum manifest for a portable rebuild.
+Generated outputs are in `generated/main_duct_and_return/`; packaging validates before copying to `deliverables/main-duct-and-return/`, which the app serves. In the extracted ZIP, install `source/requirements.txt`, then run `python source/src/build.py --output-dir generated/main_duct_and_return`, `python scripts/validate_main_duct_and_return.py` and `python scripts/package_main_duct_and_return.py` from the extracted root. Workbook edits are not imported. Run one build at a time. Input SHA256 provenance and archive/delivery manifests are included. The original14-sheet issue is preserved in `deliverables/main-duct-and-return/revision-01/`; Rev08–Rev12 and the user's benchmark DWG remain unchanged.

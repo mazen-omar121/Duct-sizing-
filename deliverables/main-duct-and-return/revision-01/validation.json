@@ -1,0 +1,23 @@
+{
+  "name": "Main duct and return",
+  "detailed_A1_sheets": 14,
+  "functional_method_sheets": 11,
+  "scaled_Rev12_reference_plans": 3,
+  "native_CAD_layouts": 14,
+  "DXF_audit": "passed",
+  "native_CAD_masks_lineweights_and_reference_viewports": "checked",
+  "retained_reference_block_entities": "checked including masks",
+  "preserved_input_sha256": "checked",
+  "retained_instruments_graphically_checked": 85,
+  "additional_DX_candidates_graphically_checked": 22,
+  "terminal_tags_graphically_checked": 53,
+  "retained_IO_points": 275,
+  "room_drop_tags_checked": 15,
+  "roof_reference_routes": 31,
+  "functional_main_flow_velocity_friction_checks": 15,
+  "main_location": "Roof common mains with room drops - user selected",
+  "supply_l_s": 3697.8,
+  "return_l_s": 3006.680337621642,
+  "minimum_mass_balance_makeup_l_s": 691.119662378358,
+  "scope": "Method and retained proposed physical plans; DX capacity, OEM selections, structure, actual roof survey, complete fan ESP and native AutoCAD plot remain pending"
+}

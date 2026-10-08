@@ -1,0 +1,4 @@
+unit,duty,supply_l_s,return_l_s,minimum_mass_balance_OA_l_s,total_sensible_latent_capacity,entering_leaving_conditions,external_static_pressure,refrigerant_charge,footprint_and_nozzles,detail,status
+PAU-A,50%; TWO DUTY + ONE ROTATING STANDBY,1848.9,1503.340168810821,345.559831189179,TBC - revised room and outdoor-air load,TBC,TBC - complete route and OEM losses,OEM TBC,Reservation only; OEM general arrangement required,MDR-039,No DX equipment is selected
+PAU-B,50%; TWO DUTY + ONE ROTATING STANDBY,1848.9,1503.340168810821,345.559831189179,TBC - revised room and outdoor-air load,TBC,TBC - complete route and OEM losses,OEM TBC,Reservation only; OEM general arrangement required,MDR-039,No DX equipment is selected
+PAU-C,50%; TWO DUTY + ONE ROTATING STANDBY,1848.9,1503.340168810821,345.559831189179,TBC - revised room and outdoor-air load,TBC,TBC - complete route and OEM losses,OEM TBC,Reservation only; OEM general arrangement required,MDR-039,No DX equipment is selected

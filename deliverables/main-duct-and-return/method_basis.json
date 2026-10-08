@@ -1,7 +1,12 @@
 {
   "name": "Main duct and return",
-  "method_revision": 1,
-  "sheets": 14,
+  "method_revision": 2,
+  "sheets": 50,
+  "detailed_base_sheets": 32,
+  "new_DX_detail_sheets": 7,
+  "supporting_method_sheets": 11,
+  "retained_register_tabs": 35,
+  "total_register_tabs": 44,
   "baseline_instruments": 85,
   "new_DX_proposals": 22,
   "terminals": 53,
@@ -20,7 +25,7 @@
   "assumed_insulation_each_face_mm": 50,
   "assumed_flange_allowance_each_side_mm": 25,
   "component_reserved_depth_mm": 550,
-  "status": "Detailed functional method and preliminary sizing, not surveyed route or construction approval",
+  "status": "Full detailed engineering content with DX/header development proposals; final selections and approval pending",
   "holds": [
     "Proposed roof layout / structure / penetrations / weatherproofing / support and OEM dimensions",
     "Room drops: beam / actuator / support / access coordination",

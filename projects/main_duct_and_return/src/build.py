@@ -5,7 +5,7 @@ equipment capacity or actual fan ESP is inferred from diagram dimensions.
 """
 from pathlib import Path
 from math import ceil,pi,log10,sqrt
-import csv,json,argparse,hashlib,zipfile,shutil
+import csv,json,argparse,hashlib,zipfile,shutil,re
 from collections import defaultdict
 import fitz,ezdxf
 from shapely.geometry import LineString
@@ -19,9 +19,11 @@ from cad import Scene,table,pdf_render_scene,export_schematic,MM,COL
 BASE=Path(__file__).resolve().parents[1]
 ap=argparse.ArgumentParser();ap.add_argument('--output-dir',default=str(BASE.parents[1]/'generated/main_duct_and_return'))
 args=ap.parse_args();OUT=Path(args.output_dir);OUT.mkdir(parents=True,exist_ok=True)
-TITLE='Main duct and return';COUNT=14;SHEETS=[];COVERED=defaultdict(set);DX_COVERED=defaultdict(set)
+TITLE='Main duct and return';COUNT=50;SHEETS=[];COVERED=defaultdict(set);DX_COVERED=defaultdict(set)
 def read(n):
-    with (BASE/'inputs'/n).open() as f:return list(csv.DictReader(f))
+    path=BASE/'inputs'/n
+    if not path.is_file():path=BASE/'inputs/rev12_schedules'/n
+    with path.open() as f:return list(csv.DictReader(f))
 DATA=json.loads((BASE/'inputs/Design_basis.json').read_text());ROOMS={r['id']:r for r in DATA['rooms']}
 ORDER=['02','04','08','05','06','09','07','03','01'];RA_ORDER=[r for r in ORDER if ROOMS[r]['rn']]
 INSTRUMENTS=read('Instruments.csv');IO=read('IO_points.csv');TERMS=read('Terminals.csv')
@@ -43,7 +45,7 @@ for air,order,field,target in [('SA',ORDER,'sa',4.8),('RA',RA_ORDER,'ra',3.5)]:
         MAINS.append(dict(tag=f'{air}-M{i+1:02}',air_type=air,room_takeoff=room,flow_before_takeoff_l_s=q,
                           takeoff_l_s=ROOMS[room][field],flow_after_takeoff_l_s=q-ROOMS[room][field],
                           clear_width_mm=w,clear_depth_mm=depth,velocity_m_s=round(v,6),straight_friction_pa_m=round(fr,6),
-                          installed_length_m='TBC - surveyed route required',status='Functional sequential room-flow accounting only; actual grouped roof routes and 31 segment duties are in Roof_routes_Rev12 / MDR-012'))
+                          installed_length_m='TBC - surveyed route required',status='Functional sequential room-flow accounting only; actual grouped roof routes and 31 segment duties are in Roof_routes_Rev12 / MDR-023'))
 write('Common_main_sizing.csv',MAINS)
 DX=[]
 for c in 'ABC':
@@ -71,7 +73,7 @@ def frame(n,title,scale='NTS'):
     s.text(253,553,'DRAWING TITLE',2.2,'DIM');s.text(253,563,title,3.2,'INK',True)
     s.text(253,578,'ROUTES / OEM SELECTION / CHECKED AND APPROVED: PENDING',2.3,'DIM')
     s.text(637,553,'ADM-HVAC-MDR-'+f'{n:03}',3,'INK',True);s.text(637,577,'SCALE: '+scale+' AT A1',2.5)
-    s.text(745,552,'METHOD REVISION 01',2.3);s.text(745,562,'08 OCT 2026',2.5);s.text(745,578,f'SHEET {n} OF {COUNT}',2.4)
+    s.text(745,552,'DRAWING REVISION 02',2.3);s.text(745,562,'08 OCT 2026',2.5);s.text(745,578,f'SHEET {n} OF {COUNT}',2.4)
     return s
 def heading(s,x,y,t,w):s.text(x,y,t,3.1,'INK',True);s.line([(x,y+4),(x+w,y+4)],'INK',.25)
 def note(s,x,y,t,w=390,z=2.8):return s.para(x,y,t,w,z)+6
@@ -350,11 +352,19 @@ counts={t:sum(r['type']==t for r in IO) for t in ['AI','AO','DI','DO','COMM']}
 table(s,20,471,490,['Retained I/O','AI','AO','DI','DO','COMM'],[['275 baseline points',*[counts[t] for t in counts]]],[2,1,1,1,1,1],2.7,16)
 footer(s,'Basement remains an independent ventilation system; its flows/ESP/heat removal are not included in the 3697.80 L/s room supply. New DX proposals are separate from the unchanged 275-row I/O baseline; final channel allocation and protocols pending.');SHEETS.append(s)
 
+from engineering import make_details
+DETAILS=make_details(dict(frame=frame,heading=heading,note=note,footer=footer,sensor=sensor,read=read,write=write,rooms=ROOMS,dx=DX,supply=TOTAL_SA,**{'return':TOTAL_RA}))
+BASELINE_INDEX={r['tag']:r for r in read('Instrument_drawing_index.csv')}
+def canonical(n):return n+39 if n<=11 else n
+def instrument_refs(tag):
+    legacy={int(n) for n in re.findall(r'\d{3}',BASELINE_INDEX[tag]['drawings'])}
+    return ' / '.join(f'MDR-{n:03}' for n in sorted(legacy|{canonical(n) for n in COVERED[tag]}))
+
 # MDR-010: cross-reference every retained instrument to its actual graphical sheet.
 assert set(COVERED)=={r['tag'] for r in INSTRUMENTS},('Uncovered retained instrument',set(r['tag'] for r in INSTRUMENTS)-set(COVERED))
 assert set(DX_COVERED)=={r['tag'] for r in DX}
 index=[dict(tag=r['tag'],parameter=r['parameter'],location=r['location'],io=r['io'],
-            graphical_sheet=' / '.join(f'MDR-{n:03}' for n in sorted(COVERED[r['tag']])),status='Retained requirement / settings and OEM wiring pending') for r in INSTRUMENTS]
+            graphical_sheet=instrument_refs(r['tag']),status='Retained requirement / settings and OEM wiring pending') for r in INSTRUMENTS]
 write('Instrument_drawing_index.csv',index)
 s=frame(10,'COMPLETE INSTRUMENT INDEX AND DRAWING REFERENCES')
 for offset,x in [(0,20),(43,427)]:
@@ -379,6 +389,38 @@ for t in [f'SA {TOTAL_SA:.2f} minus RA {TOTAL_RA:.2f} requires makeup >= {MAKEUP
 footer(s,'Review index: 001 whole method; 002 all terminals; 003 extracts; 004 PAU/air instruments; 005 DX circuit; 006 room instruments; 007 heater safety; 008 sections/risers; 009 controls/basement; 010 all 85 instruments; 011 functional flow steps; 012 scaled roof plan; 013 indoor coordination; 014 room instrument locations.');SHEETS.append(s)
 
 assert len(SHEETS)==11
+METHOD_SHEETS=SHEETS
+METHOD_MAP={**{n:n+39 for n in range(1,12)},12:23,13:1,14:7}
+def remap_text(value):
+    return re.sub(r'MDR-(\d{3})',lambda m:f"MDR-{METHOD_MAP.get(int(m[1]),int(m[1])):03}",value)
+for n,sheet in enumerate(METHOD_SHEETS,1):
+    rewritten=[]
+    for operation in sheet.ops:
+        op=list(operation)
+        if op[0]=='text':
+            # Instrument-index cells already carry canonical physical/method references.
+            if not(n==10 and 49<=op[2]<=520):op[3]=remap_text(op[3])
+            op[3]=op[3].replace(f'SHEET {n} OF {COUNT}',f'SHEET {n+39} OF {COUNT}')
+        rewritten.append(tuple(op))
+    sheet.ops=rewritten
+with fitz.open(BASE/'inputs/Rev12_reference.pdf') as ref:
+    PHYSICAL_TITLES=[p.get_text().splitlines()[0].replace('ADMINISTRATION BUILDING - ','') for p in ref]
+PHYSICAL_TITLES[17]='COMPLETE DRAWING INDEX / DESIGN BASIS / ISSUE 02'
+DRAWING_INDEX=[]
+for n,title in enumerate(PHYSICAL_TITLES,1):
+    DRAWING_INDEX.append(dict(number=f'MDR-{n:03}',title=title,type='Detailed Rev12 content reissued; index updated' if n==18 else 'Retained detailed physical / engineering content',source='Rev12 D-'+f'{n:03}',layout=f'MDR{n:02}_A1'))
+for n,sheet in list(DETAILS.items())+list(zip(range(40,51),METHOD_SHEETS)):
+    title=next(op[3].split(' - ',1)[1] for op in sheet.ops if op[0]=='text' and op[3].startswith(TITLE.upper()+' - '))
+    DRAWING_INDEX.append(dict(number=f'MDR-{n:03}',title=title,type='New DX engineering detail' if n<40 else 'Supporting system method / instrumentation',source='Main duct and return revision02',layout=f'MDR{n:02}_A1'))
+write('Drawing_index.csv',DRAWING_INDEX)
+s=frame(18,PHYSICAL_TITLES[17])
+for offset,x in [(0,20),(25,427)]:
+    table(s,x,47,394,['Drawing','Title / subject'],[[r['number'],r['title']] for r in DRAWING_INDEX[offset:offset+25]],[1,5],2.55,16)
+footer(s,'50 A1 sheets: full32-sheet engineering content, seven new DX/header details and11 supporting diagrams. First32 D-xxx references correspond to MDR-xxx. Original route geometry / duties retained. DX/OA/roof/structure/OEM/final approval remain pending.')
+DETAILS[18]=s
+SHEETS=[DETAILS[n] for n in [18,*range(33,40)]]+METHOD_SHEETS
+CUSTOM_NUMBERS=[18,*range(33,40),*range(40,51)]
+
 def export_pdf(name,mono=False):
     old=COL.copy()
     if mono:COL.update({k:'#AAAAAA' if k=='ARCH' else '#000000' for k in COL})
@@ -395,88 +437,104 @@ def export_pdf(name,mono=False):
                     if fill!='#FFFFFF':op[fill_slot]='#EEEEEE' if min(rgb)>200 else '#000000'
                 sheet.ops.append(tuple(op))
             sheets.append(sheet)
-    c=canvas.Canvas(str(OUT/name),pagesize=(841*MM,594*MM),pageCompression=1)
-    c.setTitle(TITLE);c.setAuthor('Administration HVAC engineering coordination');c.setSubject('DX common supply / common return method; provisional engineering inputs')
+    custom=OUT/('_custom_mono.pdf' if mono else '_custom_color.pdf')
+    c=canvas.Canvas(str(custom),pagesize=(841*MM,594*MM),pageCompression=1)
+    c.setTitle(TITLE);c.setAuthor('Administration HVAC engineering coordination')
     for sheet in sheets:pdf_render_scene(c,sheet);c.showPage()
     c.save();COL.update(old)
+    with fitz.open(custom) as generated,fitz.open(BASE/'inputs'/('Rev12_reference_mono.pdf' if mono else 'Rev12_reference.pdf')) as ref,fitz.open() as final:
+        for n in range(1,COUNT+1):
+            if n in CUSTOM_NUMBERS:final.insert_pdf(generated,from_page=CUSTOM_NUMBERS.index(n),to_page=CUSTOM_NUMBERS.index(n));continue
+            final.insert_pdf(ref,from_page=n-1,to_page=n-1)
+            page=final[-1];replacements=[]
+            for block in page.get_text('dict')['blocks']:
+                for line in block.get('lines',[]):
+                    for span in line['spans']:
+                        value=span['text'];new=None
+                        if value.startswith('ADMINISTRATION BUILDING - '):new=value.replace('ADMINISTRATION BUILDING - ',TITLE.upper()+' - ',1)
+                        elif value==f'ADM-HVAC-D-{n:03}':new=f'ADM-HVAC-MDR-{n:03}'
+                        elif value==f'SHEET {n} OF 32':new=f'SHEET {n} OF {COUNT}'
+                        elif value=='12' and span['origin'][0]>737*MM and span['origin'][1]>550*MM:new='02'
+                        if new:
+                            page.add_redact_annot(fitz.Rect(span['bbox']),fill=(1,1,1));replacements.append((span,new))
+            page.apply_redactions(images=0,graphics=0)
+            for span,new in replacements:page.insert_text(span['origin'],new,fontname='hebo' if 'Bold' in span['font'] else 'helv',fontsize=span['size'],color=(0,0,0) if mono else (.09,.11,.13))
+            page.insert_text((22*MM,36*MM),'REISSUED DX MAIN / RETURN OPTION | ROUTES / DUTIES RETAINED FROM REV12 | D-xxx REFERENCES = MDR-xxx | DX DETAILS MDR-033..039',fontsize=2.1*MM,color=(.25,.25,.25))
+        final.set_metadata({'title':TITLE+' - Detailed revision02','author':'Administration HVAC engineering coordination'})
+        final.save(OUT/name)
+    custom.unlink()
 export_pdf(TITLE+'.pdf');export_pdf(TITLE+' - Monochrome.pdf',True)
-export_schematic(SHEETS,OUT/(TITLE+'.dxf'))
-# Keep the selected Rev12 physical plans as clearly identified references.
-reference_pages=[22,0,6]
-for filename in [TITLE+'.pdf',TITLE+' - Monochrome.pdf']:
-    with fitz.open(OUT/filename) as pdf, fitz.open(BASE/'inputs'/('Rev12_reference_mono.pdf' if 'Monochrome' in filename else 'Rev12_reference.pdf')) as ref:
-        for n,page in enumerate(reference_pages,12):
-            pdf.insert_pdf(ref,from_page=page,to_page=page)
-            pdf[-1].insert_text((22*MM,36*MM),f'MDR-{n:03} REFERENCE PLAN / RETAINED REV12 D-{page+1:03} / MAIN DUCT AND RETURN',fontsize=2.5*MM,color=(.25,.25,.25))
-        pdf.save(OUT/(filename+'.tmp'))
-    (OUT/(filename+'.tmp')).replace(OUT/filename)
-# Native CAD references use their original model blocks, translated away from the NTS diagrams.
+export_schematic(SHEETS,OUT/(TITLE+'.dxf'),numbers=CUSTOM_NUMBERS)
 from ezdxf.xref import Loader,ConflictPolicy
 from ezdxf.math import Matrix44
 target=ezdxf.readfile(OUT/(TITLE+'.dxf'));source=ezdxf.readfile(BASE/'inputs/Rev12_reference.dxf')
-# Discard only stale frozen-layer names, keeping valid reference visibility settings.
 for original_layout in source.layouts:
-    for vp in original_layout.query('VIEWPORT'):
-        vp.frozen_layers=[name for name in vp.frozen_layers if name in source.layers]
-# Presentation corrections stay in memory; original Rev12 input is unchanged.
+    for vp in original_layout.query('VIEWPORT'):vp.frozen_layers=[name for name in vp.frozen_layers if name in source.layers]
 for original_block in source.blocks:
     for text in original_block.query('TEXT'):text.dxf.height*=.718
-for name in ['D023_A1','D001_A1','D007_A1']:
-    for hatch in source.layouts.get(name).query('HATCH[layer=="M-ANNOTATION"]'):
-        hatch.dxf.true_color=0xF0F3F5
+for n in range(1,33):
+    layout=source.layouts.get(f'D{n:03}_A1')
+    for hatch in layout.query('HATCH[layer=="M-ANNOTATION"]'):hatch.dxf.true_color=0xF0F3F5
+    for text in layout.query('TEXT'):
+        value=text.dxf.text
+        if value.startswith('ADMINISTRATION BUILDING - '):text.dxf.text=value.replace('ADMINISTRATION BUILDING - ',TITLE.upper()+' - ',1)
+        elif value==f'ADM-HVAC-D-{n:03}':text.dxf.text=f'ADM-HVAC-MDR-{n:03}'
+        elif value==f'SHEET {n} OF 32':text.dxf.text=f'SHEET {n} OF {COUNT}'
+        elif value=='12' and text.dxf.insert.x>737 and text.dxf.insert.y<44:text.dxf.text='02'
 existing={e.dxf.handle for e in target.modelspace()}
-# Modern loader preserves WIPEOUTs and separate source dash/style resources.
 loader=Loader(source,target,conflict_policy=ConflictPolicy.NUM_PREFIX);loader.load_modelspace()
-ref_layouts=[]
-for n,name in enumerate(['D023_A1','D001_A1','D007_A1'],12):
-    loader.load_paperspace_layout(source.layouts.get(name));ref_layouts.append((name,f'MDR{n:02}_A1'))
+for n in range(1,33):
+    if n!=18:loader.load_paperspace_layout(source.layouts.get(f'D{n:03}_A1'))
 loader.execute()
 for e in target.modelspace():
     if e.dxf.handle not in existing:e.transform(Matrix44.translate(900000,0,0))
-for original_name,newname in ref_layouts:
-    layout=target.layouts.get(original_name)
-    target.layouts.rename(layout.name,newname)
+for n in range(1,33):
+    if n==18:continue
+    layout=target.layouts.get(f'D{n:03}_A1');target.layouts.rename(layout.name,f'MDR{n:02}_A1')
     for vp in layout.query('VIEWPORT'):
         if vp.dxf.id>1:
             center=vp.dxf.view_center_point;vp.dxf.view_center_point=(center.x+900000,center.y)
-    layout.add_text('REFERENCE PLAN / RETAINED REV12 / MAIN DUCT AND RETURN',dxfattribs={'height':2.5*.718,'layer':'M-INK'}).set_placement((22,558))
+    layout.add_text('REISSUED DX MAIN / RETURN OPTION / REV12 ROUTES RETAINED / DX DETAILS MDR-033..039',dxfattribs={'height':2.1*.718,'layer':'M-INK','style':'Standard'}).set_placement((22,558))
+# Physical drawings first, then specific DX details and supporting diagrams.
+for n in range(1,COUNT+1):target.layouts.get(f'MDR{n:02}_A1').dxf.taborder=n
 target.saveas(OUT/(TITLE+'.dxf'))
 
 # Workbook keeps all source duty data and distinguishes new DX candidates.
-wb=Workbook();ws=wb.active;ws.title='Read_me'
-for row in [('Drawing package',TITLE+' / 11 method sheets + 3 scaled reference plans / 85 retained instruments + 22 new DX candidates'),
+wb=load_workbook(BASE/'inputs/Rev12_registers.xlsx');BASELINE_TABS=set(wb.sheetnames);ws=wb.create_sheet('MDR_Read_me',0)
+for row in [('Drawing package',TITLE+' / revision02 / 50 detailed A1 sheets'),
+            ('Contents','Full32-sheet Rev12 engineering content; seven new DX/header details; eleven supporting diagrams. Detailed plans first.'),
             ('Architecture','DX PAU bank -> roof common SA main -> nine room drops; six room returns -> roof common RA main -> bank. Dedicated extracts separate.'),
-            ('Main location','User selected ROOF COMMON MAINS WITH ROOM DROPS. Scaled roof plan is a floor-footprint proposal; roof survey and OEM approval pending.'),
-            ('Ceiling','User slab U/S4000, ceiling3300 mm. Indoor room depth <=400 mm, BOD3400. Roof SA BOD4800, RA5550 proposed; 50 indoor/75 outdoor insulation assumptions.'),
-            ('Scope','Method drawings / sizing only; actual building routing, supports, structure, fan ESP, DX capacity and OEM selections pending.'),
-            ('AutoCAD','Open Main duct and return.dxf; MDR01_A1 through MDR14_A1; Save As DWG. Native AutoCAD plotting has not run.'),
-            ('Input editing','Original inputs retained; edit build.py for the method assumptions. Generated workbook edits are not imported.')]:ws.append(row)
-mapping=[('Instruments.csv','Retained_instruments'),('IO_points.csv','Retained_IO'),('Terminals.csv','All_terminals'),('Components.csv','Retained_components'),('Instrument_installation_Rev12.csv','Mounting_baseline'),('Roof_routes_Rev12.csv','Roof_routes_Rev12'),('Roof_risers.csv','Roof_risers')]
+            ('Baseline','All35 baseline register tabs retained;53 terminals,85 instruments,275 I/O unchanged.22 DX candidates separately proposed.'),
+            ('Ceiling','Confirmed slab4000 / ceiling3300 mm; local400-depth envelope. Roof and installed OEM/equipment levels remain proposals.'),
+            ('CAD','MDR01_A1..MDR50_A1; AutoCAD Open DXF -> Save As DWG. Native AutoCAD plot not run.'),
+            ('Scope','Actual DX capacity/OEM port geometry/complete fan ESP/structure/fire/OA and final approval remain open.')]:ws.append(row)
+mapping=[]
 for name,title in mapping:
     ws=wb.create_sheet(title)
     with (BASE/'inputs'/name).open() as f:
         for row in csv.reader(f):ws.append(row)
-for name,title in [('Common_main_sizing.csv','Common_main_sizing'),('Additional_DX_proposals.csv','Additional_DX'),('Instrument_drawing_index.csv','Instrument_index')]:
+for name,title in [('Common_main_sizing.csv','MDR_Functional_flows'),('Additional_DX_proposals.csv','Additional_DX'),('Instrument_drawing_index.csv','MDR_Instrument_index'),('Drawing_index.csv','MDR_Drawing_index'),('DX_bank_connections.csv','DX_Bank_connections'),('DX_cause_and_effect.csv','DX_Cause_effect'),('DX_interface_schedule.csv','DX_Interface'),('DX_equipment_schedule.csv','DX_Equipment')]:
     ws=wb.create_sheet(title)
     with (OUT/name).open() as f:
         for row in csv.reader(f):ws.append(row)
 for ws in wb:
+    if ws.title in BASELINE_TABS:continue
     ws.freeze_panes='A2';ws.sheet_view.showGridLines=False;ws.auto_filter.ref=ws.dimensions
     for c in ws[1]:c.fill=PatternFill('solid',fgColor='123B52');c.font=Font(name='Calibri',size=11,bold=True,color='FFFFFF');c.alignment=Alignment(wrap_text=True,vertical='top')
     for row in ws.iter_rows(min_row=2):
         for c in row:c.alignment=Alignment(wrap_text=True,vertical='top');c.font=Font(name='Calibri',size=10)
-        ws.row_dimensions[row[0].row].height=60 if ws.title in ['Read_me','Additional_DX','Mounting_baseline'] else 38
+        ws.row_dimensions[row[0].row].height=80 if ws.title in ['MDR_Read_me','Additional_DX','DX_Cause_effect','DX_Interface','DX_Equipment','DX_Bank_connections'] else 38
     for j,col in enumerate(ws.iter_cols(),1):ws.column_dimensions[get_column_letter(j)].width=min(80,max(18,max(len(str(c.value or '')) for c in col)*.65))
     ws.print_title_rows='1:1';ws.page_setup.orientation='landscape';ws.page_setup.paperSize=ws.PAPERSIZE_A3;ws.page_setup.fitToWidth=1;ws.page_setup.fitToHeight=0
 wb.save(OUT/(TITLE+' - Registers.xlsx'))
 
-summary={'name':TITLE,'method_revision':1,'sheets':COUNT,'baseline_instruments':85,'new_DX_proposals':22,
+summary={'name':TITLE,'method_revision':2,'sheets':COUNT,'detailed_base_sheets':32,'new_DX_detail_sheets':7,'supporting_method_sheets':11,'retained_register_tabs':35,'total_register_tabs':len(wb.sheetnames),'baseline_instruments':85,'new_DX_proposals':22,
          'terminals':53,'baseline_IO_points':len(IO),'common_roof_route_segments':31,'functional_header_flow_steps':len(MAINS),'room_drops':15,
          'supply_l_s':TOTAL_SA,'return_l_s':TOTAL_RA,'minimum_mass_balance_makeup_l_s':MAKEUP,
          'ceiling_clearance_requirement_mm':3300,'slab_underside_mm':4000,'available_void_mm':700,
          'main_location':'Roof common mains with room drops - user selected','bare_indoor_room_duct_depth_limit_mm':400,'assumed_insulation_each_face_mm':50,
          'assumed_flange_allowance_each_side_mm':25,'component_reserved_depth_mm':550,
-         'status':'Detailed functional method and preliminary sizing, not surveyed route or construction approval',
+         'status':'Full detailed engineering content with DX/header development proposals; final selections and approval pending',
          'holds':['Proposed roof layout / structure / penetrations / weatherproofing / support and OEM dimensions','Room drops: beam / actuator / support / access coordination',
                   'DX capacity, refrigerant, OEM circuit and fan selection / complete route ESP','OA/pressure balance and room comfort / humidity requirements','Fire boundaries and final wiring']}
 (OUT/'method_basis.json').write_text(json.dumps(summary,indent=2)+'\n')
