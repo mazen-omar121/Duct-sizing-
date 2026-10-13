@@ -1,0 +1,17 @@
+{
+  "source": "N-19082-RO-012-TQT-AES-PFD-B3-001_to_005_Rev0.pdf",
+  "source_sha256": "638866ff604c3500a8b0c72dd666cb8e8cc7863817889240f42996c32450021b",
+  "reviewed_source_sheets": 5,
+  "findings": 38,
+  "priorities": {
+    "Medium": 15,
+    "High": 22,
+    "Low": 1
+  },
+  "valve_checklist_rows": 28,
+  "engineer_comments_open": 2,
+  "review_report_pages": 13,
+  "markup_annotations": 69,
+  "original_text_and_geometry_preserved": true,
+  "referenced_PIDs_specifications_and_OEM_data_supplied": false
+}
